@@ -1,0 +1,162 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+table,th,td{
+	border-collapse:collapse;
+	border:1px solid #666;
+}
+table{
+	width:75%;
+	margin:0 auto;
+}
+
+ul,li,ol{list-style:none;}
+html{font-size:14px;}
+th,td{padding:10px;}
+
+#title{
+		font-size:3rem;
+		color:rgb(251,192,147);
+		
+}
+.hdtag>h3 ~ h4, h3 ~ h5, h3 ~ h6{background-color:aqua;}
+	
+
+/*
+	동위 선택자를 사용하여 hdtag 클래스 안에 있는 태그 중 h3 이후에 등장하는 태그들의 배경 색상을 aqua 컬러로 바꾸시오.
+*/
+
+.pgh{
+	background:
+	url('./html/icon/icon04.png') repeat-x left top/50px,
+	url('./html/images/cupcake.png') repeat-y center/120px,
+	url('./html/images/pattern3.png') repeat
+	#FDD692;
+	background-blend-mode:luminosity;
+}
+
+	
+@font-face {
+    font-family: 'MapoHongdaeFreedom';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoHongdaeFreedomA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+	배경색 : #FDD692
+	배경 이미지 3개 적용:
+	icon04.png , : x축으로만 반복, 배경이미지의 크기는 50px
+	cupcake.png , : ㅛ축으로만 반복, 가로 정중앙에 위치, 배경 이미지의 크기는 120px
+	pattern3.png : 반복
+	
+	★ background 축약형으로 작성
+	
+*/
+.box>li{
+	height:27px;
+	line-height:27px;
+	padding:5px 0 5px 5px;
+	text-indent:35px;
+	margin:10px 0;
+	background:url('./img/bgimg.png') no-repeat left top/27px 27px content-box #ffc;
+	background-blend-mode:overlay;
+}
+
+.july{text-align:center;}
+
+.july>li{
+		display:inline-block;
+		width:80px;
+		height:45px;
+		line-height:45px;
+		border-right:1px solid red;
+	
+}
+
+.july>li:last-child{
+		border-right:0;
+}
+
+.blkelement{
+	width:150px; height:200px;
+	border:solid 10px #cfc;
+	background:#333;
+	padding:10px;
+	/*
+		해당 요소가 차지하고 있는 가로세로 크기는??
+			가로:(150 + 20 + 20)190px
+			세로:(200 + 20 +20)240px
+	*/
+}
+
+.inelement{
+	width:150px; height:200px;
+	border:solid 10px #cfc;
+	background:#888;
+	padding:10px;
+	box-sizing:border-box;
+/*
+		해당 요소가 차지하고 있는 가로세로 크기는??
+			가로:150px
+			세로:200px
+	*/
+	overflow:hidden;
+	display:block;
+	visibility:hidden;
+}
+
+.h4title{
+	width:100px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+.imgWrap img{
+	padding:5px;
+	border:1px solid blue;
+	border-radius:50%;
+	
+}
+
+form{
+	
+    font:normal 18px/1 'MapoHongdaeFreedom';
+    
+}
+
+fieldset{border:none;}
+legend{font-size:24px; font-weight:bold;}
+form>fieldset>p{margin:10px 0;}
+
+input[name="id"]{
+	border:1px solid pink;
+	font-size:18px;
+	outline:none;
+}
+input[name="id"]:focus{
+	background:hotpink;
+}
+
+input::placeholder{
+	color:#666;
+	font: normal 14px/1 'MapoHongdaeFreedom';
+}
+
+input[type="submit"],
+input[type="reset"]{
+	background:darkred;
+	color:#fff;
+	border:2px solid transparent;
+	padding:5px 10px;
+	border-radius:5px;
+	
+	
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+	border-color:darkred;
+	color:darkred;
+	background:#fff;
+	
+}

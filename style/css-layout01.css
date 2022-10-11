@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+#wrapper{/*width+padding=1000*/
+	width:960px;
+	margin:0 auto;
+	padding:20px;
+	
+}
+
+header, section, footer{
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+
+header{
+	padding:20px;
+	margin: 0 0 20px 0;
+}
+
+#side{
+	width:240px;
+	padding:20px;
+	float:right;
+}
+
+#sec{
+	width:700px;
+	padding:20px;
+	float:left;
+	margin: 0 0 20px 0;
+}
+
+footer{
+	clear:both;
+	padding:20px;
+}
+
+
+section>h2{
+	display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+
+}

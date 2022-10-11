@@ -1,0 +1,20 @@
+@charset "utf-8";
+html{font-size:10px;}
+
+.unit01{
+	font-size:20px;
+}
+
+.unit01 div{
+	font-size:2em;
+	
+}
+.unit02{
+	font-size:20px;
+	
+}
+
+
+.unit02 div{
+	font-size:2rem;
+}

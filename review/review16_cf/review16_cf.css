@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+
+.hover{
+	width:1216px; height:400px; padding:12px;margin:40px auto;
+	background:#fec8c9;
+}
+
+
+
+.hover>ul>li{float:left; background:#fff;
+	width:288px; height:384px;
+	margin:8px; text-align:center; 
+}
+
+.hover>ul>li::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+.hover>ul>li>a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#ff3399;
+}
+
+
+.hover>ul>li>a>dl{padding:20px;}
+
+.hover>ul>li>a>dl>dt{
+	margin-bottom:10px; color:#004a8d;
+	font-size:1.4em;
+}
+
+
+
+
+.hover>ul>li>a>dl>dd{
+	line-height:1.4;
+}
+
+.hover>ul>li>a>dl>dd:last-child{
+	display:block;
+	width:100%; height:35px;
+	text-indent:-9999px;
+	overflow:hidden;
+	margin-top:20px;
+	background:url('./images/arr.png') no-repeat center/35px; 
+}
+
+.hover>ul>li:hover{background-color:#004a8d;}
+.hover>ul>li:hover>a>dl>dt,.hover>ul>li:hover>a>dl>dd{
+	color:#fff;
+	text-decoration:underline pink;
+
+}
+
+
+
+
+
+
+.hover>ul>li:hover>a>dl>dd:last-child{
+	
+	background:url('./images/arr-on.png') no-repeat center/35px; 
+}

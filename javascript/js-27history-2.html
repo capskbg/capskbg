@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> new </title>
+</head>
+<body>
+<h2>방문기록 관련 (history)</h2>
+<button onclick="goBack();">이전페이지</button>
+<script>
+/*
+	방문 기록 내에서 이동하기 관련 메소드
+	back() : 방문기록 내의 바로 이전 url 아동
+	forward() : 방문기록 내의 바로 다음 url 이동
+	go('경로 or url') : 방문기록 내의 특정 url로 이동(정확한 문자열로 입력)
+
+	★go(-1) : back() 과 동일하게 이동
+
+	웹접근성 심사
+	-> 사용자가 실수를 했을 때 회복을 빠르게 해야함.
+	>되돌아가기가 정확하게 이루어지는지
+
+*/
+
+function goBack(){
+	history.back();
+}
+
+</script>
+</body>
+</html>

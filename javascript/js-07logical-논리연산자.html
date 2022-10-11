@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-logical-논리연산자.html </title>
+</head>
+<body>
+<script>
+var num1, num2, num3;
+
+num1 = 7; num2 = 3;
+
+
+num3 = (num1 >= 7) && (num2 <=3);
+	// 1(T) AND 1(T) = 1(T)
+
+document.write(num3);
+
+
+num3 = (num1< 3) || (num2 === 3);
+	// 		F(0)  OR    T(1) = 0+1 =1(T)
+
+document.write("<br/>" + num3);
+
+
+
+num3 = (num2 >= 4 ) && (num1>4) && (num1>=7);
+//	     0            AND  1     AND 1 = 0*1*1=0(F)
+document.write("<br/>" + num3);
+
+num3 = !(num1 === num2);
+document.write("<br/>" + num3);
+
+num3 = (num1>=7)||(num2 <3)||(num1>num2);
+//			T     	    F      T = 1
+
+
+
+
+
+</script>
+</body>
+</html>

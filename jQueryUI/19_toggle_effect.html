@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<style>
+body{
+	background-color:lightgreen; text-align:center;
+}
+.fx{
+	width:100px; height:50px;
+	line-height:50px;
+	color:#fff;
+	background-color:#000;
+	border:1px solid #f3f3f3;
+	text-align:center;
+	display:inline-block;
+	margin:0 auto;
+}
+.btn_wrapper{ margin: 20px auto;}
+</style>
+<script>
+// 스크립트 부분
+
+$(function(){
+	$(".fx").hide();
+	$("button").button();
+	$("#btn_blind").click(function(){
+		$(".bl").toggle("blind",{
+			direction:"left"
+		});
+	});
+	$("#btn_bounce").click(function(){
+		$(".bo").toggle("bounce",{
+			distance : "1000"
+		},1000);
+	});
+	$("#btn_clip").click(function(){
+		$(".cl").toggle("clip","slow");
+	});
+	$("#btn_drop").click(function(){
+		$(".dr").toggle("drop",1000);
+	});
+	$("#btn_explode").click(function(){
+		$(".ex").toggle("explode",{
+			pieces:120
+		});
+	});
+	$("#btn_fade").click(function(){
+		$(".fd").toggle("fade");
+	});
+	$("#btn_highlight").click(function(){
+		$(".ht").toggle("highlight",{color:"pink"});
+	});
+	$("#btn_fold").click(function(){
+		$(".fo").toggle("fold",{
+			size :30,
+			horizFirst : false
+		},2000);
+	});
+	$("#btn_puff").click(function(){
+		$(".pu").toggle("puff",{
+			percebt :200
+		},2000);
+	});
+	$("#btn_pulsate").click(function(){
+		$(".pl").toggle("pulsate",{
+			times:50
+		},400);
+	});
+	$("#btn_scale").click(function(){
+		$(".sc").toggle("scale",{direction:"horizontal",
+			origin:"center",
+			percent: 200,
+			scale : "box"
+		});
+	});
+	$("#btn_shake").click(function(){
+		$(".sk").toggle("shake",{
+			duration:2000,
+			times:10,
+			distance: 20,
+			direction: "up"
+		});
+	});
+	
+	$("#btn_size").click(function(){
+		$(".si").toggle("size",{
+
+		});
+	});
+
+	$("#btn_slide").click(function(){
+		$(".sd").toggle("slide",410);
+	});
+});
+</script>
+</head>
+<body>
+<h1>jquery-ui 의 효과</h1>
+<div class="btn_wrapper">
+	<button id="btn_blind">블라인드</button>
+	<button id="btn_bounce">바운스</button>
+	<button id="btn_clip">클립</button>
+	<button id="btn_drop">드롭</button>
+	<button id="btn_explode">익스플루드</button>
+	<button id="btn_fade">페이드</button>
+	<button id="btn_highlight">하이라이트</button>
+	<button id="btn_fold">폴드</button>
+	<button id="btn_puff">퍼프</button>
+	<button id="btn_pulsate">펄스/점멸</button>
+	<button id="btn_scale">스케일</button>
+	<button id="btn_shake">셰이크</button>
+	<button id="btn_size">사이즈</button>
+	<button id="btn_slide">슬라이드</button>
+	<!--효과버튼끝-->
+</div>
+<div id="box_wrapper">
+	<div class="fx bl">블라인드</div>
+	<div class="fx bo">바운스</div>
+	<div class="fx cl">클립</div>
+	<div class="fx dr">드롭</div>
+	<div class="fx ex">익스플루드</div>
+	<div class="fx fd">페이드</div>
+	<div class="fx ht">하이라이트</div>
+	<div class="fx fo">폴드</div>
+	<div class="fx pu">퍼프</div>
+	<div class="fx pl">펄스</div>
+	<div class="fx sc">스케일</div>
+	<div class="fx sk">셰이크</div>
+	<div class="fx si">사이즈</div>
+	<div class="fx sd">슬라이드</div>
+</div>
+</body>
+</html>

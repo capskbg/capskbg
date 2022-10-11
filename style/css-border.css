@@ -1,0 +1,143 @@
+@charset "utf-8";
+div{
+	margin:10px;
+	padding:10px;
+	background:#cfc;
+	
+}
+
+
+.solid{border-style:solid;}
+.double{border-style:double;}
+.dashed{border-style:dashed;}
+.groove{border-style:groove;}
+.inset{border-style:inset;}
+.outset{border-style:outset;}
+.dotted{border-style:dotted;}
+.none{border-style:none;}
+.ridge{border-style:ridge;}
+.mix1{
+	border-style:ridge groove double solid
+
+}
+.mix2{
+	border-style:dotted outset dotted outset;
+}
+.mix3{
+	border-style:groove solid;
+}
+.mix4{
+	border-style:dotted solid dashed
+}
+
+
+.bw01{
+	border-style:solid;
+	border-width:thin;
+}
+.bw02{
+	border-style:solid;
+	border-width:thick;
+}
+.bw03{
+	border-style:solid;
+	border-width:50px;
+}
+/*
+	border-style만 지정을 하고 width를 지정 안 하면 기본값으로 medium이 적용 되어짐.
+*/
+
+.dc01{
+	border-top-style:solid;
+	border-width:2px;
+	border-color:red;
+}
+.dc02{
+	border-style:solid;
+	border-width:2px;
+	border-color:#66f;
+}
+.dc03{
+	border-bottom-style:solid;
+	border-bottom-width:5px;
+	border-bottom-color:rgb(150,150,200);
+	border-top-style:dotted;
+	border-top-width:2px;
+	border-top-color:red;
+}
+.dc04{
+	border-style:solid;
+	border-width:2px;
+	border-color:rgba(150,150,150,0.5);
+	box-sizing:border-box;
+}
+
+#sec03>div{background:lightblue;}
+.bt01{border:dotted;}
+.bt02{border:double 40px;}
+.bt03{border:rgba(0,0,0,0.6) solid 40px;}
+
+/*
+border ( 테두리 속성적용 축약)
+	border-style, border-color, border-width
+세가지 프로퍼티값을 각각 띄어쓰기 형태로 작성.
+이때, 프로퍼티값의 순서는 상관 없다.
+
+순서는 상관 없지만 border-style 관련된 값이 입력되어 있지 않으면 테두리는 적용되지 않는다.
+*/
+
+#sec03>p[class^="br"]{
+	width:100px; height:100px;
+	display:inline-block;
+	background:#ccf;
+	border:2px solid #aac;
+	
+}
+
+.br01{
+	border-top-left-radius:20px;
+	border-top-right-radius:30px;
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius:50%;
+}
+.br02{
+	border-radius:10px 20px 30px 40px;
+	}
+.br03{border-radius:0px 50px 10px;}
+.br04{border-radius:10px 50px;}
+.br05{border-radius:50%;}
+
+/*
+	border-radius의 프로퍼티 값을 1개만 작성할 경우 모든 모서리에 동일한 값이 지정됨.
+	※ 요소에 radius값을 50%로 적용하면 원이 됨.
+	(정사각형인 경우에는 정원, 직사각형이면 타원형이 됨)
+	
+*/
+
+#sec03>p[class^="bimg"]{
+	width:500px; height:50px;
+	padding:15px;
+	margin: 0 0 20px 0;
+	background:#ffc;
+	border:10px solid transparent;
+	
+}
+
+#sec03>p.bimg01{
+	border-image:url('../img/border.png') 27 round;
+}
+#sec03>p.bimg02{
+	border-image:url('../img/border.png') 27 repeat;
+}
+#sec03>p.bimg03{
+	border-image:url('../img/border.png') 27 stretch;
+}
+#sec03>p.bimg04{
+	border:50px dashed transparent;
+	border-image:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(43,188,194,1) 26%, rgba(253,29,29,1) 50%, rgba(51,252,105,1) 78%, rgba(252,176,69,1) 100%) 50;
+	
+}
+#sec03>p.bimg05{
+	border:10px dashed transparent;
+	border-image:linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(43,188,194,1) 26%, rgba(253,29,29,1) 50%, rgba(51,252,105,1) 78%, rgba(252,176,69,1) 100%) 10;
+}

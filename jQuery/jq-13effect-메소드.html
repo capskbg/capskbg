@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>effect-메소드</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+    <style>
+        #wrap{
+            background:pink;
+            width:900px; height:700px; margin:0 auto;
+            text-align:center;
+            padding:30px;
+        }
+        button{padding:10px 30px;
+        background:teal;color:#fff;
+        border:1px solid #fff;
+        border-radius: 10px; cursor:pointer;
+        }
+        button:hover{background:green;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <button class="sh">SHOW</button>
+    <button class="hi">HIDE</button>
+    <button class="out">FADEOUT</button>
+    <button class="in">FADEIN</button>
+    <button class="tog">FADETOGGLE</button>
+    <button class="ft50">FADETO</button>
+    <button class="ft90">FADETO</button>
+    <br/>
+    <img src="../html/images/cupcake.png" alt="컵케이크"/>
+</div>
+<script>
+$(".sh").click(function(){
+    $("img").show();
+});
+$(".hi").click(function(){
+    $("img").hide();
+});
+$(".out").click(function(){
+    $("img").fadeOut(500);
+});
+$(".in").click(function(){
+    $("img").fadeIn(500);
+});
+$(".tog").click(function(){
+    $("img").fadeToggle();
+});
+$(".ft50").click(function(){
+    $("img").fadeTo(4000,0.5);
+});
+$(".ft90").click(function(){
+    $("img").fadeTo(4000,0.9);
+});
+
+
+</script>
+</body>
+</html>

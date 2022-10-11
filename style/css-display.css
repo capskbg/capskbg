@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+/*
+ 모든 태그들에 대해서 기본적으로 가지고 있던 안쪽 여백과 바깥여백을 없애줌.
+ -> reset을 시켜주는 용도
+*/
+
+ul{
+	background:#ccf;
+	
+	margin:20px; /*요소의 바깥여백*/
+}
+
+li{
+	list-style:none;
+	text-align:center;
+	font-size:2em;
+	background:rgba(255,255,255,0.5);
+	margin:10px;
+}
+
+.list01>li{
+	display:inline-block;
+	width:100px;
+}
+
+
+span{
+	background:#ccf;
+	
+	width:350px;
+	display:inline-block;
+	font-size:40px;
+	
+}
+
+.list02>li:last-child{
+	width:80px; opacity:0.1;
+}
+
+/*
+	visibility:hidden; -> 투명도가 0이 된 것 처럼 적용(그 자리에 요소가 존재는 하나 단순하게 투명도만 0이 된것) 원래 처음에 있었던 자리를 차지한 채로 투명해지기만 함.
+	
+	display:none; -> 아예 처음부터 없었던 것처럼 사라짐 요소가 차지하고 있던 영역도 사라짐
+--------------------요소를 숨겨주는 기능.
+	
+	
+
+display
+	- inline : 인라인 요소로 변경
+			※ 기본적으로 인라인 요소는 가로,세로 크기를 가질 수가 없음.(css에서 width,height 속성을 사용할 수 없음)
+			
+			※ 인라인 요소는 요소 안에 쓰여진 텍스트와 이미지의 가로로 인라인 요소의 너비(가로사이즈)가 결정됨
+			
+			세로 사이즈의 경우 텍스트의 높이(폰트사이즈)(줄간격) 결정됨(안에 무엇이 적성되어져 있는지에 따라 크기가 달라짐)
+			
+			※ 즉 인라인 요소를 작성하면 가로(수평)로 나열이 됨
+			
+	- block : 블록 요소로 변경
+			※ 블록요소는 가로사이즈를 지정하지 않는한 상위요소 크기의 100%를 사용 함.
+			
+			※ 블록요소를 작성하게 되면 마크업 상에서 수직으로 나열이 됨.
+			
+			※ css상에서 width,height 속성을 사용하여 가로세로 사이즈를 지정할 수 있음.
+			
+	- inline-block : 인라인 요소의 특징과 블록 요소의 특징이 섞여있음.
+			
+			※ inline이 가지고 있는 가로로 배치가 되는 특징과 block요소가 가지고 있는 가로세로 사이즈를 지정할 수 있는 특징 두가지 모두를 가지고 있다.
+			
+			※ inline-block을 통해서 요소를 가로 배치하게 되면 다른 속성값을 reset 시켜 놨는데도 불구하고 알 수 없는 미세한 여백의 오차가 발생함.(3~8px) 정도 그렇기에 정확한 레이아웃 잡기가 어려움 1px만 틀어져도 전체가 다 틀어질 수 있기에 주의해야한다.
+			
+			※ text-align 속서엥 따라 요소가 이동함.
+			
+	- none : 요소를 감춰줌.
+	
+*/
+
+nav{margin-top:100px;}
+nav>ul, nav>ul>li{margin:0;padding:0;}
+nav>ul{text-align:center;}
+nav>ul>li{display:inline-block; width:200px;}

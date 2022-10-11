@@ -1,0 +1,31 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+
+.bg{
+	width:925px; height:197px; 
+	background:#ffc; margin:0 auto; margin-top:150px;
+}
+
+.bg>ul{
+	background:lightgreen;
+	width:110px; height:197px; margin-right:53px; float:left; 
+	text-align:center;
+}
+
+.bg>ul:last-child{margin-right:0;}
+
+
+.bg>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+
+.bg>ul>li:nth-child(even){ background:pink; width:90px; font-size:0.8em;
+	overflow:hidden; white-space: nowrap; text-overflow:ellipsis; margin:0 auto;
+}
+

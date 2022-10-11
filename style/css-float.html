@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>NEW</title>
+<link href="./css-float.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2>기본 웹 문서의 흐름</h2>
+<p>
+html 태그는 크게 인라인요소와 블록 요소로 구분이 되어진다.</p>
+<p><strong>블록(block) 의 특징</strong> : 
+한줄에 하나씩 쓰여지며, 가로 사이즈는 상위요소의 100%를 가지게 된다.<br/>
+가로사이즈가 100%이기 때문에 무조건 수직(세로) 배치가 된다.<br/><br/>
+※ css상의 width, height 속성을 사용해서 사이즈 조절을 할 수 있는다.<br/>
+※ 세로사이즈의 경우 입력하지 않으면 height:auto를 가지게됨.(가지고 있는 텍스트의 크기나 이미지의 크기만큼 세로사이즈가 가변적으로 변하게 됨.)<br/>
+※ 블록요소의 흐름은 세로(y축)가 기준이 된다.
+</p>
+
+
+<p><strong>인라인(inline) 의 특징</strong> : 
+한줄에 여러개 쓸 수가 있으며(가로,수평기준), 인라인 요소의 크기는 요소안에 쓰여진 텍스트 및 이미지의 크기까지만 사용 할 수 있다.<br/>
+가로사이즈의 경우 텍스트의 길이까지이고 세로 사이즈의 경우 텍스트의 크기와 line-height에 따라 달라진다.<br/><br/>
+(가로 세로 사이즈는 위에 언급한 것들로 지정이 되어지며 CSS의 width,height 속성으로 사이즈를 제어 할 수 없다.)<br/>
+※ 인라인 요소의 흐름은 가로(x축)가 기준이 된다.
+
+</p>
+
+
+<hr/>
+<div>block요소</div>
+<div>block요소</div>
+<div>block요소</div>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<span>inline요소</span>
+<hr/>
+<h2>float 속성을 사용한 요소의 정렬</h2>
+<h3>cf) display :: 요소가 가진 기본 흐름(block,inline)을 바꿔 줄 수 있는 프로퍼티</h3>
+
+<div class="con1">
+<img src="../html/images/flower.jpg" alt="flower" width="100" class="flower"/>
+<img src="../html/images/flower.jpg" alt="flower" width="100" class="flower"/>
+<p id="blocke">
+★모든 국민은 건강하고 쾌적한 환경에서 생활할 권리를 가지며, 국가와 국민은 환경보전을 위하여 노력하여야 한다. 중앙선거관리위원회는 법령의 범위안에서 선거관리·국민투표관리 또는 정당사무에 관한 규칙을 제정할 수 있으며, 법률에 저촉되지 아니하는 범위안에서 내부규율에 관한 규칙을 제정할 수 있다.
+</p>
+<span class="inbg">인라인 요소인 span 태그
+<br/>&nbsp;&nbsp;&nbsp;<br/>&nbsp;<br/>
+</span>&nbsp;
+<p class="fl">
+누구든지 체포 또는 구속을 당한 때에는 적부의 심사를 법원에 청구할 권리를 가진다.
+</p>
+<p class="fl">
+근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다.
+</p>
+<p class="fl">
+국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다.
+</p>
+<p style="clear:left;">이거는 그냥 추가로 쓴 p태그입니다.</p>
+<p>이거는 그냥 추가로 쓴 p태그입니다.</p>
+<p>이거는 그냥 추가로 쓴 p태그입니다.</p>
+<p>이거는 그냥 추가로 쓴 p태그입니다.</p>
+</div>
+<hr/>
+<h2>★목록태그를 float 속성을 사용하여 가로 정렬 해보기★</h2>
+<h3>연희카페메뉴</h3>
+<ul class="inline_gnb"><li>에스프레소</li><li>아메리카노</li><li>카푸치노</li><li>카페라떼</li><li>콜드브루</li><li>카페모카</li><li>플랫화이트</li></ul>
+<hr/>
+<ul class="gnb">
+	<li>에스프레소</li>
+	<li>아메리카노</li>
+	<li>카푸치노</li>
+	<li>카페라떼</li>
+	<li>콜드브루</li>
+	<li>카페모카</li>
+	<li>플랫화이트</li>
+</ul>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

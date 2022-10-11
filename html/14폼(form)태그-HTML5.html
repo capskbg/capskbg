@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>NEW</title>
+</head>
+<body>
+
+<h2>다양한 폼 필드</h2>
+<form method="post" action="#" name="joinfrm">
+
+
+
+<!-- 
+		폼태그의 속성
+		name="폼이름" : 폼의 이름을 [js]javascript, [jsp]java serverpage)
+		등에서 사용할 수 있도록 정의할때 쓰인다.
+	
+		** 한페이지 내에서 여러개의 폼을 사용할 경우 name 속성이
+		중복되면 안됨(데이터 덩어리의 분류를 구분할 수 없음)
+-->
+
+<p> text : <input type="text" name="txt"/></p>
+
+<!--
+	: 한줄짜리 텍스트
+	가장 많이 쓰이는 폼필드로 텍스트필드, 문자입력필드 라고 함.
+	사용 가능한 속성 " size, maxlength, value
+	
+		- value : value 속성의 값이 입력되어진 채로 출력
+		- maxlength : 텍스트등을 입력받는 필드에서는 모두 사용 가능
+			(속성값에 들어간 숫자 만큼의 무자를 작성할 수 있다.)
+		- size : 입력한 숫자에 해당하는 텍스트 길이 만큼 너비가 됨.
+-->
+
+<p> password : <input type="password" name="pwd" /> </p>
+<!-- 
+	패스워드(비밀번호) 입력 필드로 •문자로 출력 되어짐
+-->
+
+<p> search : <input type="search" /> </p>
+
+<!--
+	검색필드, 검색상자필드
+	: 일반 텍스트필드와 출력되는 형태는 동일하나,
+	해당필드에 텍스트를 입력하면 키워드(입력한 검색어)를 지울 수 있는
+	x가 필드 오른쪽 끝에 표시가 됨.
+-->
+
+<p>email : <input type="email" /> </p>
+
+<!-- 
+	: 이메일 입력 필드
+		이메일 양식에 맞추어 입력하지 않은 상태에서 submit(전송) 버튼을
+		누르게 되면 양식에 맞추어 입력하라고 경고창이 뜬다.
+-->
+
+<p>url : <input type="url"   /></p>
+<!--
+	: 프로토콜을 포함한 웹 주소양식에 맞추어 입력해야하는 필드로
+	ex)	naver.com ->x
+		https://www.naver.com -> o
+-->
+
+<p>tel : <input type="tel" value="100" /></p>
+<!--
+	:전화번호를 입력할 수 있게 하는 필드
+		-지원하지 않는 브라우저의 경우 text 필드와 동일한 역할을 함.
+		
+		- 지원하는 OS(모바일)의 경우 숫자 입력 키패드가 보여짐
+		
+-->
+
+<p> number : <input type="number" max="600" min="10" value="500"
+				step="5"/> </p>
+<!--
+	: 숫자만 ! 입력 가능한 필드로
+		마우스를 올리면(호버)시 스핀버튼이 보여지며, 음수~양수까지
+		스핀버튼으로 입력 가능한 필드(직접입력도 가능하나 숫자만 입력할 수 있음)
+		- max(최댓값), min(최솟값), step(숫자 증가,증감 간격),
+		value(초기값)
+-->
+
+<hr/>
+
+<p>hidden: <input type="hidden" name="login" value="y" /></p>
+<!--
+	사용자에게는 보이지 않는 필드로
+	value 속성에 해당하는 값은 서버로 넘기거나 받아온 값이
+	되는데, 보통 로그인 여부를 체크한다거나 하는 걸로 사용..
+-->
+<hr/>
+
+<p>range : <input type="range" max="100" min="0" value="10" step="5" /></p>
+
+<p>progress : <progress value="50" max="100"></progress></p>
+
+<!--
+	: 진행상태 표기 해주는 필드
+-->
+<p>meter : 
+		<meter min="0" max="100" low="20" high="90" value="35"></meter>
+		<meter min="0" max="100" low="20" high="90" value="100"></meter>
+		<meter min="0" max="100" low="20" high="90" value="15"></meter>
+		
+</p>
+
+<!--
+	value값이 차지하는 크기를 보여줌.
+	지정되는 갑싱 적정 수준인지 아닌지를 보여줌.
+-->
+
+<hr/>
+
+<h2>날짜, 시간 관련 필드</h2>
+<p>date : <input type="date" /></p>
+
+<!-- 
+	날짜 (년,월,일)을 지정할 수 있는 필드
+	yyyy-mm-dd
+-->
+
+<p>month : <input type="month" /> </p> <!-- 년도와 월-->
+<p>week : <input type="week" value="2022-W02" /> </p> <!-- 해당 년도의 몇번째 주인지 yyyy-Wnn // 사파리,파이어폭스 지원x-->
+
+<p>datetime-local : <input type="datetime-local" value="2000-07-20T10:15" /></p>
+<!-- 접속 지역 기준하여 현재 년,월,일 + 시간 까지 선택할 수 있는 필드 기본값 : 현재날짜와 시간
+	날짜와 시간을 지정해서 쓰고 싶은 경우 value 속성에 yyyy-mm-ddT23:23 .형식으로 작성해야함
+	시간의 경우 24시간 제로 작성.
+-->
+
+<hr/>
+
+<h2>다양한 버튼<h2/>
+<p>color: <input type="color" value="#ff00cc" /></p>
+
+
+<p>
+	일반버튼-input : <input type="button" value="일반버튼" /> <br/>
+	일반버튼-button태그 : <button>일반버튼</button>
+</p>
+<p>
+	전송버튼 : <input type="submit" value="전송" onclick="alert('전송을 하시겠습니까?');" />
+</p>
+
+<p>
+	취소버튼 : <input type="reset" value="다시작성" /> 
+</p>
+<p>
+	파일첨부 버튼: <input type="file" /> <br/>
+<!--- 한개의 파일만 업로드 할 수 있게 하는 버튼. 파일선택 필드와 선택된 파일의
+이름을 보여주는 곳이 함게 출력됨-->
+
+	다중 파일 선택 : <input type="file" multiple />
+</p>
+<hr/>
+<h2>선택 관련 필드</h2>
+<p>radio : <input type="radio" /> 라디오 버튼</p>
+<!-- 
+	여러개의 값중 하나만 선택해야 할 때 쓰임.
+		그룹으로 묶어 주기 위해서는 name 속성을 동일하게 작성해야함.
+		-> 그룹으로 묶어주게 되면 해당 그룹 안에서 단 한개만 선택되어짐.-->
+<p>checkbox : <input type="checkbox"/> 체크박스 </p>
+<!-- 
+	주로 다중 선택 시 사용. 그룹으로 묶어서 데이터 관리를 수월하게 해줌.
+	->name 속성을 통해서 묶어줌
+-->
+<p>
+<select name="sel" multiple size="3">
+			<option value="a">선택1</option>
+			<option value="b" selected>선택2</option>
+			<option value="c">선택3</option>
+			<option value="d">선택4</option>
+	
+</select>
+<hr/>
+<h2>폼필드에서 사용하는 다양한 속성</h2>
+
+	<input type="text" placeholder="ex) asdasda@gmail.com" value="초깃값" required="false" autofocus readonly="true" disabled="disabled"/>
+	
+	<!--
+	    placeholder : 해당필드에 무엇을 적으면 되는지 등에 대한 설명을 보여주는 속성
+		텍스트를 작성하면 해당 속성값은 지워진다.
+		
+		value: 서버로 넘어가는 값을 뜻함. 출력 초깃값으로도 사용.
+		
+		name: 폼필드의 이름을 지정. 서버로 폼의 값들이 넘어갈 때 
+			네임속성값=value 값 형태로 쌍을 이뤄서 가져감.
+		
+		required : T/F 필수 입력필드인 경우 사용자에게는
+					(required 속성을 가진 필드에 값을 입력하지 않으면 전송버튼을
+					눌렀을 때 !값을 입력하지 않았다는 팝업창을 보여줌 
+		
+		autofocus :  자동으로 입력 커서가 보여지게 됨(활성화 시켜서 보여줌)
+		
+		readonly : T/F 읽기전용 필드
+		
+		disabled : 필드값을 입력이나 수정을 할 수 없도록 비활성화 시켜줌.
+		
+		pattern(text,password,tel 속성에 쓰임) : 특정 입력 범위를 지정할 수 있음
+				(입력되는 텍스트 혹은 숫자, 특수문자 등에 대한 규칙 및 범위 지정할 수 있다)
+				속성값에는 범위를 지정하는 '정규 표현식'이 들어가야 함.
+		autocomplete : 속성값을 on / off 둘 중 하나를 사용. (자동완성 기능)
+	-->
+</form>	
+
+
+</body>
+</html>

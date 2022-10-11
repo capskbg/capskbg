@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-while-반복문.html </title>
+</head>
+<body>
+<script>
+
+/*
+
+	while(조건식,표현식){... 조건식,표현식이 참인동안 실행 되는 값..}
+	while(true){..} <-무한루프가 되니 주의해서 사용
+
+*/
+
+var secret = 10;// 사용자가 맞춰야할 값
+var cnt = 0;//사용자가 숫자를 입력한 횟수를 카운트 해주는 변수
+				// 맞추지 못 하면 +1이 증가가 되야함.
+var tmp; // 사용자가 입력한 값을 입력한 값을 담아 둘 변수
+
+while(tmp != secret){ // 맞추지 못하면 true
+	cnt++; // cnt = 0 + 1 증가 ===== =1 ····· 반복되면 계속 증가
+	tmp = prompt("1~10사이의 숫자를 입력하시오");
+	document.write("입력한 값:"+tmp+"<br/>");
+
+
+}
+document.write(cnt + "번만에 맞췄습니다.<br/>"); // 루프를 빠져나왔을 때 실행될 값
+
+</script>
+</body>
+</html>

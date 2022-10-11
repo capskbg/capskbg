@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEW</title>
+	<link href="./style.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="./js/jquery.cycle.all.js"></script>
+</head>
+<body>
+<h1>cycle 플러그인</h1>
+<h3>cycle 기본</h3>
+<div class="show_wrap">
+	<div class="slidwshow" id="zoom01">
+		<img src="./images/01.jpg" alt="이미지1" />
+		<img src="./images/02.jpg" alt="이미지2" />
+		<img src="./images/03.jpg" alt="이미지3" />
+		<img src="./images/04.jpg" alt="이미지4" />
+	</div>
+</div>
+<script>
+/*스크립트*/
+$("#zoom01").cycle({
+	fx : "zoom",
+	easing:"easeInQuint",
+	speed:400,
+	timeout:100,
+	sync:true
+});
+
+</script>
+<h3>cycle 마우스 오버 시 해당 이미지(썸네일)의 큰 이미지 출력하기</h3>
+
+<ul id="nav">
+	<li><a href="#"><img src="./images/01.jpg" /></a></li>
+	<li><a href="#"><img src="./images/02.jpg" /></a></li>
+	<li><a href="#"><img src="./images/03.jpg" /></a></li>
+	<li><a href="#"><img src="./images/04.jpg" /></a></li>
+	<li><a href="#"><img src="./images/05.jpg" /></a></li>
+	<li><a href="#"><img src="./images/06.jpg" /></a></li>
+	<li><a href="#"><img src="./images/07.jpg" /></a></li>
+	<li><a href="#"><img src="./images/08.jpg" /></a></li>
+</ul>
+<div id="slideshow1">
+	<img src="./images/01.jpg" />
+	<img src="./images/02.jpg" />
+	<img src="./images/03.jpg" />
+	<img src="./images/04.jpg" />
+	<img src="./images/05.jpg" />
+	<img src="./images/06.jpg" />
+	<img src="./images/07.jpg" />
+	<img src="./images/08.jpg" />
+</div>
+<script>
+$("#slideshow1").cycle({
+	fx : "curtainX",
+	easing:"easeInQuint",
+	speed:400,
+	timeout:100,
+	sync:true,
+	pager:"#nav",
+	pagerEvent:"mouseover",
+	pagerAnchorBuilder:function(idx,slide){
+			return "#nav li:eq(" + (idx) + ") a";
+	},
+	pauseOnPagerHover: 1
+});
+
+</script>
+
+<h3 stlye="clear:both;">썸네일이 아닌 자동 슬라이드 순서 번호 그대로 사용(페이징)</h3>
+<br/><br/>
+<div id="nav_p"></div>
+<div id="slideshow2" class="pics">
+	<img src="./images/01.jpg" />
+	<img src="./images/02.jpg" />
+	<img src="./images/03.jpg" />
+	<img src="./images/04.jpg" />
+	<img src="./images/05.jpg" />
+	<img src="./images/06.jpg" />
+	<img src="./images/07.jpg" />
+	<img src="./images/08.jpg" />
+</div>
+<script>
+
+$("#slideshow2").cycle({
+	fx : "curtainX",
+	easing:"easeInElastic",
+	speed:400,
+	timeout:1000,
+	sync:true,
+	pager:"#nav_p",
+	pagerEvent:"mouseover",
+	pauseOnPagerHover: 1
+});
+
+</script>
+<h3 style="clear:both;">이미지랑 텍스트 함께 슬라이드로 만들기</h3>
+<div id="showImgTxt1">
+	<div class="innerWrap">
+		<img src="./images/01.jpg" />
+		첫번째이미지
+	</div>
+	<div class="innerWrap">
+		<img src="./images/02.jpg" />
+		첫번째이미지
+	</div>
+	<div class="innerWrap">
+		<img src="./images/03.jpg" />
+		첫번째이미지
+	</div>
+	<div class="innerWrap">
+		<img src="./images/04.jpg" />
+		첫번째이미지
+	</div>
+	<div class="innerWrap">
+		<img src="./images/05.jpg" />
+		다섯번째이미지
+	</div>
+</div>
+<script>
+/*스크립트*/
+$("#showImgTxt1").cycle({
+	fx:"turnDown",
+	timeout:300
+});
+
+
+</script>
+</body>
+</html>

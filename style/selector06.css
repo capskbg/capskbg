@@ -1,0 +1,72 @@
+@charset "utf-8";
+ul{overflow:hidden;}
+li{list-style:none;}
+
+#list01>li{
+	float:left;
+	background-color:lightgreen;
+	padding:15px;
+}
+#list01>li:first-child{
+	background-color:pink;
+	/*list01 안에 있는 자식 li를 선택*/
+}
+#list01>li:last-child{
+	background-color:brown;
+}
+
+#list02>li:nth-child(5){
+	background-color:red;
+}
+#list02>li:nth-child(2n+1){
+	background-color:yellow;
+}
+/*
+nth-child(숫자,수열,odd,even)
+- odd: 1,3,5,7 ... 번째(홀수)
+- even : 2,4,6,8 번째 (짝수)
+- 숫자 : 해당 번째의 요소만 선택
+- 수열: 함수수열로 an+b 형태로 작성
+	3n+1->> 0+1,3+1,6+1 
+		1,4,7
+		an + b를 계산해서 나온 결과값(숫자)의 번째를 선택
+			5n --> 0, 5, 10, 25:5의 배수
+		*/
+#list03>li{
+	float:left;
+	background-color:green;
+	padding:15px;
+}
+
+#list03>li:nth-child(5n){
+	background-color:hotpink;
+	
+}
+
+#list03{clear:both;}
+
+h1:first-of-type{
+	/*
+	first-of-type, last-of-type
+	형제관계(동위)중에서 가장 첫번째나
+	마지막으로 등장하는 특정 태그
+	*/
+	
+	color:teal;
+}
+
+h1:last-of-type{
+	color:red;
+}
+
+h1:nth-of-type(5){
+	color:yellow;
+}
+
+h3:nth-last-of-type(2){
+	background-color:pink;
+}
+
+h1:nth-of-type(odd){ /*홀수 1 3 5 7 ...*/
+	background-color:blue;
+}

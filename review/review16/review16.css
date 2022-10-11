@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+
+html{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight:300;
+}
+
+*{margin:0; padding:0; list-style:none;}
+
+
+body{background:#f7f7f7;}
+
+#wrapper{
+	width:1280px; margin:100px auto; background:#ddd;
+	padding:20px 40px;
+	box-sizing:border-box;
+}
+
+
+#wrapper>h2{
+	color:#ea002c;
+	font-weight:500;
+	text-align:center;
+	
+}
+
+
+#wrapper>ul>li{
+	width:280px;
+	height:185px;
+	background:#fff;
+	float:left;
+	margin:10px;
+}
+
+#wrapper>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+#wrapper>ul>li>dl>dt{
+	background:#434159;
+	color:#fff;
+	padding:20px;
+	position:relative; /*dt를 기준으로 삼아서 위치를 가질 수 있게 해줌.*/
+}
+
+#wrapper>ul>li>dl>dt::after{
+	content:'';
+	display:block; /*가상 선택자는 인라인이므로 가로 세로 사이즈를 가지게 하기 위해서 block 요소로 바꿔 줌*/
+	width:15px; height:15px;
+	background:url('./images/alpha_pointer.png') no-repeat;
+	position:absolute;
+	bottom:-15px;
+}
+
+#wrapper>ul>li:last-child>dl>dt::after{
+	background-position:0px -15px;
+}
+
+
+
+#wrapper>ul>li:last-child>dl>dt{
+	background:#ea002c;
+}
+
+#wrapper>ul>li>dl>dd{
+	
+	padding:20px;
+	
+	line-height:1.2;
+	color:#666;
+}
+
+

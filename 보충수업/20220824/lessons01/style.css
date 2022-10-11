@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+
+
+
+/*공통 or PC*/
+
+section>h2{display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+/*컨텐츠 열의 변화는 4-> 2->1*/
+#intro{background: #fcf; padding:50px 0;}
+
+.wrap{width:1440px; margin:0 auto; background: #cfc;}
+#intro>.wrap>ul{ /*flex-container*/
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;/*주축*/
+
+}
+#intro>.wrap>ul>li{/*flex-item*/
+    width:23%;
+    height:350px;
+    background: #fff;
+    
+    border:1px solid #ddd;
+}
+
+.com_intro>li:first-child{width:90%;}
+.com_intro>li:first-child img{width:100%;}
+
+
+
+
+@media all and (max-width:1280px){ /*태블릿*/
+    .wrap{width:100%; background:#ffc; padding: 0 10px; box-sizing: border-box;}
+    #intro>.wrap>ul>li{width:49%; height:450px; margin-bottom:0.5%;}
+
+}
+@media all and (max-width:640px){/*모바일*/
+    .wrap{width:100%; background:#ccf; padding: 0 10px; box-sizing: border-box;}
+    #intro>.wrap>ul>li{width:100%;  margin-bottom:1%;}
+}
+

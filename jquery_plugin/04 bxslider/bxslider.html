@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <title>Carousel using bxSlider.js</title>
+	</head>
+	<style>
+	#wrapper{
+		width:600px;
+		margin:0 auto;
+	}
+	.bx-wrapper{
+		box-shadow: 0 0 0;
+		border:none;
+	}
+	</style>
+	<body>
+    <div id="wrapper">
+	<div class="bxslider">
+        <div>
+          <img src="images/things-1.jpeg" title="슬라이더1번">
+        </div>
+        <div>
+          <img src="images/things-2.jpeg" title="슬라이더2번">
+        </div>
+        <div>
+          <img src="images/things-3.jpeg" title="슬라이더3번">
+        </div>
+        <div>
+            <img src="images/things-4.jpeg" title="슬라이더4번">
+        </div>
+	</div>
+	</div>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script>
+	/*스크립트*/
+	
+	$('.bxslider').bxSlider({
+  	auto: true,
+  	autoControls: true,
+  	stopAutoOnClick: true,
+  	pager: true,
+  	slideWidth: 600
+});
+
+	</script>
+  </body>
+</html>

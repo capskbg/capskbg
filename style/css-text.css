@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+
+/*문단정렬 : 가로축 정렬*/
+.txt_center{text-align:center;}
+.txt_left{text-align:left;}
+.txt_right{text-align:right;}
+.txt_justify{text-align:justify;}
+.txt_initial{text-align:initial;}
+.txt_inherit{text-align:inherit;}
+
+/*대소문자 변환 및 텍스트 꾸미기*/
+
+.txt_upper{
+	text-transform:uppercase;
+	/*작성된 영문자 모두 대문자로 변환*/
+	
+	text-decoration:overline red dashed;
+}
+
+.txt_lower{
+	text-transform:lowercase;
+	/*작성된 영문자 모두 소문자로 변환*/
+	
+	text-decoration:underline;
+}
+
+.txt_capi{
+	text-transform:capitalize;
+	/*작성된 단어 기준 첫글자만 대문자로 변환*/
+	
+	text-decoration-line:line-through;
+	text-decoration-color:blue;
+	text-decoration-style:wavy;
+}
+
+/*
+text-transform(영문자)
+ - uppercase
+ - lowercase
+ - capitalize
+ - none : 대소문자 변환 방지 할 때 씀
+ - full-width : 동아시아문자(중국어나 일본어) 강제로 사각형 안에 정렬하게 만듬
+
+
+text-decoration-color
+	- 텍스트에 그어지는 선의 색상
+
+
+text-decoration-line (★이 속성은 반드시 작성되어야 텍스트 꾸밈선이 적용이 됨★)
+	- overline
+	- line-through
+	- underline
+	- none : 기존에 정의된 텍스트 꾸밈선 제거.(ex : a태그)
+
+text-decoration-style
+	- soilid(기본값)
+	- wavy : 물결
+	- dashed : 점선
+	- double : 이중실선
+	
+text-decoration-thickness
+	- 숫자px
+	- 숫자%
+	- auto
+	
+*/
+
+
+.txt_all{
+	text-decoration: #fcf line-through double 5px;
+}
+
+.txt_gap01{
+	text-indent:50px;
+}
+
+.txt_gap02{
+	letter-spacing:-2xp;
+}
+
+.txt_gap03{
+	word-spacing:10px;
+}
+
+.txt_gap04{
+	white-space:pre-line;
+	background:aqua;
+}
+
+.txt_gap05{
+	width:50%; height:100px;
+	background:pink;
+	
+	
+	text-overflow:ellipisis;
+	/*white-s-resizepace:nowrap;*/
+	
+	test-overflow: ellipsis
+	/**White-spae:nowrap;/
+	
+	
+}
+
+/*
+텍스트가 넘쳐서 ... 말줄임표를 써야하는 경우
+
+	text-overflow:ellipisis;
+	white-space:nowrap;
+	overflow:hidden;
+
+
+	위 세가지 프로퍼티: 값이 셋트로 작성되어져야함.
+	
+	letter-spacing:자간(글자와 글자사이의 간격)
+	wrod-spacing: 띄어쓰기 기준 단어간의 간격
+	-> 음수,0,양수 모두 사용 가능
+	
+*/

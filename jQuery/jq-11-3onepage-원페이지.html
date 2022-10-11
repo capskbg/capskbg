@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="onepage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav>
+    <ul class="gnb">
+        <li id="btn01">BTN01</li>
+        <li id="btn02">BTN02</li>
+        <li id="btn03">BTN03</li>
+        <li id="btn04">BTN04</li>
+        <li id="btn05">BTN05</li>
+    </ul>
+</nav>
+<section class="wrap">
+    <div class="page page1"></div>
+    <div class="page page2"></div>
+    <div class="page page3"></div>
+    <div class="page page4"></div>
+    <div class="page page5"></div>
+</section>
+<script>
+$("#btn01").click(function(){
+    $(".wrap").animate({top:"0"});
+});
+$("#btn02").click(function(){
+    $(".wrap").animate({top:"-100%"});
+});
+$("#btn03").click(function(){
+    $(".wrap").animate({top:"-200%"});
+});
+$("#btn04").click(function(){
+    $(".wrap").animate({top:"-300%"});
+});
+$("#btn05").click(function(){
+    $(".wrap").animate({top:"-400%"});
+});
+
+
+</script>
+</body>
+</html>

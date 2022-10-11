@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+#container{
+   width:800px;
+   height:600px;
+   border-left:3px solid red;
+   border-top:3px solid coral;
+   border-right:3px solid green;
+   border-bottom:3px solid blue;
+   margin:80px auto;
+   position:relative;
+  
+}
+
+
+.ab_box1{
+   background:skyblue;
+   width:80px; height:80px;
+   position:absolute;
+   left:100px; top:-50px;
+}
+.ab_box2{
+   background:orange;
+   width:150px; height:150px;
+   position:absolute;
+   left:50%; top:50%;
+   transform:translate(-50%,-50%);
+}
+.ab_box3{
+   background:plum;
+   width:60px; height:60px;
+   position:absolute;
+   bottom:0; right:0;
+   
+}
+.rt_in1{
+   background:pink;
+   position:relative;
+   top:0; left:0;
+}
+.rt_in2{
+   background:lightgreen;
+   position:relative;
+   top:20px; left:150px;
+}
+.rt_in3{
+   background:lightblue;
+   
+   position:inherit;
+   right:0; bottom:300px;
+}
+.rt_box1{
+   background:khaki;
+   width:100px; height:100px;
+   position:relative;
+   bottom:-400px; right:-150px;
+}
+
+/*
+position: 요소의 위치를 지정하는 ㅡ로퍼티
+- static(기본흐름) : 요소가 원래 가지고 있던 위치.
+- relative : 상대위치. 요소가 원래 있던 위치를 기준으로 하여 위치가 변경 됨
+- absolute : 절대위치.
+*상위요소에 relative가 적용되어 있다면 상위요소를 기준으로 하여 위치를 변경할 수 있다면음
+*상위요소에 statice이 선언되어 있거나 position값이 없는 경우 body를 기준으로 하여 위치가 변경됨.   
+- fixed : 고정위치. 상위요소에 포지션값이 relative로 되어 있어도 무시하고 무조건 body(screen, 뷰, 화면)기준으로 위치가 변경됨
+
+- inherit : 상위요소의 포지션값을 물려받아서 사용.
+
+*/

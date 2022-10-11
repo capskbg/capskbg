@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.box01{
+	width:100px;
+	height:100px;
+	background:blue;
+	animation-name:box01;
+	animation-duration:3s;
+}
+
+/*
+@keyframes 애니메이션 이름
+*/
+
+@keyframes box01{
+	from{
+		background:blue;
+		margin:0 0 0 0;
+	}
+	to{
+		background:yellow;
+		margin:0 0 0 200px;
+	}
+}
+
+.box02{
+	width:100px; height:100px;
+	border-radius:50%;
+	background:pink;
+	border:10px solid red;
+	box-sizing:border-box;
+	/*
+	animation-name:anibox;
+	animation-duration:15s;
+	animation-delay:.5s;
+	animation-iteration-count:infinite;
+	animation-direction:reverse;
+	animation-timing-function:ease;*/
+	animation: anibox 5s linear 2s infinite;
+}
+
+@keyframes anibox{
+	
+	
+	
+	
+	0%{
+		background:green;
+		border-radius:50%;
+		border:10px solid yellowgreen;
+		margin-left:0px;
+		
+	}
+	25%{background:brown;
+		border-radius:0;
+		border:5px dotted pink;
+		margin-left:50px;
+	}
+	50%{background:#ffc;
+		border-radius:20%;
+		border:10px solid skyblue;
+		margin-left:100px;
+	}
+	60%{background:lightgreen;
+		border-radius:50%;
+		border:5px double orange;
+		margin-left:130px;
+	}
+	100%{background:red;
+		border-radius:50%;
+		border:5px solid black;
+		margin-left:200px;
+	}
+	
+}

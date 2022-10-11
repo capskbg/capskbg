@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+	$("#mytab").tabs();
+	$("button").button();
+	$("#distab").click(function(){
+		$("#mytab").tabs("option","disabled",[0,2]);
+	});
+	$("#alltab").click(function(){
+		$("#mytab").tabs("option","disabled",false);
+	});
+});
+</script>
+</head>
+<body>
+<h1>jquery-ui 탭메뉴 만들기</h1>
+<button id="distab">첫번째,세번째 탭 비활성화</button>
+<button id="alltab">전체 활성화</button>
+<div id="mytab">
+<ul>
+	<li><a href="#tab01">탭메뉴 1번</a></li>
+	<li><a href="#tab02">탭메뉴 2번</a></li>
+	<li><a href="#tab03">탭메뉴 3번</a></li>
+</ul>
+<div id="tab01">
+<p>첫번째 탭에 들어갈 내용 입니다.</p>
+</div>
+<div id="tab02">
+<p>두번째 탭에 들어갈 내용 입니다.</p>
+</div>
+<div id="tab03">
+<p>세번째 탭에 들어갈 내용 입니다.</p>
+</div>
+
+</div>
+
+</body>
+</html>

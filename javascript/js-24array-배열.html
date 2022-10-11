@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-array-배열.html</title>
+</head>
+<body>
+<script>
+/*
+배열! Array
+ - 배열은 객체(object) 중의 하나
+ - 데이터를 담을 수 있는 공간
+  --> 그럼 변수?
+
+  * 배열과 변수의 차이점
+
+  변수의 경우 var i = 0; > 0을 가지고 있는 숫자형(데이터타입) 변수
+  			let, const...
+
+		변수는 보통 기본 데이터 형으로 구분 할 수 있음
+
+		var Test = funtion(){}.. 익명함수.
+
+	☆배열(ojbect)
+	-배열은 여러개의 값을 함께 담아 둘 수 있고, 다양한 데이터 타입을 한꺼번에 사용할 수 있음.
+
+
+
+*/
+
+var color; // 일반변수
+const COLOR3  = 30; // 상수(변하지않는 수);
+
+var red = [];//red라고 하는 이름을 가진 빈 비배열을 생성.;
+
+var colorList = ["빨강","파랑","초록","분홍",597,false];
+
+
+
+
+// colorList "분홍"이 들어간 칸의 값을 763으로 바꾸세요.
+
+
+for(var i = 0 ; i <= colorList.length-1; i++){
+	
+	document.write("<br/>  colorList : "+ colorList[i]
+	
+	);
+}
+
+/*000000
+Q. 네이버 박스오피스 검색 후
+
+	1위~10위까지의 순위에 있는 영화의 제목을 가지고 있는 movieList라고 하는 배열을 만드시오.
+
+*/
+
+var movieList = [
+   "헌트",
+   "한산:용의 출현",
+   "놉",
+   "탑건:매버릭",
+   "비상선언",
+   "미니언즈2",
+   "DC 리그 오브 슈퍼-펫",
+   "육사오(6//45)",
+   "헤어질 결심",
+   "바다 탐험대 옥토넛:탐험선 대작전"
+];
+
+ for(var i = 0 ; i <= movieList.length-1; i++){
+	/*영화의 순위와 제목을 한꺼번에 출력 해주는 실행문을 작성하시오.*/
+	document.write("<br/>" + (i+1) + "위 :: " + "제목 ("+ movieList[i] +")");
+}
+
+var fruits = new Array(); // 정석으로 객체 불러오는 방법
+
+
+fruits[0] = "딸기";
+fruits[20] = "수박";
+fruits[30] = "포도";
+
+
+document.write("<hr/>"+ fruits.length)
+document.write("<hr/>"+ fruits[30])
+
+for( var k in fruits ){
+	document.write("<hr/>"+fruits[k]);
+}
+for( var k in movieList ){
+	document.write("<hr/>"+movieList[k]);
+}
+
+
+</script>
+</body>
+</html>

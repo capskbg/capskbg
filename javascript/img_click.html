@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link href=".css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<img src="../html/images/a01.jpg" alt="이미지" id="chImg" />
+
+<script>
+var Img =document.getElementById("chImg");
+/*
+Img를 클릭할 때 마다 이미지가 a01~05로 계속 변함.
+    1 2 3 4 5 1 2 3 4 5
+        mod 연산 이용
+*/
+var i= 0;
+Img.onclick = function(){
+    i++;
+    var chk = i % 5; // 0~4 루프
+    alert(chk);
+    this.src ="../html/images/a0"+(chk+1)+".jpg";
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

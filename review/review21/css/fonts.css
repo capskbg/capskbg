@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+
+
+@font-face {
+    font-family: 'tvN 즐거운이야기 Medium.';
+    src: url('./TTF/tvN 즐거운이야기 Medium.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

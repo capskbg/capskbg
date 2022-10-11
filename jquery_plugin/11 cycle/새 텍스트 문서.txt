@@ -1,0 +1,5 @@
+이징 플러그인
+http://gsgd.co.uk/sandbox/jquery/easing/
+
+사이클 플러그인
+http://jquery.malsup.com/cycle/

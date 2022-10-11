@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<style>
+div{
+width:100px; height:150px;
+border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<h1>요소의 사이즈를 변경 할 수 있다</h1>
+
+<img src="./images/0.jpg" width="200" height="70"/>
+<div>박스1</div>
+
+<script>
+// 스크립트 부분
+$(function(){
+    $("img,div").resizable();
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>NEW</title>
+	<link href="./css_defalut.css" rel="stylesheet" type="text/css" />
+	<style>
+		h2{background-color:green}
+	</style>
+</head>
+<body>
+<h2>CSS란?</h2>
+	<p>
+	Cascading Style Sheets 의 약자로<br/>
+	css,스타일,스타일시트 라고도 부른다.<br/>
+	<br/>
+	-HTML 문서를 꾸며주는 역할을 한다.<br/>
+	- 화면의 레이아웃을 잡는 역할<br/>
+	- 레이아웃을 잡을 때 div나 시맨틱 태그를 기준으로 해서 사용<br/>
+	- HTML5에서는 시맨틱 태그를 사용해야함.(단순히 나눠주는 div로
+	레이아웃을 하지 않음)
+	</p>
+<h3><mark>&lt; div class="header" &gt;</mark></h3>
+	<p>
+	 위 예시처럼 작성되어진 경우가 종종 보이는데 이 경우 HTML4.0이다.<br/>
+	 HTML5에서는 header라는 태그가 존재하기 때문에 위처럼 작성하는게 아닌
+	 header 태그를 사용해서 마크업 하면 됨.
+	</p>
+	
+<hr/>
+
+<h2 style="background-color:pink;">CSS(Cascading Style Sheets)</h2>
+	<h3>사용방법</h3>
+	<pre> <!-- 원래 HTML은 공백을 단 1개만 표기해줌. 띄어쓰기를 열개를 써도 
+	한칸으로 보여주는데, PRE 태그를 쓰면 입력한 그대로를 보여줌. 띄어쓰기
+	10개쓰면 10개 쓴대로 그대로 출력-->
+	선택자 {속성명1 : 값1; 속성명2 : 값2; 속성명n : 값n;}
+	선택자 {
+			속성명1 : 값1; 
+			속성명2 : 값2; 
+			속성명n : 값n;
+			}
+			
+	h1{
+		color:red;
+		background:yellow;
+		}		
+			
+	선택자(selector) : 스타일시트가 적용될 범위를 지정하는 키워드
+	태그, 클래스명, 아이디명, 태그속성명 등등
+	
+	속성(property) : 스타일시트의 속성으로 대체적으로 두 단어
+	이상 연결 시 하이픈(-)을 이용한다.
+	
+		cf) html : bgcolor
+			css : background-color
+			js : bgColor
+			
+	값, 속성값(values) : 속성에 해당하는 값으로 여러개일 경우가 많음.
+						ex) background-color 의 속성값으로 ..red,green,blue등
+						온갖 색상 명칭이 들어갈 수 있음..
+	
+	</pre>
+	
+<h4>웹문서에 CSS을 적용하는 기본적인 방법 + 우선순위 </h4>
+	<h5>3순위) 외부 파일 링크 <small>(외부 스타일 시트)</small></h5>
+	<p> : ~.css 파일 생성 후 html 파일 내에서 링크 태그로 연결해서 
+	사용하는 방법</p>
+	<pre>&lt; link href="css파일의 경로" rel="stylesheet" type="text/css"/&gt;</pre>
+	
+	<h5>2순위) 웹문서 head 태그 안에 기술 <small>(내부 스타일 시트)</small></h5>
+	<pre>
+	&lt;style&gt;
+	........................
+	&lt;/style&gt;
+	</pre>
+	<br/><br/>
+	
+	
+	<h5>1순위) 태그 안 사용 <small>(인라인 스타일 시트)</small></h5>
+	<p>&lt; 태그명 style="속성명1:값1; 속성명n:값n;" &gt;</p>
+	<p>인라인 스타일 시트는 무조건 우선순위가 가장ㄷ 높음.<br/>
+		외부,내부 스타일 시트의 경우 작성된 텍스트 중<br/>
+		가장 아래에 기술 하는 것이 우선순위가 더 높음.
+	</p>
+	
+	<hr>
+	
+<h3>★클래스와 아이디★</h3>
+	<strong>아이디 (id) : id = "아이디명"</strong><br/>
+	<p>
+	하나의 화면(웹문서)에서 중복되는 값이 존재하면 안 되는 선택자<br/>
+	-사실 중복된다고 해서 브라우저상에서는 오류를 표기하거나 그러진 않음<br/>
+	마크업 유효성 검사를 한다거나 해당 아이디로 동작되어지는 js가 들어간다면
+	문제가 발생함<br/>
+	<br/>
+	- a 태그의 href 속성값으로 #아이디명을 쓰게되면 '내부 링크(북마크)'가
+	되어 해당 아이디가 있는 위치로 스크롤이 이동 되어짐.
+
+	</p>
+	<br>
+	<strong>클래스(class) : class="클래스명"</strong><br/>
+	<p>
+	- 클래스명의 명명규칙은 아이디와 같으나, 중복되는 값이 존재 해도 됨.<br/>
+	- 서로 다른 요소(태그)라도 같은 이름의 클래스로 묶어서 사용 가능<br/>
+	&gt;&gt;&gt;&gt;&gt;&gt; 같은 스타일을 적용시킬 수 있음.
+	</p>
+	
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>

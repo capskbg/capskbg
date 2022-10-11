@@ -1,0 +1,42 @@
+@charset "utf-8";
+@media all and (orientation:landscape){
+	/*orientation:landscape : 디바이스의 가로화면*/
+	body{
+		background:red;
+	}
+}
+
+@media all and (orientation:portrait){
+	/*orientation:portrait : 디바이스의 세로화면*/
+	body{
+		background:yellow;
+	}
+}
+
+/*
+미디어 쿼리 사용법
+
+@media 매체이름1,매체이름2 and (표현식) {
+							↑
+							논리연산자(and,only,not)
+	
+	
+	... 표현식에 해당하는 범위의 스타일 ....
+}
+
+	매체이름
+		all : 모든 기기
+		screen : 컴퓨터 모니터, 태블릿, 모바일 등등 화면출력 디바이스
+		
+		cf) print : 인쇄시 사용법
+			speech: 스크린 리더기 페이지 읽을 때 사용법
+
+표현식
+min-width: 숫자px
+max-width: 숫자px
+orientation:landscape: 디바이스 가로
+orientation:portrait: 디바이스 세로
+			
+*/
+
+

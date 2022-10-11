@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>NEW</title>
+<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<link href="./css/animate.css" rel="stylesheet" type="text/css" />
+<style>
+section {height:760px; width:500px;}
+div.wow{width:200px; height:200px; border-radius:50%; display:inline-block; font-size:1.2em; line-height:200px; text-align:center; color:#fff; margin:20px;}
+.wrap{width:100%;text-align:center; overflow:hidden; padding-top:100px; padding-bottom:100px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="wow bounce" style="background-color:purple">bounce</div>
+<div class="wow flash" style="background-color:violet">flash</div>
+<div class="wow pulse" style="background-color:teal">pulse</div>
+</div>
+<div class="wrap">
+<div class="wow rubberBand" style="background-color:#9DC8C8" data-wow-iteration="5">rubberBand</div>
+<div class="wow shake" style="background-color:#58C9B9">shake</div>
+<div class="wow headShake" style="background-color:#519D9E">headShake</div>
+</div>
+<div class="wrap">
+<div class="wow swing" style="background-color:#8CD790">swing</div>
+<div class="wow tada" style="background-color:#77AF9C">tada</div>
+<div class="wow wobble" style="background-color:#285943">wobble</div>
+</div>
+<div class="wrap">
+<div class="wow jello" style="background-color:red">jello</div>
+<div class="wow bounceIn" style="background-color:blue">bounceIn</div>
+<div class="wow bounceInDown" style="background-color:steelblue" >bounceInDown</div>
+</div>
+<div class="wrap">
+<div class="wow bounceInLeft" style="background-color:#736B00">bounceInLeft</div>
+<div class="wow bounceInRight" style="background-color:#B1BE00">bounceInRight</div>
+<div class="wow bounceInUp" style="background-color:#736B00" >bounceInUp</div>
+<br/><br/>
+<div class="wow bounceOut" style="background-color:purple">bounceOut</div>
+<div class="wow bounceOutDown" style="background-color:violet">bounceOutDown</div>
+<br/><br/>
+<div class="wow bounceOutLeft" style="background-color:teal">bounceOutLeft</div>
+<div class="wow bounceOutRight" style="background-color:steelblue">bounceOutRight</div>
+<div class="wow bounceOutUp" style="background-color:steelblue">bounceOutUp</div>
+</div>
+<div class="wrap">
+<div class="wow fadeIn" style="background-color:#9DC8C8">fadeIn</div>
+<div class="wow fadeInDown" style="background-color:#58C9B9">fadeInDown</div>
+<div class="wow fadeInDownBig" style="background-color:#519D9E">fadeInDownBig</div>
+<br/><br/>
+<div class="wow fadeInLeft" style="background-color:#8CD790">fadeInLeft</div>
+<div class="wow fadeInLeftBig" style="background-color:#77AF9C">fadeInLeftBig</div>
+<br/><br/>
+<div class="wow fadeInRight" style="background-color:#B1BE00">fadeInRight</div>
+<div class="wow fadeInRightBig" style="background-color:#736B00">fadeInRightBig</div>
+<br/><br/>
+<div class="wow fadeInUp" style="background-color:#FF848F">fadeInUp</div>
+<div class="wow fadeInUpBig" style="background-color:#9282CD">fadeInUpBig</div>
+</div>
+<div class="wrap">
+<div class="wow fadeOut" style="background-color:red">fadeOut</div>
+<div class="wow fadeOutDown" style="background-color:blue">fadeOutDown</div>
+<div class="wow fadeOutDownBig" style="background-color:steelblue" >fadeOutDownBig</div>
+<br/><br/>
+<div class="wow fadeOutLeft" style="background-color:indianred" >fadeOutLeft</div>
+<div class="wow fadeOutLeftBig" style="background-color:brown" >fadeOutLeftBig</div>
+<br/><br/>
+<div class="wow fadeOutRight" style="background-color:lightcoral" >fadeOutRight</div>
+<div class="wow fadeOutRightBig" style="background-color:tomato" >fadeOutRightBig</div>
+</div>
+
+<section class="wow rollIn" style="background-color:#6A5ACD" >섹션1</section>
+<section class="wow fadeInDown" style="background-color:#9932CC" data-wow-delay="1s" >섹션2 1초 후 실행</section>
+
+<!--
+data-wow-duration : 애니메이션 지속 시간 변경
+data-wow-delay : 애니메이션 시작 전 지연
+data-wow-offset : 애니메이션 시작 거리 (브라우저 하단과 관련)
+data-wow-iteration : 애니메이션 반복 횟수 지정
+-->
+
+<script src="./js/wow.js"></script>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:100,
+		live:true
+      }
+    );
+    wow.init();
+</script>
+
+</body>
+</html>

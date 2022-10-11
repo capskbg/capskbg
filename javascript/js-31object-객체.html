@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-object-객체.html </title>
+</head>
+<body>
+<script>
+/*
+	일반(사용자 정의)객체 생성
+	- 객체 만드는 문법
+	var 객체명 = {
+		키1 : 키값1,
+		키2 : 키값2,
+		키3 : 키값3,
+		키n : 키값n,
+	};
+	var 객체명 {...};
+*/
+
+var Sale = {
+	product : "볼펜",//제품명
+	cnt : 50, // 제품수량
+	price : 500,// 가격
+	total : function(){
+		return Sale.cnt*Sale.price;
+	}
+	
+
+}
+
+for(var i in Sale){
+		document.write("<br/>"+ Sale[i]);
+	}	// 키값 출력
+
+document.write("<hr/> 제품명 : " +Sale.product);
+document.write("<hr/> 수량 : " +Sale.cnt);
+document.write("<hr/> 가격 : " +Sale.price);
+document.write("<hr/> 수량x가격 : " +Sale.total);
+document.write("<hr/> 수량x가격 : " +Sale.total());
+
+
+
+
+</script>
+</body>
+</html>

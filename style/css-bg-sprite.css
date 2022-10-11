@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{
+	list-style:none;
+	margin=0; padding:0;
+}
+
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#cff;}
+a:active{color:#333;}
+
+nav{
+	width:300px;
+	background:#ffc;
+}
+nav>ul>li{
+	height:50px;
+	margin:10px;
+	border:1px solid #666;
+	background:url('../img/bg_sprite.png') no-repeat;
+	text-indent:60px;
+}
+
+nav>ul>li:nth-child(2){background-position:0 -100px;}
+nav>ul>li:nth-child(3){background-position:0 -200px;}
+nav>ul>li:nth-child(4){background-position:0 -300px;}

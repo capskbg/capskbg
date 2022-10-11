@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> review05 </title>
+	<link href="./review05.css" rel="stylesheet" type="text/css" />
+	<style>
+		table, th, td{
+			border: 1px solid black;
+			border-collapse:collapse;
+		}
+		th, td{padding:10px;}
+	</style>
+</head>
+<body>
+<form method="get" name="frm">
+<table>
+	
+		
+	<tr>
+		<th>이름</th>
+		<td>
+		
+			<input type="text" />
+
+		</td>
+	</tr>
+	<tr>
+		<th>아이디</th>
+		<td>
+		
+		<input type="text" name="name" />&nbsp;&nbsp;<input type="submit" value="닉네임 중복확인" onclick="alert('중복입니다')" />
+		
+		</td>
+		
+	</tr>
+	<tr>
+		<th>비밀번호</th>
+		<td>
+			<input type="password" />
+		</td>
+	</tr>
+	<tr>
+		<th>비밀번호 확인</th>
+		<td>
+		
+			<input type="password" />
+		
+		</td>
+	</tr>
+	<tr>
+		<th>닉네임</th>
+		<td>
+		
+			<input type="text"/>&nbsp&nbsp<input type="submit" value="닉네임 중복확인" onclick="alert('사용가능한 닉네임입니다.')" />
+		
+		</td>
+		
+	</tr>
+	<tr>
+		<th>이메일</th>
+		<td>
+		
+			<input type="text"/> @<select>
+				<option>네이버</option>
+			</select> <input type="checkbox" checked="checked" />공개 <input type="checkbox" checked="checked" />수신동의
+		</td>
+		
+	</tr>
+	<tr>
+		<th>휴대폰</th>
+		<td>
+		<select><option>010</option></select>
+				&nbsp-&nbsp <input type="tel" size="4" maxlength="4" />&nbsp-&nbsp<input type="tel" size="4" maxlength="4"/>
+			
+		</td>
+	</tr>
+	<tr>
+		<th>주소</th>
+		<td>
+			<input type="tel" size="3" maxlength="3" />&nbsp;-&nbsp;<input type="tel" size="2" maxlength="2" />&nbsp;<input type="button" value="우편번호&nbsp검색" /><br/>
+			<input type="text" size="18"/>&nbsp;<input type="text" size="18"/>
+			
+		</td>
+	</tr>
+	<tr>
+		<th>코멘트</th>
+		<td>
+		
+			<textarea cols="30" rows="5">
+			
+			</textarea>
+	
+		</td>
+	</tr>
+	<tr>
+		<th colspan="2">
+	
+			<input type="submit" value="회원가입" onclick="alert('회원가입 하시겠습니까?')">
+		
+			<input type="reset" value="다시 입력" />
+			
+		
+		
+		
+		</td>
+	</tr>
+	
+	
+</table>
+</form>
+</body>
+</html>

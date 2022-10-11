@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link href=".css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script>
+/**/
+var test; // test 라는 변수를 선언만 해둠. 빈 변수.. undefined
+var a, b, c; 
+
+/*typeof */
+document.write(typeof test + "<br/>");
+
+test = 1004;
+document.write(typeof test + "<br/>");
+
+test = false;
+document.write(typeof test + "<br/>");
+
+test = "1004";
+document.write(typeof test + "<br/>");
+
+test = "문자가 입력되어져 있습니다.";
+document.write(typeof test + "<br/>");
+
+
+test = 9999999999999999998;
+document.write(test + "<br/>");
+
+
+test = 456;
+document.write(test + "<br/>");
+
+/*
+ 자바스크립트 기본 자료형(숫자, 문자열, 논리값)
+
+ - number : 정수의 경우 15자리까지만 정확하게 표현.
+ - stribg : 문자열 ''나 ""로 묶은 한개의 문자 혹은 여러개의 문자
+ - boolean : 논리값 참, 거짓 (true/false)
+
+ ============================================================================================
+
+ 함수(function).. 메소드(method)
+
+ 객체(object)
+ - null(널값) : 객체에 값이 없을때
+ - Array(배열) : 객ㅊ체 데이터의 집합
+ - Math(수학관련함수들이 모여있는 객체)
+ - symbol
+
+
+*/
+
+
+
+test = 9999999999999999998;
+document.write(test + "<br/>");
+
+
+test = 456;
+document.write(test + "<br/>");
+
+
+test = document.getElementById('test');
+document.write(test+'<br/>'); // null값
+
+var x = '가';
+var y = 100;
+var z = 5;
+
+document.write("<hr/>");
+document.write("<hr/>");
+document.write(x - y);
+
+// NaN(Not a Number) : 숫자가 아닌 것을 연산하려고 하면 반환되는 값.
+
+var j = 2/0;
+document.write("<hr/>");
+document.write("<hr/>");
+document.write(j);
+/*
+서버단에서는 JSP 경우  0으로 나누어 버리면 ..
+jsp 화면 자체를 전혀 단 1도 볼 수 없음.
+====== 서버 언어에서는 엄청나게 큰 오류로 취급함.
+
+자바스크립트에서는 Infinity로 처리를 해서 큰 오류로 잡지 않음.
+== 적어도 화면을 볼 수 있음. 사용자가 어? 여기 사이트 터졌네? 라는 말을 안 하게됨.
+*/
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+    <style>
+        .init,.moving{
+            width:550px;
+            text-align: center;
+            margin:0 auto;
+        }
+        .moving{
+            text-align: right;
+            border:1px solid #666;
+            margin:40px auto 0px;
+        }
+        .moving img {
+            width:200px; position:relative;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="init">
+    <button id="btn_init">초기화</button>        
+</div>
+<div class="moving">
+    <img src="../html/images/a01.jpg" alt="1번" onclick="funcMove(this, 6000)"/><br/>
+    <img src="../html/images/a02.jpg" alt="2번" onclick="funcMove(this, 200)"/><br/>
+    <img src="../html/images/a03.jpg" alt="3번" onclick="funcMove(this, 1000)"/><br/>
+</div>
+<script>
+function funcMove(na,time){
+    $(na).stop().animate({
+        left:-350,
+        top:0
+    },time);
+}
+
+$("#btn_init").click(function(){
+    $(".moving img").stop().animate({
+        left:0,
+        top:0
+    },50);
+})
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>문자 결합 연산자</title>
+</head>
+<body>
+<script>
+var car1 = "SUV";
+var car2 = 'JEEP';
+var num = 650;
+/**/
+document.write(num + 5);// 655 '+'' = 덧셈연산자
+document.write(num + car2);// 650JEEP '+' = 결합연산자
+
+/*이스케이프 시퀀스*/
+
+var msg = "안녕하세요 \"반갑습니다\"";
+document.write("<br/>"+msg);
+var msg2 = "안녕하세요 \'반갑습니다'";
+var msg3 = '안녕하세요\n "반갑습니다"';
+document.write("<br/>"+msg2);
+document.write("<br/>"+msg3);
+
+
+
+</script>
+</body>
+</html>

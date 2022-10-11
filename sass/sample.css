@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.list li {
+  list-style: none;
+}
+
+/*변수 사용*/
+.text {
+  color: #333333;
+  background: #fa574e;
+}
+
+/*mixin 선언*/
+.sample {
+  width: 500px;
+  background: red;
+}
+
+.box li {
+  float: left;
+}
+.box::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.sample li a {
+  text-align: center;
+}
+.sample2 {
+  text-align: left;
+}
+
+.box2 {
+  /*css에서 축약형태 쓸대 접두어에 좀 신경을 씀
+      border-top;
+      border-left
+      margin-top ->> margin:
+      padding-top
+  */
+  border-left: #333333;
+  border-top: #fa574e;
+  border-bottom: red;
+  border-right: lime;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 300px;
+}/*# sourceMappingURL=sample.css.map */

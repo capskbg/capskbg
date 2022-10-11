@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>	
+	<meta charset="utf-8" />
+	<title> new </title>
+	<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+</head>
+<body>
+<p>
+수량
+<button onclick="numCount('mi')">-</button>
+<span id="number_cnt">0</span>
+<button onclick="numCount('pl')">+</button>
+</p>
+<script>
+function numCount(text){
+		var  number_cnt = parseInt(document.getElementById("number_cnt").innerText);
+	
+	if(text == "mi"){
+		number_cnt -= 1;
+		alert(number_cnt);
+	}else{
+		number_cnt += 1;//연결됨
+		alert(number_cnt);
+	}
+	 document.getElementById("number_cnt").innerText = number_cnt;
+	}
+</script>
+</body>
+</html>

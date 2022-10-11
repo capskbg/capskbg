@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui.css">
+</head>
+<body>
+<h2>widget (Autocomplete) - 자동완성기능</h2>
+<div class="ui-widget">
+	<label for="books">TITLE : </label>
+	<input id="books">
+</div>
+<script>
+// 스크립트 부분
+$(function(){
+	var booksList =[
+		"하얼빈",
+		"불편한 편의점2",
+		"불편한 편의점1",
+		"파친코1",
+		"파친코2",
+		"세상의 마지막 기차역",
+		"세상",
+		"오늘밤, 세계에서 이 눈물이 사라진다 해도"
+	];
+	$("#books").autocomplete({
+		source:booksList
+	});
+});
+</script>
+</body>
+</html>

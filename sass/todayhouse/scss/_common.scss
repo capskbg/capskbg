@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+$default_font:'Noto Sans KR', sans-serif;
+$default_color: #78b3c5;
+$point_color:#deeff6;
+$bold_color:#236680;
+$font_color:#333;
+
+/*사용 MIXIN*/
+
+@mixin text_style($size,$color,$align,$line){
+    font-family: $default_font;
+    font-size:$size;
+    color:$color;
+    text-align: $align;
+    line-height: $line;
+    
+}
+
+@mixin zero{
+    margin:0;
+    padding: 0;
+}
+*,html,body,li,p,span,ol,ul,section,article{
+    @include zero;
+    list-style:none;
+}
+
+@mixin trans($seconds){
+    transition:all $seconds;
+    
+}
+
+@mixin float_clear { 
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+
+body{
+    font-family: $default_font;
+    color:$font_color;
+}
+
+a{
+    @include text_style(14px,$font_color,center,1);
+    text-decoration: none;
+    &:link, &:visited, &:hover, &:active{
+        color:$font_color;
+        font-weight: 700;
+    }
+}
+
+.clear::after{
+@include float_clear;
+}

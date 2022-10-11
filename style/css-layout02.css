@@ -1,0 +1,37 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+
+#wrap{
+	width:1280px;
+	margin:0 auto;
+}
+
+.top{
+	background:lightgreen;
+	height:50px;
+	
+}
+
+.hd{
+	background:lightpink;
+	height:100px;
+
+}
+
+.con1, .con2, .con3, .con4{
+	width:25%;
+	height:300px;
+	float:left;
+	
+	
+}
+
+.con1{background:#cfc;  }
+.con2{background:#ccf; }
+.con3{background:#cff;}
+.con4{background:#ffc; }
+
+.ft{
+	background:#333; height:80px;
+	clear:both;
+}

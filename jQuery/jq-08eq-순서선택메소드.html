@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+    <style>
+        td{width:80px; height:80px; vertical-align: middle; text-align:center;}
+    </style>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>1번</td>
+        <td>2번</td>
+        <td>3번</td>
+    </tr>
+    <tr>
+        <td>4번</td>
+        <td>5번</td>
+        <td>6번</td>
+    </tr>
+    <tr>
+        <td>7번</td>
+        <td>8번</td>
+        <td>9번</td>
+    </tr>
+</table>
+<script>
+$("td").eq(3).css("background","red");
+
+$("td:eq(7)").css("background","gray");
+
+$("td").eq(1).next().css("background","yellow");
+
+$("td").eq(2).parent().next().css("color","skyblue");
+$("td").eq(3).prev().css("color","green");
+$("td").eq(2).parent().next().children().eq(1).css({
+    "background":"pink",
+    "color":"white",
+    "font-size":"20px"
+})
+
+</script>
+</body>
+</html>

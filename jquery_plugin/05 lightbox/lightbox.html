@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>LightBox</title>
+    <link rel="stylesheet" href="./js/jquery.lightbox-0.5.css" />
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="./js/jquery.lightbox-0.5.js"></script>
+</head>
+<body>
+<a class="light" href="./images/image1.jpg">이미지1</a>
+<a class="light" href="./images/image2.jpg">이미지2</a>
+<a class="light" href="./images/image3.jpg">이미지3</a>
+	<script>
+		/*스크립트*/
+        $(document).ready(function(){
+            $("a.light").lightBox();
+        });
+
+	</script>
+</body>
+</html>

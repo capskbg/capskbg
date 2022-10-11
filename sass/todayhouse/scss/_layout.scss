@@ -1,0 +1,69 @@
+.container{
+    width:1200px;
+    margin:0 auto;
+    position: relative;
+}
+header{height:200px; overflow: hidden;}
+h1.logo{
+    img{width:50px; margin-top:15px;
+        height: auto;
+        text-align: center;
+    }
+}
+
+.util{
+    position:absolute;
+    right:0;
+    ul li{float:left;}
+    a{
+        display: block;
+        height: 60px;
+        padding: 10px 20px;
+    }
+}
+
+nav#gnb{
+    margin-top:60px;
+    position: relative;
+    ul li{
+        float:left;
+        width:200px;
+        @include text_style(24px,$font_color,center,1);
+        a{
+            display: block;
+            height:40px;
+            @include text_style(24px,$font_color,center,40px);
+            position: relative;
+            &::after{
+                content:'';
+                width:0%; height:3px;
+                
+            }
+            &:hover{
+                color:$bold_color;
+                font-weight: 900;
+                &::after{
+                    content: '';
+                    width: 70%;
+                    height:3px;
+                    position: absolute;
+                    background: $bold_color;
+                    left:50%;
+                    bottom:0;
+                    transform: translateX(-50%);
+                    @include trans(.3s);
+                }
+            }
+        }
+       
+}
+ ul::after{@include float_clear;}
+}
+
+footer{
+    margin-top: 100px;
+    background-color: $point_color;
+    @include text_style(14px, $font_color, center, 2);
+    ul.info li, ul.icon li{display: inline-block; margin:15px 20px;}
+    p{@include text_style(12px, $font_color, center, 3);}
+}

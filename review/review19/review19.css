@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+*{margin:0; padding:0;}
+li,ol,ul,a{list-style:none;}
+body{
+    font:normal 300 16px/1 'Noto Sans KR', sans-serif;
+    color:#666;
+}
+.guide-wrap{
+    width:1080px;    margin:0 auto;
+}
+
+.guide-wrap ::selection{color:#983b43; background:#d3d3d3;}
+
+.buying{
+	width:1080px; height:600px;
+	background:#e9e9e9;
+	padding-top:82px;
+	text-align:center;
+
+	
+}
+
+.buying>ul{margin-top:82px;}
+.buying>ul>li{float:left; 
+	width:540px; height:354px; line-height:20px;
+
+	
+}
+.buying>ul>li:first-child{
+	box-sizing:border-box;
+	border-right:2px solid #546220;}
+.buying>ul>li>p{
+	width:540px; height:177px;
+}
+
+.buying>ul>li:first-child>p{
+	
+	background:url('./images/purchase_img_01.png') no-repeat center/172px;}
+.buying>ul>li:last-child>p{
+	background:url('./images/purchase_img_02.png') no-repeat center/142px;
+	}
+
+.buying>ul>li>dl>dt{
+	font-size:1.8rem; font-weight:bold; padding:20px 0 15px 0;
+}
+
+#tel{font-weight:bold; font-size:1.5rem; margin-top:5px;}
+
+.process>h2,.buying>h2{color:#546220; font-size:2.0rem; margin-bottom:82px;
+	
+}
+
+.process{
+	width:1080px;  height:600px;
+	background:#e3e3e3;
+	padding-top:82px;
+	text-align:center;
+
+}
+.process>ol{margin-bottom:50px;}
+.process>a{
+	padding:25px; background:#2e1503; font-size:18px;
+	color:#fff; 
+}
+
+.processlist{
+	width:240px; height:240px; margin-right:40px; float:left; 
+}
+
+
+.processlist>p:first-child{position:relative;}
+
+.processlist>p:first-child::after{content: url("./images/ico_arrow_03.png"); position:absolute; right:-20px; top:100px;
+ 
+}
+
+
+.processlist:last-child>p:first-child::after{content:""; display:none;}
+
+
+.processlist:last-child{margin-right:0;}
+.processlist>p:first-child{
+	width:240px; height:160px; 
+}
+
+
+
+
+.processlist:nth-child(1)>p:first-child{
+	
+	background:url('./images/mileag_procedure_01.png') no-repeat center;
+
+}
+
+.processlist:nth-child(2)>p:first-child{
+	
+	background:url('./images/mileag_procedure_02.png') no-repeat center;
+
+}
+
+.processlist:nth-child(3)>p:first-child{
+	
+	background:url('./images/mileag_procedure_03.png') no-repeat center;
+
+}
+
+.processlist:nth-child(4)>p:first-child{
+	
+	background:url('./images/mileag_procedure_04.png') no-repeat center;
+ 
+}
+
+
+
+
+.voucheruse{
+	width:1050px; height:200px;
+	text-align:left;
+	padding-left:30px;
+	background:#e3e3e3;
+	line-height:1.4;
+}
+.voucheruse>h2{margin-bottom:30px;}
+.voucheruse>ul>li:before{
+content:"· ";
+}
+
+
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}

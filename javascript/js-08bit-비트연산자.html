@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-bit-비트연산자.html </title>
+</head>
+<body>
+<script>
+	document.write((14 & 11));
+	/*
+		10진수 14는 2진수로 변환하면 1110
+		10진수 11은 2진수 변환하면 1011
+								-------
+								1010
+	*/
+	document.write("<br/>"+(14|11).toString(2));
+
+							/*
+								1110
+								1011
+								----
+								1111
+							*/
+	document.write("<br/>"+(14^11).toString(2));
+/*
+1110
+1011
+----
+0101
+*/
+
+	document.write("<br/>"+(~14).toString(2));
+
+	document.write("<br/><br/>");
+	document.write(2<<2);
+	/*
+		0000 0010
+			<< left sihft 2
+		0000 1000	
+	
+	*/
+
+
+
+</script>
+</body>
+</html>

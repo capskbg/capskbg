@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link href=".css" rel="stylesheet" type="text/css" />
+    <script>
+
+        //스크립트 태그의 경우 head 안에 쓰일 수도 있고
+        // html태그 중간중간에도 사뇽 가능
+        // 다만! 한줄씩 읽어 내려가는 html 특성상
+        // 먼저 읽혀줘야 하는 jquery 라이브러리 같은 경우 먼저 작성하고
+        // 그 후에 코드를 작성해야한다.
+
+        document.write("자바스크립트로 작성된 텍스트 입니다. 1")
+    </script>
+
+<script src="./test.js"></script>
+</head>
+<body>
+<button onclick:"window.open('https://www.naver.com')"> 이동 </button>
+<script src="./test.js"></script>
+<script>
+//내부 스크립트 방식
+//자바스크립에서는 한줄 주석 사용가능
+/*여러줄 주석을 사용할 때는
+ css와 똑같이
+ 사용가능*/
+
+ document.write("자바스크립트로 작성된 텍스트 입니다. 2")
+</script>
+
+<h3>제목태그입니다</h3>
+
+<script>//중간 중간 아무 곳이나 스크립트 태그 열고 닫고 쓰면 됨
+
+    document.write("자바스크립트로 작성된 텍스트 입니다. 3")
+
+
+</script>
+
+<script>
+
+    //alert("경고창ㅇ");
+    //prompt("숫자를 입력하시오");
+    confirm("확인/취소창입니다");
+    console.log("어디에 뜨는지 확인ㅇㅅㅇ 합시다.");
+    console.log("어디에 뜨는ㅇㅇㅇ시다.");
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*관련 색상
+rgba(150,255,0,0.3)
+#00CED1
+#D8BFD8
+#6495ED
+*/
+body{
+	/**/
+	/**/
+}
+.menu{
+	border:1px solid #666;
+	padding:0; margin:0;
+	/**/
+}
+.menu>li{
+	padding:5px 10px;
+	/**/
+}
+.menu>li>a{
+	color:#000;
+	/**/
+	/**/
+}
+.sc01{
+	margin:150px 0;
+	/**/
+}
+.sc01>p{
+	width:600px;
+	padding:30px;
+	/**/
+	/**/
+	/**/
+}
+.sc02>p{
+	width:800px;
+	padding:10px;
+	/**/
+	/**/
+	/**/
+	/**/
+}
+.sc02{margin-bottom:100px;}
+.sc03{
+	height:100px;
+	/**/
+	/**/
+}
+
+
+
+
+
+

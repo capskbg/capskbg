@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+
+$(function(){
+	$("#slist").sortable();
+});
+</script>
+</head>
+<body>
+<h1>목록의 순서 변경</h1>
+<ol id="slist">
+	<li class="ui-state-default">1번목록</li>
+	<li class="ui-state-default">2번목록</li>
+	<li class="ui-state-default">3번목록</li>
+	<li class="ui-state-default">4번목록</li>
+	<li class="ui-state-default">5번목록</li>
+	<li class="ui-state-default">6번목록</li>
+</ol>
+</body>
+</html>

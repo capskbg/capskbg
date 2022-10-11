@@ -1,0 +1,65 @@
+@charset "utf-8";
+h1{background-color:red;}
+/* 현재 문서 내에 있는 모든 h1태그를 선택*/
+
+#wrap h1{ /*아이디 #wrap 안에 있는 모든 h1 선택*/
+	background-color:yellow;
+}
+#wrap>h1{ /*아이디 #warp의 자식요소인 h1 선택*/
+	border:2px solid green;
+}
+
+/*
+	서브★ 텍스트를 가지고 있는 요소들을 선택하는
+	선택자를 3개 이상 작성해보시오.
+	*/
+선택자1{background-color:cyan;}
+선택자2{border:5px solid red;}
+선택자3{box-shadow:5px 5px 5px black;}
+
+ul#list>li>ul.submenu>li{border:3px solid yellow;}
+.submenu li{background-color:cyan;}
+#list>li>ul>li{border:5px solid red;}
+.submenu>li{box-shadow:5px 5px 5px black;}
+
+/*
+세번째 헤딩태그 텍스트를 가지고 있는 요소에
+
+*/
+
+선택자1{font-size:16px;}
+선택자2{text-shadow:5px 5px 5px red;}
+
+
+div.title2>h1{text-shadow:5px 5px 5px blue;}
+
+#wrap>div.title2>h1{font-size:16px;}
+.title2>h1{font-size:16px;}
+.title2 h1{text-shadow:5px 5px 5px red;}
+
+#list li{/*아이디가 list인 요소안에 있는 모든 li태그 선택*/
+	text-decoration:overline red;
+}
+
+/*
+※스타일 적용의 우선순위※
+
+!important >>> 인라인 >>> 내부 >>> 외부
+
+	내부와 외부 스타일 시트의 경우
+	▶아래에 기술할 수록 우선순위가 더 높다.
+	
+※ 선택자의 우선순위※
+아이디선택자>자식선택자>클래스,속성,가상선택자>태그>전체선택자
+
+	* 좀 더 정확한 선택자 *
+	 - #아이디명>h2 vs 태그명#아이디명>h2
+
+			후자가 우선순위가 좀더 높다.
+			why?? 앞에 태그명을 붙여서 저 정확하게 했기 때문에
+
+
+*/
+
+
+ul>li{border: 5px solid blue !important}

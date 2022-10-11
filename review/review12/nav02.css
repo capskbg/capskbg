@@ -1,0 +1,126 @@
+@charset "utf-8";
+/*RESET CSS*/
+*{margin:0; padding:0;}
+li,ul,ol{list-style:none;}
+
+/*a link style*/
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+/*레이아웃 공통 적용 css*/
+
+.wrap{/*컨텐츠 가로 990px 중앙정렬*/
+	width:990px;
+	margin:0 auto;
+
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+header{border-bottom:1px solid #d4d4d4;
+		box-sizing:border-box;
+		height:140px;
+}
+
+/*유틸영역 CSS*/
+
+.bg_wrap{
+	background:#004795;
+	height:50px;
+}
+
+.util_left{
+	float:left;
+}
+.util_right{
+	float:right;
+}
+.util_left>li,
+.util_right>li{
+	float:left;
+	height:50px;
+}
+.util_left>li{
+	width:180px;
+	
+	text-align:center;
+}
+.util_left>li>a{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	display:block;
+	color:#fff;
+	font-weight:bold;
+}
+
+.util_left>li:first-child>a{
+	background:#fff;
+	color:#004795;
+}
+
+.util_right>li>a{
+	font-size:0.8em;
+	color:#fff;
+	display:block;
+	padding:0 8px;
+	border-right:1px solid #fff;
+	font-weight:bold;
+	
+}
+
+.util_right{
+	margin-top:16px;
+}
+
+.util_right>li:last-child>a{
+	border-right:0;
+}
+
+/*GNB 영역*/
+
+/*a태그 영역에 로고 넣기*/
+#logo{
+	width:150px; height:43px;
+	margin-top:25px;
+	float:left;
+
+}
+#logo>a{
+	background:url('./images/logo_ckd.jpg') no-repeat;
+	display:block;
+	width:100%; height:43px;
+	text-indent:-9999px;
+	overflow:hidden;
+	
+}
+
+#gnb{
+	float:right;
+	
+	margin-top:15px;
+
+}
+
+#gnb>li{
+	float:left;
+}
+#gnb>li>a{
+	padding:0 30px;
+	display:block;
+	font-size:18px;
+	font-weight:bold;
+}
+	
+	
+
+

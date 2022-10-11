@@ -1,0 +1,49 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+a{text-decoration:none; color:#222;}
+li,ol,ul{list-style: none;}
+body{background: lightgreen;}
+nav{
+    background:#fff;
+    border-bottom:4px solid green;
+    width:1200px;
+    margin:0 auto;
+    height:auto;
+}
+
+.menu>li{
+    width:20%; float:left;
+    text-align: center;
+    font-size:1.2em;
+    background: aquamarine;
+}
+
+.menu>li>a,.submenu>li>a{
+    display: block;
+    width:100%;
+    height: 60px;
+    line-height: 60px;
+
+    position: relative; /*추후에 레이아웃 작성시 슬라이드 같은게 들어가는 경우가 많아서 '띄워준다'*/
+}
+
+.submenu{
+    display: none;
+    background: #fff;
+    border-left:1px solid green;
+}
+
+.menu>li:hover{background: palevioletred;}
+.submenu>li:hover{background: olivedrab;}
+
+.menu::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+.menu>li:last-child>.submenu{
+    border-right:1px solid green;
+}
+

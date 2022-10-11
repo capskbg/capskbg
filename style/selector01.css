@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*css의 주석*/
+
+/*
+	*(전체 선택자) : html 요소 안에 있는 모든 태그를 선택함
+					주로 기본 html 스타일을 삭제하기 위해 사용
+					->> reset 한다고 이야기 함.
+*/
+body{background-color:coral;}
+/*
+태그 선택자 : 태그명을 그대로 쓰는 선택자
+*/
+li{background-color:lightgreen;}/* 문서내의 모든 li태그 선택*/
+
+#list01{background-color:blue;}
+/*아이디가 list01인 요소를 선택*/
+.txt02{
+	color:#ff0;
+	font-size:20px !important;
+	text-decoration:underline;	
+}
+.txt01{
+	color:#ff0;
+	font-size:40px; 
+	}
+/*
+	⁕ 클래스 선택자
+	
+	.클래스명{...}
+	
+	: 한 태그에 클래스는 단 한개만 사용할 수 있는게 아니라 여러개 붙여서 사용 가능하다. 이 때 클래스의 구분은 띄어쓰기로 한다.
+	
+		ex) <p class= "txt01 txt02 font02"></p>
+		
+		ex) <p id="subtitle" class="txt01 txt02 font02"></p>
+
+*/

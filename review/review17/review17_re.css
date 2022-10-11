@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+*{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+
+html{font:normal 14px/1 'Noto Sans KR', sans-serif;}
+
+/*a link style*/
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+header{	border-top:5px solid #009223;}
+
+.topmenu{
+	width:1170px; height:100px;
+	margin:0 auto; 
+	position:relative;
+}
+#logo{width:200px; height:100px; 
+		position:absolute;
+		left:50%;
+		transform:translateX(-50%);
+}
+#logo>a{
+	display:block;
+	 height:100px;
+	background:url('./images/subway.png') no-repeat center/200px;
+	text-indent:-99999px;
+	
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+.topmenu>ul>li{
+	float:left;
+	font-size:0.9rem;
+	margin:0 5px;
+}
+
+.topmenu>ul>li>a{
+	display:block;
+	border:1px solid #ddd;
+	padding:10px;
+	border-radius:50px;
+	
+	
+}
+
+.topmenu>ul>li:last-child>a{
+	width:12px; height:12px;
+	background:url('./images/icon_utill_global.png') no-repeat center/80%;
+}
+
+.topmenu>ul{
+	position:absolute;
+	right:0;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.gnb_wrap{border-bottom:1px solid #ddd;}
+
+#gnb{
+	width:990px; 
+	margin:0 auto;
+}
+
+#gnb>li{
+	width:20%;/*990/5=198*/
+	height:50px;
+	line-height:50px;
+	float:left;
+	text-align:center;
+	font-size:1.2rem;
+}
+#gnb>li>a{
+	display:block;
+	width:100%; height:100%;
+}
+
+#gnb>li>a:hover{color:#009223;}
+
+.submenu{display:none;}
+
+#gnb>li:hover .submenu{display:block;}
+

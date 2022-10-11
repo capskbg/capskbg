@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*
+768px 기준
+1024px 기준 박스 배치(레이아웃) 변함
+
+모바일 - 580 ~ 640
+태블릿 - 768 ~ 1024/1280
+pc - 1280 이상 ( 중앙 정렬 : 1440, 1320, 1600)
+*/
+
+/*공통 CSS*/
+*{margin:0; padding:0;}
+h2{text-align:center; margin:0px;}
+#img_box{width:100%;}
+.box{
+	width:300px;
+	height:120px;
+	border:1px solid #666;
+	box-sizing:border-box;
+	margin:10px auto;
+}
+/*모바일 CSS*/
+#wrapper{
+	width:580px;
+	margin:0 auto;
+	background:#fdd;
+}
+
+.img1{background:#fcf;}
+.img2{background:#ffc;}
+.img3{background:#cfc;}
+.img4{background:#ccf;}
+
+/*
+768px 기준
+1024px 기준 박스 배치(레이아웃) 변함
+*/
+@media all and (min-width:768px){
+	/*768~1023 그리고 1024~1280 사이의 스타일 뺀 모두에 해당되는 스타일
+		768이상
+	*/
+	
+	#wrapper{
+		width:768px;
+		text-align:center;
+	}
+	.box{
+		width:48%; margin:0.5%;
+		display:inline-block;
+	}
+}
+@media all and (min-width:1024px) and (max-width:1280px){
+	/*1024~1280에 해당되는 스타일
+		1024이상 1280이하
+	*/
+	#wrapper{
+		width:1024px;
+		max-width:1280px;
+		text-align:center;
+	}
+	.box{
+		width:23%; margin:0.5%;
+		
+	}
+}
+

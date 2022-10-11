@@ -1,0 +1,35 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+header{
+    width:900px; 
+    background:#f3f3f3;
+    margin:0 auto;
+}
+
+.menu{width:100%;}
+.menu>li{float:left;
+font-size: 20%;
+background: aquamarine;
+text-align:center;
+height:40px;
+line-height: 40px;
+width:20%;
+}
+
+.menu::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+.submenu{display:none;}
+
+.submenu>li{
+    background:skyblue;
+    color:#fff;
+}
+
+.menu>li:hover{background:yellow;}
+.submenu>li:hover{background: yellow;}

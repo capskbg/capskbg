@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*
+상태선택자, 반응선택자
+
+선택자: 키워드{}
+
+ex) h2:hover{...}
+	#idname:active{...}
+	.divwrap>li:hover{...}
+*/
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:violet;}
+a:hover{color:green;}
+a:active{color:#333;}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+	text-decoration:none;
+	color:#222;
+}
+
+input:enabled{ /* 선택자: enabled - 선택자중에서 사용가능한 것을 선택 */	background-color:tomato;
+}
+
+input:disabled{
+	background-color:green;
+}
+
+input{outline:0;} /*폼필드의 경우 활성화(텍스트를 입력하려고
+하면)가 되면 테두리가 약간 굵은 까만색으로 변함. 해당 테두리를
+없애고 싶으면 border 속성을 제어하는게 아닌. outline 속성을 0로 세팅해야함. */
+input[type="password"]:hover{
+	border:2px solid blue;
+	background-color:skyblue;
+}
+
+#actionID:active{
+		background-color:green;
+		color:white
+	
+}
+
+#actionID:hover{
+	text-shadow:2px 3px 5px lime;
+}
+

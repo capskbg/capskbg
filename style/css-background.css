@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+div{
+	height:300px; padding:20px;
+}
+
+body{background-color:transparent;}
+
+/*
+색상명 : red, green, blue
+HEX 값 : #ffffff, #ccffdd, #AA0099
+RGB 값 : rgb(255,2555,255)
+RGBA값 : rgba(255,255,255,a) a: 0~1사이의 소수값
+HSLA 값 : hsla(255, 100% 100% a)
+a:0~1사이의 소수값
+
+★★★ transparent : 투명(기본값)★★★
+
+*/
+body{
+	background-image: url('../html/images/flower.jpg');
+	background-repeat: no-repeat;
+	background-position:center bottom;
+	background-attachment:fixed;
+	background-size:20%;
+}
+
+
+/*
+background-image: url('경로')
+	- 배경에 이미지를 적용하는 속성
+background-repeat
+	- 배경으로 사용한 이미지의 반복 구간을 지정
+	- repeat (기본값) : x축,y축 둘다 반복
+	- repeat-x : x축반복(가로)
+	- repeat-y : y축반복(세로)
+	- no-repeat : 반복안함
+	- space : 반복을 하는데 가로 기준으로 이미지가 짤려보이지 않게 해줌
+	- round : 반복을 하는데 세로 기준으로 이미지가 짤여보이지 않게 해줌
+background-position: x값 y값;
+	- 배경 이미지의 위치를 지정해주는 property
+	- x값 : left, right, center, 숫자px, 숫자%
+	- y값 : top, bottom, center, 숫자px, 숫자%
+	
+background-size
+	 width값 height값; 
+	width값(세로사이즈는 비율 고정으로 하여 알아서 들어감)
+	
+	- width값: 숫자px, 숫자%
+	- height값 : 숫자px, 숫자%
+	- contain, cover, auto
+	
+	ex) background-size : 150px; ->(가로사이즈 고정)
+		background-size: 150px 20px; -> 가로세로사이즈 알 수 있음(고정)
+	
+*/
+
+#box01,#box02{
+	background-image:url('../html/images/flower.jpg');
+	background-repeat:no-repeat;
+}
+
+#box01{
+	background-size:contain;
+	
+	/*
+		background-size:contain;
+		- 원본 이미지의 비율을 유지하면서 요소의 가로 크기의 100%로 설정>>> 이미지가 짤리거나 비율이 깨지지 않는 선에서 가장 크게 보여줌.
+	*/
+}
+
+#box02{
+	background-size:cover;
+	/*
+		background-size:cover;
+		- 원본 이미지의 비율은 유지하면서 이미지를 보여주지만 이미지가 들어갈 수 있는 영역이 좁아지면 이미지를 자른채로 출력 함 
+	*/
+
+}
+
+.bg01, .bg02, .bg03, .bg04, .bg05, .bg06 {
+	padding: 20px;
+	border: 10px double rgba(0,150,150,0.7);
+background-color:#222; }
+
+
+.bg01, .bg02, .bg03{
+	background-image:url('../html/icon/icon02.png');
+background-repeat:no-repeat;}
+
+.bg01{background-origin:padding-box;}
+.bg02{background-origin:border-box;}
+.bg03{background-origin:content-box;}
+
+/*
+	background-origin : 배경의 이미지가 어느시점 부터 적용이 되는지
+	- 지정안함(padding-box) : 배경의 위치는 기본 위치인 보더(테두리)가 끝난 지점부터 시작
+	- border-box : 박스 테두리 선 왼쪽 위부터 배경이 시작
+	-content-box : 적용된 패딩값에 따라 왼쪽 위부터 배경이 시작 됨(패딩 제외하고 적용)
+
+*/
+
+.bg04{background-clip:border-box;}
+.bg05{background-clip:padding-box;}
+.bg06{background-clip:content-box;}
+
+/*
+	background-clip : 배경의 색상이 어느시점부터 적용이 되는지..
+	- 지정안함(border-box)
+	- padding-box : 박스 테두리선(보더)에는 색이 적용되지 않음. 테두리가 끝나는 시점부터 배경색 적용되지
+	- content-box : 패딩 이후에 색상 적용 (지정된 패딩값 + 테두리값을 제외한 곳>> 내용영역)
+*/
+
+div[class^="back"]{
+	/*div중에 클래스 속성 값이 back을 포함한 요소들 선택*/
+	
+	height:100px
+}
+
+.back01{
+	background:skyblue url('../html/icon/icon01.png') 10px 20px/100px no-repeat content-box fixed;
+}
+
+.back02{
+	background:url('../html/icon/icon03.png') left bottom/60px no-repeat;
+}
+
+.back03{
+	background-image:
+	url('../html/images/cupcake.png'),
+	url('../html/icon/icon04.png'),
+	url('../html/icon/icon02.png');
+	background-size: 100px, 30px, 50px;
+	background-repeat: no-repeat, repeat-x, repeat-y;
+	background-position: center bottom, 10px 20%, right 50px;
+	background-color:skyblue
+}
+
+.back04{
+	background-color:lightpink;
+	background:
+	url('../html/images/cupcake.png') center bottom/100px no-repeat,
+	url('../html/icon/icon04.png') 10px 20%/30px repeat-x,
+	url('../html/icon/icon02.png') right 50px/50px repeat-y;
+}
+
+/*※ 여러개의 배경이미지를 넣었을 때 배경색까지 넣고 싶다면 마지막 속성값으로 색상을 입력 해야함.*/
+
+.back05{
+   border:10px solid rgba(255,0,0,0.5);
+   
+   background: #ffcccc url('../html/icon/icon03.png') 
+   5px 10px/contain no-repeat padding-box content-box scroll;
+}
+
+/*
+background 속성 축약 사용 시
+	background-clip, background-origin의 경우 속성 값이 같아서 축약할 때 한 가지만 입력하면, 어떤 세부속성에 값을 부여하는지 모를 수 있다
+	
+	축약 시 속성값을 하나만 쓰면 둘 다 적용.
+	
+		background: padding-box;
+		
+		->> -clip : padding-box;
+			-origin: padding-box;
+			
+			축약으로 두개의 값을 다르게 주고 싶은 경우 띄어쓰기로 구분 하여 쓰는데 먼저 쓰인 값이 origin값이 되고 뒤에 쓰인 값이 clip이 된다.
+			
+			background: padding-box border-box;
+				>> -clip: border-box;
+					-origin: padding-box;
+*/
+
+
+
+
+
+
+
+
+/*
+	color-repat-image-position-size-origin-clip-attachment
+
+
+	나눠서 쓰지 않고 하나만 쓰는 경우에는 origin과 clip 동시에 같은 값이 적용됨
+
+*/

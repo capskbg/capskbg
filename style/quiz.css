@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+
+
+background: url('./Backgroundback.png') bottom/100% no-repeat fixed #E7E7E8;
+
+
+
+background-img: url('BackgroundFront.png'), url('BackgrounBack.png');
+background-position: bottom bottom;
+background-size: 100%, 100%;
+background-repeat: no repeat;
+background-attachment:fixed;
+background-color:#e7e7e8

@@ -1,0 +1,28 @@
+@charset "utf-8";
+@charset "utf-8";
+h3{text-align:center;}
+p{text-align:center; font-weight:bold;}
+
+.wrapper{
+	width:600px;
+	height:300px;
+	margin:0px auto 20px;
+	
+	border:2px solid black;
+	background:#ccc;
+	
+	display:flex;
+	flex-flow:row wrap;
+	/**/
+}
+.wrapper div{
+	width:210px;
+	background:#f3f3f3;
+	border:2px solid red;
+}
+
+#con1{justify-content:flex-start;}
+#con2{justify-content:flex-end;}
+#con3{justify-content:center;}
+#con4{justify-content:space-between;}
+#con5{justify-content:space-around;}

@@ -1,0 +1,295 @@
+@charset "utf-8";
+@improt "fonts.css";
+@import "reset.css"; /*로컬에 이쓴ㄴ 경우 이렇게도 사용가능하고*/
+/*이런 식으로도 사용 가능*/
+/*
+ font-family: 'OTEnjoystoriesBA';
+ font-family: 'NanumSquareRound';
+*/
+
+html{
+	font-family: 'NanumSquareRound';
+	font-size:14px;
+}
+
+a,a:link,a:visited,a:hover,a:active{
+	text-decoration:none;
+	color:#666;
+}
+
+
+.wrap{
+	width:1280px;
+	margin:0 auto;
+}
+
+/*헤더영역*/
+
+header{
+	border-bottom:5px solid #0c2162;
+	height:150px;
+	
+}
+
+#logo{
+	width:174px; height:95px;
+		overflow:hidden;
+		margin:0px auto;
+}
+
+#logo>a{
+	display:block;
+	width:100%; height:100%;
+	background: url('../images/logo.png') no-repeat center /100% 95px;
+	text-indent:-9999999px;
+
+}
+
+
+
+#gnb>li{width:20%; height:45px; float:left;}
+
+
+#gnb::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+#gnb>li>a{
+	text-align:center;
+	width:100%;
+	height:45px;
+	line-height:45px;
+	display:block;
+	/*border:1px solid transparent;*/
+}
+
+#gnb>li>a:hover{
+	background:#0c2162;
+	color:#fff;
+	/*border:1px solid #0c2162;*/
+	
+}
+
+/*컨텐츠영역 css*/
+
+section>h2{
+	font-family: 'tvN 즐거운이야기 Medium' ;
+	font-size:50px;
+	text-align:center;
+	margin:0 0 30px 0;
+}
+section.wrap{padding:50px 0px;}
+
+
+/*기획의도 영역*/
+
+#sec_plan{
+	background:url('../images/poster.jpg') no-repeat 27% center/300px;
+	height:450px;
+	position:relative;
+}
+
+#sec_plan .desc{
+	position:absolute;
+	left:46%;
+	width:40%;
+	
+}
+
+.desc>p{
+	margin:10px 0;
+	
+	line-height:1.5;
+	
+}
+
+#sec_actor .main_actor{
+	width:850px;
+	margin:0 auto;
+	text-align:center;
+	
+}
+#sec_actor .main_actor img{
+	width:100%
+	
+	
+}
+
+
+#sec_actor .main_actor  h3{
+	font-size:24px; 
+	font-weight:bold;
+	margin:10px 0;
+}
+#sec_actor .main_actor  h4{
+	font-size:18px; 
+	font-weight:bold;
+	margin:0 0 10px 0;
+	color:#8a084b;
+	font-style:italic;
+}
+#sec_actor .main_actor  h5{
+	 
+	line-height:1.5;
+	width:60%;
+	text-align:left;
+	margin:15px auto;
+}
+
+p.btn_red{
+	display:inline-block;
+	width:152px; height:38px;
+	line-height:38px;
+	border:1px solid #8a084b;
+	color:#8a084b;
+	cursor:pointer;
+}
+
+p.btn_red:hover{
+	color:#fff;
+	background:#8a084b;
+}
+
+#sec_actor .main_actor>li:first-child{
+	margin-bottom:40px;
+}
+
+#sec_actor .sub_actor{
+	width:90%;
+	margin:0 auto;
+}
+
+#sec_actor .sub_actor>li{
+	float:left;
+	width:30%;
+	margin:50px 0 0 0;
+	text-align:center;
+}
+
+#sec_actor .sub_actor>li:nth-child(2){
+	margin:50px 5% 0;
+	
+}
+
+#sec_actor .sub_actor>li img{width:100%;}
+
+#sec_actor .sub_actor::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+#sec_actor .sub_actor h3{
+	font-size:1.1rem;
+	font-weight:bold;
+	margin:0 0 15px 0;
+}
+#sec_actor .sub_actor h4{
+	font-style:italic;
+	color:#08298a;
+	margin: 0 0 15px 0;
+}
+
+
+
+p.btn_blue{
+	display:inline-block;
+	width:126px; height:26px;
+	line-height:26px;
+	border:1px solid #08298a;
+	color:#08298a;
+	cursor:pointer;
+}
+
+p.btn_blue:hover{
+	color:#fff;
+	background:#08298a;
+}
+
+/*현장 스케치 영역*/
+#sec_gallery .gallery_list{
+	margin-bottom:30px;
+	
+}
+
+
+#sec_gallery .gallery_list>li{
+	width:240px; height:190px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	
+	
+}
+
+#sec_gallery .gallery_list>li:nth-child(5n){
+	margin-right:0px;
+}
+
+
+
+#sec_gallery .gallery_list::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+
+#sec_gallery .gallery_list>li img{width:100%;}
+
+
+#sec_gallery .gallery_list>li>a{
+	width:100%; height:100%;
+	
+	font-size:15px;
+	font-weight:bold;
+	border:1px solid red;
+	display:block;
+	box-sizing:border-box;
+}
+
+#sec_gallery .gallery_list>li>a>p{
+	text-indent:20px;
+	line-height:1.8;
+}
+
+#sec_gallery .gallery_list>li>a:hover{
+	border-color:#8a084b;
+}
+
+
+/*푸터 영역*/
+
+footer{
+	background:#f3f3f3;
+	text-align:center;
+	padding:50px 0;
+}
+
+footer>.ft_list>li{
+	display:inline-block;
+	margin-bottom:30px;
+	
+}
+
+footer>.ft_list>li>a{
+	display:block;
+	border-right:1px solid #333;
+	padding:0 20px;
+}
+
+footer>.ft_list>li:last-child>a{
+	border:0;
+}
+
+
+footer p{margin:10px 0;}

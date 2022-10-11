@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>new</title>
+    <link href="./nslide.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="slide">
+    <ul class="slideWrap">
+        <li>
+            <div class="photo">
+            <img src="./images/img01.jpg" alt="slide1"/>
+            slide1
+            </div>
+        </li>
+        <li>
+            <div class="photo">
+            <img src="./images/img02.jpg" alt="slide2"/>
+            slide2
+            </div>
+        </li>
+        <li>
+            <div class="photo">
+            <img src="./images/img03.jpg" alt="slide3"/>
+            slide3
+            </div>
+        </li>
+        <li>
+            <div class="photo">
+            <img src="./images/img04.jpg" alt="slide3"/>
+            slide4
+            </div>
+        </li>
+        <li>
+            <div class="photo">
+            <img src="./images/img05.jpg" alt="slide3"/>
+            slide5
+            </div>
+        </li>
+        
+    </ul>
+    <div class="btnWrap">
+        <button onclick="prevFunc()">이전</button>
+        <button onclick="nextFunc()">다음</button>
+    </div>
+</div>
+<pre>
+    3개의 슬라이드가 롤링 되는 배너
+    1~5까지 li 순서가 무한반복 되어야 함.
+
+    이전 버튼을 누르면 이전 li 1개씩 이동,
+    다음 버튼을 누르면 다음 li 1개씩 이동..
+
+    ++ 자동으로 3초 후에는 다음 li로 이동 (자동 실행)
+</pre>
+<script src="nslide.js"></script>
+</body>
+</html>

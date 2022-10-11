@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+	$("a:eq(0)").button({disabled:true});
+	$("a:gt(0)").button();
+	// gt(index) " index 값보다 큰 모든 선택자 선택"
+	setTimeout(() => {
+		alert();
+		$("a:eq(0)").button("option","disabled",false);
+		
+	}, 2000);
+});
+</script>
+</head>
+<body>
+<h1>캐릭터 선택</h1>
+<div>
+	<a href="#">검사</a>
+	<a href="#">마법사</a>
+	<a href="#">힐러</a>
+</div>
+</body>
+</html>

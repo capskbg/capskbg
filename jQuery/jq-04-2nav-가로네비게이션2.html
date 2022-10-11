@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="rownav2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<script>
+ /**/
+ $(".menu li").hover(function(){
+   $(".submenu").css("height","360px").stop().slideDown();
+ 
+ },function(){
+    $(".submenu").stop().slideUp();
+
+});
+
+</script>
+</body>
+</html>

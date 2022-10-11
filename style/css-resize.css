@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.ntext{
+	resize:none;
+	overflow:auto;
+}
+
+/*
+resize : 요소의 가로세로 사이즈를 사용자가 임의로 수정할 수 있도록 // 빗금 표시를 요소의 우측 하단에 보이게끔 하는 프로퍼티
+
+
+	보통 overflow:auto와 함께 사용 함.(scroll,scroll-x,scroll-y,hidden)
+		overflow:visible이면 적용되지 않음
+*/
+
+
+
+.re_text{
+	width:200px; height:80px;
+	background:url('../img/bg_flower.png');
+	resize:both;
+	overflow:auto;
+	
+}
+
+

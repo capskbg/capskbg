@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/*font-family: 'Noto Sans KR', sans-serif;
+	#21407e 
+	#4487c6 
+	#50a8c0 
+	#58bcb5
+*/
+html{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight:300;
+	color:#333;
+	font-size:14px;
+	
+}
+
+body{background:#f3f3f3}
+
+.container{
+	width:1162px;
+	margin:0 auto;
+}
+
+.container h2{
+	font-size:1.2rem;
+	font-weight:400;
+	margin:20px 0;
+}
+.container h3{
+	font-size:2rem;
+	font-weight:500;
+	margin:20px 0 50px 0;
+}
+
+ol>li{
+	width:250px;
+	margin-right:54px;
+	float:left;
+}
+
+ol::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+ol>li:last-child{margin:0;}
+
+
+ol>li>ul>li:first-child{
+	background:url('') no-repeat center #fff;
+	height:200px;
+	margin:0 0 30px 0;
+}
+ol>li:nth-child(1)>ul>li:first-child{
+	background-image:url('./images/icon01.png');
+}
+
+ol>li:nth-child(2)>ul>li:first-child{
+	background-image:url('./images/icon02.png');
+}
+
+ol>li:nth-child(3)>ul>li:first-child{
+	background-image:url('./images/icon03.png');
+}
+
+ol>li:nth-child(4)>ul>li:first-child{
+	background-image:url('./images/icon04.png');
+}
+
+ol>li>ul>li:nth-child(2){
+	font-weight:400;
+	font-size:1.2rem;
+}
+ol>li>ul>li:nth-child(3){
+	font-weight:500;
+	font-size:1.5rem;
+}
+ol>li>ul>li:nth-child(4)>p{
+	margin:20px 0;
+	padding:5px 15px;
+	display:inline-block;
+	color:#21407e;
+	border:1px solid #21407e;
+	border-radius:15px;
+	font-size:0.9rem;
+}
+
+ol>li:nth-child(2)>ul>li:nth-child(4)>p{
+	border-color:#4487c6;
+	color:#4487c6;
+}
+ol>li:nth-child(3)>ul>li:nth-child(4)>p{
+	border-color:#50a8c0 ;
+	color:#50a8c0 ;
+}
+ol>li:nth-child(4)>ul>li:nth-child(4)>p{
+	border-color:#58bcb5;
+	color:#58bcb5;
+}
+
+ol>li>ul>li>ul>li{
+	margin:10px 0;
+	color:#888;
+	font-size:1.1rem;
+	letter-spacing:-1px;
+	
+}
+ol>li>ul>li>ul>li:before{
+	content:'· ';
+	margin-right:5px;
+}
+
+ol>li>ul>li>ul>li>p{
+	marign:10px 0 0 20px;
+}
+

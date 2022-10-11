@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<style>
+div{background:teal; 
+    font-size:2em; color:#fff;
+    border:1px solid #ccf; width:500px;
+    text-align:center;}
+div#contents{
+    background:#cff; color:blue;
+    height:300px; display: none;
+}
+div#stop{position:fixed; right:100px; top:200px; width:100px; height:80px; line-height:80px;
+ background:brown;}
+</style>
+</head>
+<body>
+<div id="top">TOP</div>
+<div id="contents">CONTENTS</div>
+<div id="toggle">TOGGLE</div>
+<div id="stop">STOP</div>
+<script>
+$(document).ready(function(){
+$("#top").mouseover(function(){
+        $("#contents").slideDown(6000);
+    });
+    $("#stop").click(function(){
+        $("#contents").stop();
+    });
+    $("#toggle").click(function(){
+        $("#contents").slideToggle(100);
+    })
+    $("#contents").click(function(){
+        $("#contents").slideUp("slow");
+    });
+});
+
+
+</script>
+</body>
+</html>

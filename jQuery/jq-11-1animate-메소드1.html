@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+    <style>
+            body{background:#cfc;}
+            img{position:relative;}
+    </style>
+</head>
+<body>
+<div class="pic">
+    <button id="ch01">가로 100px</button>
+    <button id="ch02">가로 200px</button>
+    <button id="ch03">가로 300px</button>
+    <button id="ch04">사이즈 변경 후 이동</button>
+</div>
+<img src="../html/images/flight3.png" alt=""/>
+<script>
+$("#ch01").click(function(){
+    $("img").width(100);});
+   /* $("img").css("width","100");*/
+
+$("#ch02").click(function(){
+    $("img").animate({
+        "width":"200px"},500);
+});
+
+$("#ch03").click(function(){
+    $("img").animate({
+        "width" : "300px"},3000,
+        function(){alert("끝!"); });
+});
+
+$("#ch04").click(function(){
+    $("img").animate({
+        "width" : "80px",
+        "left"  : "160px",
+        "top"   : "60px"
+    },1000);
+});
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>	
+	<meta name="description" content=""/>
+	<meta name="keywords" content="" />
+	<meta name="author" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+	<meta charset="utf-8" />
+	<title> new </title>
+	<script src="https://code.jquery.com/jquery-3.2.0.js" integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ=" crossorigin="anonymous"></script>
+	<style>
+	*{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style:none;
+}
+
+#nav_img{
+	width:600px;
+	margin:0 auto;
+}
+
+#nav_img li{
+	float:left;
+}
+	</style>
+</head>
+<body>
+
+<ul id="nav_img">
+	<li><img src="images/m1.gif" alt="img1" /></li>
+    <li><img src="images/m2.gif" alt="img2" /></li>
+    <li><img src="images/m3.gif" alt="img3" /></li>
+    <li><img src="images/m4.gif" alt="img4" /></li>
+</ul>
+<script>
+/*
+li에 마우스 올리면
+한글로 변경되는 스크립트
+ :>>> src속성을 바꾸면됨. 
+
+ .hover()
+ .attr()
+ .children()
+*/
+
+
+	$("#nav_img>li").hover(function(){
+		var i = $(this).index();
+		
+		$(this).children().attr("src","images/m"+(i+1)+"_ov.gif");
+	},function(){
+		var i = $(this).index();
+		$(this).children().attr("src","images/m"+(i+1)+".gif");
+	
+	
+	});
+
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+</script>
+</body>
+</html>

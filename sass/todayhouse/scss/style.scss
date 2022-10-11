@@ -1,0 +1,56 @@
+@import "common"; 
+@import "layout";
+//sass에서 import 할 떄에는 import 해오는 파일명 앞에 _를 반드시 붙여 작성 해주고 import 시 확장자명은 생략하여 사용
+
+/*이 주석은 위의 "//" 주석과 다르게 컴파일 되어서 아웃풋됨*/
+
+
+#banner_sec{
+    img{
+        width:1200px;
+        max-height: 500px;
+    }
+}
+#brand_sec{
+    margin-top: 100px;
+    background: url('../images/brand.png') no-repeat top left;
+    height: 500px;
+    position: relative;
+    .bar{
+        position: absolute;
+        width:30%;
+        background: $default_color;
+        height: 5px;
+        right:0;
+    }
+    .brand_txt{
+        position: absolute;
+        background: rgba($color:#fff, $alpha:0.5);
+        width:400px;
+        height: auto;
+        padding: 20px;
+        top:60px;
+        left:50%;
+        h3{ @include text_style(21px,$bold_color,left,1);}  
+        p{@include text_style(14px,$font_color,left,2); margin-top: 20px;
+            span{background: rgba($color:$bold_color, $alpha:0.5); color:#fff;}
+        }
+    }
+    .brand_circle{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        a{
+            margin: 10px;
+            img:hover{
+                transform: scale(1.1);
+                @include trans(.5s);
+            }
+            img{@include trans(.5s);}
+        }
+    }
+}
+
+body{
+    background: lighten((rgba($color:$bold_color, $alpha:0.5)),10%);
+}

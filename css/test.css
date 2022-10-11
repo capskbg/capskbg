@@ -1,0 +1,18 @@
+.list {
+  width: 100px;
+  height: 200px;
+}
+.list p {
+  color: red;
+  background: yellow;
+}
+.list p > span {
+  color: aliceblue;
+}
+.list p > span > a {
+  background: darkcyan;
+}
+.list p > span > a:hover {
+  display: none;
+  text-align: center;
+}/*# sourceMappingURL=test.css.map */

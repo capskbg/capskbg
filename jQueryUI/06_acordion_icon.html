@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+	$("#ad,#ad2").accordion({
+		icons:{
+			"header":"ui-icon-scissors",
+			"activeHeader":"ui-icon-mail-closed"
+		}
+	});
+	
+});
+</script>
+</head>
+<body>
+<h1>jquery ui로 아코디언 구현하기</h1>
+<div id="ad">
+	<h3>제목태그1번</h3>
+	<p>제목 태그 1번의 설명 부분이 들어간 p태그</p>
+	<h3>제목태그2번</h3>
+	<p>제목 태그 2번의 설명 부분이 들어간 p태그</p>
+	<h3>제목태그3번</h3>
+	<p>제목 태그 3번의 설명 부분이 들어간 p태그</p>
+</div>
+<div id="ad2">
+	<p>타이틀 1번</p>
+	<div>타이틀 1번의 내용영역</div>
+	<p>타이틀 2번</p>
+	<div>타이틀 2번의 내용영역</div>
+	<p>타이틀 3번</p>
+	<div>타이틀 3번의 내용영역</div>
+	<p>타이틀 4번</p>
+	<div>타이틀 5번의 내용영역</div>
+</div>
+</body>
+</html>

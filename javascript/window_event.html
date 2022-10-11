@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link href=".css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="text"></div>
+
+
+<script>
+
+
+
+window.onblur = blurMe;
+window.onfocus = focusMe;
+
+
+
+var text = document.getElementById("text");
+
+function blurMe(){
+    text_innerHTML = "떠났습니다.";
+
+}
+function focusMe(){
+    text.innerHTML = "들어왔습니다.";
+}
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

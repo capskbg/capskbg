@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>js-event-이벤트.html</title>
+</head>
+<body>
+<script>
+/*
+	이벤트 : 어떠한 일이 일어날 때
+	 -> 키보드 이벤트
+	 -> 마우스 이벤트
+	 -> 문서 이벤트
+
+*/
+window.onload = function(){
+	alert("로딩끝!");
+}
+
+
+</script>
+<button onclick="alert('경고창')">클릭할때</button>
+<h3 onmouseleave="alert('마우스를 해당 영역에 올리면 보임')" style="background:red;">h3h3h3h3h3h</h3>
+
+
+<div id="box" style="width:100px; height:100px; background:aquamarine;"
+	onmouseover="chBox()"
+>
+
+</div>
+<script>
+var box = document.getElementById("box");
+
+function chBox(){
+	box.style.backgroundColor="skyblue"
+}
+
+box.onclick = function() { box.style.backgroundColor="teal";}
+
+box.onmouseout = function(){
+	this.style.backgroundColor="yellow";
+}
+
+/*
+this : 나 자신.
+
+*/
+
+</script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>new</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+    <div class="side_bg">
+    <section id="profile">
+        <div id="date" class="date"></div>
+        <div id="time" class="time"></div>
+        
+        <h1><a href="../main/admin.html"><img src="./img/프로필.png" alt="profile"/></a></h1>
+        <p>홍길동님</p>
+        <p>id : abcd01</p>
+        <input type="button"  value="로그아웃" name="logout"/>
+    </section>
+    <nav id="lnb">
+        <ul>
+            <li><a href="#">메인페이지</a></li>
+            <li><a href="#">매출관리</a></li>
+            <li><a href="#">주문관리</a></li>
+            <li><a href="#">배송관리</a></li>
+            <li><a href="#">상품관리</a></li>
+            <li><a href="#">고객관리</a></li>
+            <li><a href="#">게시글관리</a></li>
+            <li><a href="#">시스템관리</a></li>
+
+        </ul>
+
+    </nav>
+    </div>
+
+    </div>
+
+</header>
+
+<section class="main_container">
+    <h2>상품 관리</h2>
+    <hr/>
+    <div class="wrap">
+        <form>
+        <table id="s_box">
+            <tr>
+                <th>검색분류</th>
+                <td><select name="name">
+                    <option>제품명</option>
+                    <optgroup label="일반 의약품 소화제"></optgroup>
+                    <option> 까스활명수</option>
+                    <optgroup label= "한방의약품"></optgroup>>
+                    <option>쌍화탕</option>
+                    <optgroup label= "건강기능식품"></optgroup>
+                    <option>까스활</option>
+                    <option>백셀에너지 드링크</option>
+                    <option>도구리 파워 비타민</option>
+                </select>
+                <input type="search" />
+                </td>
+            </tr>
+            <tr>
+                <th>구분</th>
+                <td>
+                    <input type="button" value="전체" name="divi" />
+                    <input type="button" value="전문의약" name="divi" />
+                    <input type="button" value="일반의약" name="divi" />
+                    <input type="button" value="건강기능" name="divi" />
+                    <input type="button" value="식품·음료" name="divi" />
+                    <input type="button" value="화장품" name="divi" />
+                </td>
+            </tr>
+            <tr>
+                <th>상세구분</th>
+                <td>
+                    <select>
+                        <option>===</option>
+                        <optgroup label= "제조사"></optgroup>
+                        <option>동화약품</option>
+                    </select>
+                    <select>
+                        <option>===</option>
+                        <optgroup label= "약품종류"></optgroup>
+                        <option>전문의약품</option>
+                        <option>일반의약품</option>
+                        <option>건강기능식품</option>
+                        <option>일반식품</option>
+                    </select>
+                    <select>
+                        <option>===</option>
+                        <optgroup label= "클라이언트 구분"></optgroup>
+                        <option>의료기관</option>
+                        <option>일반 도·소매</option>
+                        <option>편의점</option>
+                    </select>
+                
+                </td>
+            </tr>
+            <tr>
+                <th>판매가격</th>
+                <td> <input type="button"   value="~ 5,000"name="price5000"/>
+                   
+                    <input type="button"   value="~ 10,000"  name="price10000"/>
+                </td>
+            </tr>
+            <tr>
+                <th>검색분류</th>
+                <td>
+                   &nbsp;
+                </td>
+            </tr>
+
+
+
+        </table>
+    </form>
+        <div id="s_box_btn">
+            <button>검색</button>
+            <button>초기화</button>
+        </div>
+
+
+
+    </div>
+    <div class="wrap">
+        <span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button>상품등록</button>
+            <button>상품수정</button>
+            <button>상품삭제</button>
+            <button>판매중지</button>
+            <button>판매재개</button>
+        </span>
+
+        <table id="item_box">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="all_checkbox"/>
+                    <th>번호 ▲</th>
+                    <th>이미지</th>
+                    <th>상품명</th>
+                    <th>구분</th>
+                    <th>상세구분</th>
+                    <th>정가</th>
+                    <th>판매가격</th>
+                    <th>재고</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="checkbox"/></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>도구리 파워 비타민</td>
+                    <td>건강기능식품</td>
+                    <td>비타민 드링크제</td>
+                    <td>1,000원</td>
+                    <td>2,000원</td>
+                    <td>1,246 EA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="checkbox"/></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>까스활</td>
+                    <td>일반의약품</td>
+                    <td>소화기관용약</td>
+                    <td>1,000원</td>
+                    <td>2,000원</td>
+                    <td>4,256 EA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="checkbox"/></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>쌍화탕</td>
+                    <td>일반의약품</td>
+                    <td>한방용약</td>
+                    <td>1,000원</td>
+                    <td>2,000원</td>
+                    <td>2,000EA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="checkbox"/></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>백셀드링크</td>
+                    <td>건강기능식품</td>
+                    <td>타우린드링크제</td>
+                    <td>1,000원</td>
+                    <td>2,000원</td>
+                    <td>1,546 EA</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="checkbox"/></td>
+                    <td>1</td>
+                    <td></td>
+                    <td>까쓰활</td>
+                    <td>일반식품</td>
+                    <td>소화기관기능식품</td>
+                    <td>1,000원</td>
+                    <td>2,000원</td>
+                    <td>1,800EA</td>
+                </tr>
+
+            </tbody>
+           
+        </table>
+
+    </div>
+
+    
+
+</section>
+
+
+<script>
+function setClock(){
+    var dateInfo = new Date(); 
+    var hour = modifyNumber(dateInfo.getHours());
+    var min = modifyNumber(dateInfo.getMinutes());
+    var sec = modifyNumber(dateInfo.getSeconds());
+    var year = dateInfo.getFullYear();
+    var month = dateInfo.getMonth()+1; //monthIndex를 반환해주기 때문에 1을 더해준다.
+    var date = dateInfo.getDate();
+    document.getElementById("time").innerHTML = hour + ":" + min  + ":" + sec;
+    document.getElementById("date").innerHTML = year + "- " + month + "- " + date;
+}
+function modifyNumber(time){
+    if(parseInt(time)<10){
+        return "0"+ time;
+    }
+    else
+        return time;
+}
+window.onload = function(){
+    setClock();
+    setInterval(setClock,1000); //1초마다 setClock 함수 실행
+}
+</script>
+</body>
+</html>

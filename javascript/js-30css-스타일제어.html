@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-css-스타일제어.html </title>
+	<style>
+		button{
+			background:blue; 
+			color:#fff;
+			border-radius:30px;
+			padding:5px 30px;
+			border:0;
+		}
+		#popup{
+			background:lightgreen;
+			height:300px; width:300px;
+			text-align:center;
+			position:relative;
+			display:none;
+		}
+		#popup>button{
+			position:absolute;
+			right:0; bottom:0;
+			background:red;
+		}
+	</style>
+</head>
+<body>
+<h2>요소를 감추고 보여주는 스타일 제어.</h2>
+<button onmouseover="showBox()">팝업창 나와!</button>
+<div id="popup">
+	팝업창입니다..
+		<button onclick="hideBox()">팝업창닫기</button>
+</div>
+<script>
+/**/
+
+	var popup = document.getElementById('popup');
+
+function showBox(){
+	popup.style.display = "block";
+
+}
+
+function hideBox(){
+	popup.style.display = "none";
+}
+
+popup.style.border = "2px solid red";
+popup.style.backgroundColor ="yellow";
+
+
+</script>
+</body>
+</html>

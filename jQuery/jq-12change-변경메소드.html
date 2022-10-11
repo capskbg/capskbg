@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2>셀렉트박스의 값이 바뀔때!</h2>
+<select name="menu">
+    <option value="커피">커피</option>
+    <option value="우유">우유</option>
+    <option value="쥬스">쥬스</option>
+</select>
+<h3 id="sel"></h3>
+<script>
+$("select[name='menu']").change(function(){
+    $("#sel").html("셀렉트박스의 값이 변경 되었습니다.");
+});
+</script>
+<h2>라디오 버튼의 값이 변경될때!</h2>
+<input type="radio" name="a"/> 첫번째 <br/>
+<input type="radio" name="a"/> 두번째 <br/>
+<input type="radio" name="a"/> 세번째 <br/>
+<input type="radio" name="a"/> 네번째 <br/>
+<h3 id="rach"></h3>
+<script>
+$("input[name='a']").change(function(){
+    $("#rach").text("라디오 버튼의 값이 변경 되었습니다.");
+});
+
+
+
+</script>
+</body>
+</html>

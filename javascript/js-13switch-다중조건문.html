@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>js-switch-다중조건문.html </title>
+</head>
+<body>
+<script>
+/*
+	점수를 받아와서
+	A+ : 100점
+	A : 90점대..
+	B : 80점대..
+	....
+	F: 60점 미만
+
+*/
+
+var jumsu = prompt("점수를 입력하시오");
+var mark =((jumsu - (jumsu % 10))/10);
+	//10의 자리수 이상을 구하는 공식 = 일의 자리수 버림
+
+
+
+switch(mark){
+	case 10 :  
+		document.write("A+입니다!");
+	break;
+	case 9 : 
+		document.write("A입니다!");
+	break;
+	case 8 : 
+		document.write("B입니다!");
+	break;
+	case 7: 
+		document.write("C입니다!");
+	break;
+	case 6: 
+		document.write("D입니다!");
+	break;
+	default : 
+		document.write("F입니다!");
+	break;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

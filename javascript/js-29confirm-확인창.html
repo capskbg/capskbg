@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-confirm-확인창.html </title>
+</head>
+<body>
+<script>
+/**/
+
+function callCon(){
+	var isCon = confirm("출력되는 문자열...");
+	if(isCon){
+		document.write(isCon + "참----");
+	
+	}else{
+		document.write(isCon + "거짓----");
+	}
+}
+
+
+
+</script>
+<button onclick="callCon()">확인/취소 창 불러오기</button>
+</body>
+</html>

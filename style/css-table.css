@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*table{
+	border:1px solid black;
+}
+
+td{border:1px solid blue;}
+th{border:1px solid green;}*/
+
+table,td,th{
+	border:1px solid #666;
+	border-collapse:collapse;
+}
+
+/*
+	border-collapse:
+		- collapse: 테이블 안 셀들의 바깥 여백을 없애서 선'만'보이게 함.
+		- separate(기본값): 테이블 안의 각 셀을 분리
+*/
+
+th{height:60px; width:100px;} /*height:auto(기본값) 자동으로 크기가 지정됨.*/
+th{vertical-align:top;}
+/*
+	vertical-align 요소의 수직정렬
+		- top, middle, bottom
+		- 숫자+단위 (ex 10px, -10pt)
+		
+		※ 인라인 요소나 인라인블록 요소에만 적용 가능.
+		
+*/
+
+#board{width:800px; border:none;}
+#board tr:nth-child(2n){
+		background:#ddd;
+		
+}
+
+#board th, #board td{ 
+	border:0px solid;
+	border-bottom:1px solid #333;
+}
+#board td{padding:10px 0px;}

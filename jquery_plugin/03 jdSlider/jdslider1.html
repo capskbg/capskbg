@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css">
+    <link rel="stylesheet" href="./css/common.min.css">
+    <style>
+        body {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .jd-slider {
+            margin: 50px 0;
+        }
+
+        .jd-slider .slide-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            border: 1px solid #888;
+        }
+
+        .jd-slider .slide-area > li {
+            border-right: 1px solid #888;
+            border-left: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .jd-slider .slide-area > li:first-child {
+            border-left: 1px solid #888;
+        }
+
+        .jd-slider .slide-area > li > a {
+            display: block;
+            height: 500px;
+            /*line-height: 200px;*/
+            font-weight: bold;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        .jd-slider .controller {
+            margin: 10px 0 0;
+        }
+
+        .jd-slider.slider3 .slide-area > li,
+        .jd-slider.slider3-2 .slide-area > li,
+        .jd-slider.slider3-3 .slide-area > li {
+            width: 50%;
+        }
+
+        .jd-slider.slider3 .slide-area > li:nth-child(2),
+        .jd-slider.slider3-2 .slide-area > li:nth-child(2),
+        .jd-slider.slider3-3 .slide-area > li:nth-child(2) {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="jd-slider slider3-3">
+        <h2>반응형 캐로셀 (무한루프 + 2칸 이상 슬라이딩)</h2>
+        <div class="slide-inner">
+            <ul class="slide-area">
+                <li>
+                    <a href="http://www.naver.com">
+                        <img src="./images/dish1.jpg">
+                        <h4>dish1</h4>
+                        <p>밥이밥</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/dish2.jpg"></a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+            </ul>
+            <a class="prev" href="#">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+            <a class="next" href="#">
+                <i class="fas fa-angle-right fa-2x"></i>
+            </a>
+        </div>
+        <div class="controller">
+            <div class="indicate-area"></div>
+        </div>
+    </section>
+    <script src="./js/jquery.jdSlider-latest.min.js"></script>
+    <script>
+	
+	/*스크립트*/
+
+    </script>
+</body>
+</html>

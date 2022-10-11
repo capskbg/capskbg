@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./rownav1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+            <li><a href="#">1depth</a>
+                <ul class="submenu">
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                    <li><a href="#">2depth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<script>
+/**/
+$(document).ready(function(){
+    /*$(".menu>li").mouseover(function(){
+          $(this).children(".submenu").stop().slideDown(1000);
+    });
+    $(".menu>li").mouseleave(function(){
+          $(this).children(".submenu").stop().slideUp(2000);
+    });*/
+
+    $(".menu>li").hover(function(){
+        $(this).children(".submenu").stop().slideDown(1000);
+    },function(){
+        $(this).children(".submenu").stop().slideUp(2000);
+    });
+
+
+});
+
+
+
+
+</script>
+</body>
+</html>

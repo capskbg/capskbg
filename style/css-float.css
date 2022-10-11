@@ -1,0 +1,64 @@
+@charset "utf-8";
+.flower{
+	/*img 태그 중에서 flower 클래스를 가진 요소 선택*/
+	padding:10px;
+	border:10px solid #ddd;
+	background:#fcf;
+	border-radius:50%;
+	height:100px; width:100px;
+	
+}
+
+.inbg{
+	/*인라인 요소인 span*/
+	background:#ffc;
+	width:150px; height:150px;
+	
+	
+}
+#blocke{
+	width:200px; 
+	height:auto;
+	background:lightgreen;
+	float:right;
+	
+}
+.inbg::before{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+/*스티커 메모*/
+
+
+.fl{
+	width:100px;
+	background:lightblue;
+	border: 1px solid #333;
+	float:left;
+}
+.inline_gnb{text-align:center;}
+.inline_gnb>li{
+	display:inline-block;
+	list-style:none;
+	width:180px;
+	height:35px;
+	line-height:35px;
+	background:#fcf;
+	text-align:center;
+}
+.gnb{
+	width:1260px;
+	margin:0 auto;	
+}
+.gnb>li{
+	float:left;
+	list-style:none;
+	width:180px;
+	height:35px;
+	line-height:35px;
+	background:#fcf;
+	text-align:center;
+}

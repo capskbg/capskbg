@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> 대입연산자 </title>
+</head>
+<body>
+<script>
+/*
+	대입연산자
+	a=b
+	일반적으로 수학에서는
+	a= b a와 b의 값은 같다 라는 의미로 사용하지만
+	-> js에서는 a라는 변수에 b라는 값을 넣어준다. 라는 뜻으로 쓰이게 됨.
+*/
+
+var x, y, res;
+x=7; y=3; //초기값
+res = x + y;
+
+
+document.write(res);
+
+
+x += y; // x = x + y
+document.write("<br/>");
+document.write(x); //x가 10인 상태
+
+x = 7; y = 3; // 변수의 초기화
+x %= y; // x = x % y;
+console.log(x);
+
+
+
+</script>
+</body>
+</html>

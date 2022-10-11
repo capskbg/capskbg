@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title> js-DOM-문서객체모델.html </title>
+</head>
+<body>
+<script>
+
+
+/**/
+
+
+
+
+</script>
+<h1 id="Title01">텍스트노드</h1>
+<p>문장1</p>
+<p>문장2</p>
+<p>문장2</p>
+<p>문장2</p>
+<p>문장2</p>
+<p>문장2</p>
+<p>문장2</p>
+<button onclick="chText()">내용변경(텍스트노드변경)</button>
+<button onclick="chStyle()">style 속성값 변경</button>
+<button onclick="chRed()">p태그의 텍스트를 빨강으로 변경</button>
+<script>
+
+/**/
+
+</script>
+<br/><br/>
+<img src="../html/images/cupcake.png" id="cupImg"/>
+<h3>아래 버튼을 누르면 컵케이크 이미지가 꽃 이미지로 변경 됨.</h3>
+<button onclick="document.querySelector('#cupImg').src='../html/images/flower.jpg'">변경!</button>
+
+<hr/>
+
+<h2 onclick="">새창으로 열기</h2>
+<script>
+
+
+/*
+	id로 특정요소(노드)를 선택하는 방법
+		.getElementById("아이디이름");
+		.querySelector("#아이디이름"); -? css 아이디 선택자 사용.
+
+
+	class로 특정요소(노드)를 선택하는 방법
+		.getElementByClassName("클래스명");
+		.querySelector(".클래스명")
+
+	tag로 특정요소(노드)를 선택하는 방법
+		.getElementByTagName("태그명");
+		.querySelector("태그명");
+
+*/
+
+
+
+
+
+
+
+
+
+function chText(){
+	window.document.getElementById("Title01").innerHTML = "변경되었습니다.";
+	window.document.querySelector("#Title01").style.color="teal";
+}
+
+var tit01 = window.document.getElementById("Title01");
+
+
+
+/*
+	자바스크립트에서 특정한 요소의 속성을 사용할 때
+
+	HTML테그선택.속성명 = "변경할 값";
+
+	background-color : CSS
+	backgroundCOlor : js
+  ->> CSS의 프로퍼티(속성)에 접근하기 위해서는 속성명에 하이픈이 있으면 제거를 하고 첫글자를 대문자로 입력.
+*/
+function chStyle(){
+	tit01.style.color="blue";
+	tit01.style.backgroundColor="yellow";
+	tit01.style.textAlign = "center";
+}
+
+var p = document.getElementsByTagName("p");
+// .getElementsByTagName() : 이 메소드로 태그를 선택해서 불어오게 되면 배열에 집어 넣어서 반환됨.
+
+document.write(typeof p);
+function chRed(){
+
+	for(var k in p){
+	p[k].style.color= "red";
+
+}
+
+};
+
+</script>
+
+</body>
+</html>

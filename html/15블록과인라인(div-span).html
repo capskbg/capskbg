@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>NEW</title>
+</head>
+<body>
+<h2>HTML의 인라인 요소와 블록요소의 차이점</h2>
+<h3>인라인 요소</h3>
+<p>
+인라인 요소의 가로 사이즈는 이미지 태그인 경우엔 이미지의
+원본 사이즈가 되고, 텍스트인 경우 텍스트의 길이 만큼 가로 사이즈가 됨.
+</p>
+	<img src="./icon/icon01.png" alt="아이콘1" />
+
+	<span>인라인 요소</span>
+	<a href="#"> a 링크 - 인라인 요소</a>
+	<input type="text" />
+
+<h3>블록요소</h3>
+	<h4>한줄에 하나씩만 들어갈 수 있음.</h4>
+	<h5>요소(태그1개)의 가로 사이즈는 100%를 사용하게 됨.</h5>
+	<h6>그래서 무조건 ! 블록요소들은 수직정렬이 됨</h6>
+	
+	<ul>
+		<li>ul태그도</li>
+		<li>블록요소</li>
+		<li>입니다</li>
+	</ul>
+	
+	<p>단락태그도 블록요소임</p>
+	
+	<div>
+		div도 블록요소임 그룹이라는 역할이 주어진 이유는 출력해보면 마진(바깥여백), 
+		패딩(안쪽여백) 등이 전혀 없음
+	</div>
+	<div>
+		div도 블록요소임 그룹이라는 역할이 주어진 이유는 출력해보면 마진(바깥여백), 
+		패딩(안쪽여백) 등이 전혀 없음
+	</div>
+	<section>
+	div도 블록요소임 그룹이라는 역할이 주어진 이유는 출력해보면 마진(바깥여백), 
+		패딩(안쪽여백) 등이 전혀 없음
+	</section>
+	
+	<hr/>
+	
+<h3>블록요소로 감싸준 이미지와, 그냥 이미지태그</h3>
+
+	<p><img src="icon/icon02.png" /> </p>
+	<p><img src="icon/icon03.png" /> </p>
+	<p><img src="icon/icon04.png" /> </p>
+	
+	<hr/>
+	<img src="icon/icon02.png" />
+	<img src="icon/icon03.png" />
+	<img src="icon/icon04.png" /> 
+	<hr/>
+	<div><img src="icon/icon02.png" /> </div>
+	<div><img src="icon/icon03.png" /> </div>
+	<div><img src="icon/icon04.png" /> </div>
+	
+	<hr/>
+	
+	<h3>인라인요소 vs 블록요소</h3>
+	
+	<p>인라인 요소 삽입: <mark>Lorem ipsum dolor sit amet,</mark> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+	labore et dolore magna aliqua. Nisl tincidunt eget <img src="icon/icon04.png" /> nullam non. <strong>Quis hendrerit dolor magna</strong> eget 
+	<span>est lorem ipsum dolor sit.</span> Volutpat is purus. <em>Pulvinar</em> elementum <time>integer</time> enim neque volutpat ac.</p>
+	
+	<p>블록 요소 삽입: <div>Lorem ipsum</div> dolor sit amet, <aside>consectetur adipiscing elit,</aside> <section>sed do eiusmod tempor incididunt</section> ut 
+	labore et dolore magna aliqua. <article>Nisl tincidunt eget</article> nullam non. <footer>Quis hendrerit dolor magna eget</footer>
+	est lorem ipsum dolor sit. Volutpat is purus. Pulvinar elementum integer enim neque volutpat ac.</p>
+
+<h2>인라인 요소를 중간에 삽입을 해도 텍스트의 흐름(기본흐름)을 방해하지 않고
+적용 되어 짐. <br/> 블록요소의 경우 텍스트의 흐름을 방해해서 수직정렬로 바꿔 버리게 됨.</h2>
+	
+</body>
+</html>

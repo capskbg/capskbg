@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*RESET CSS*/
+*{margin:0; padding:0;}
+li,ul,ol{list-style:none;}
+
+/*a link style*/
+a{text-decoration:none;}
+a:link{color:#777;}
+a:visited{color:#777;}
+a:hover{color:#777;}
+a:active{color:#777;}
+
+/*레이아웃 공통 적용 css*/
+
+.wrap{/*컨텐츠 가로 990px 중앙정렬*/
+	width:990px;
+	margin:0 auto;
+
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+/*헤더 레이아웃*/
+header{
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #007dc6;
+	height:110px;
+	box-sizing:border-box;
+	overflow:hidden;
+	margin:80px;
+}
+
+/*유틸영역 css*/
+#util_wrap{
+	position:relative;
+	height:40px;
+}
+.util_left,.util_right{
+	position:absolute;
+	font-size:12px;
+}
+
+.util_left{
+		top:10px;
+}
+.util_right{
+		top:10px; right:0;
+}
+.util_left>li,.util_right>li{
+	float:left;
+	margin:0 5px;
+}
+
+.util_left>li:first-child{
+	margin-left:0;
+	
+}
+.util_right>li:last-child{
+	margin-left:0;
+}
+
+.util_left>li>a{font-weight:bold;}
+
+/*GNB영역 CSS*/
+
+#gnb_wrap{
+	height:40px;
+	background:#d3d3d3
+}
+
+#logo{
+	width:180px; height:40px;
+	
+}
+
+#logo>a{
+	display:block;
+	height:100%;
+	background:url('./images/logo_dgb.jpg') no-repeat;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+
+
+
+.gnb>li{
+	float:left;
+	height:40px;
+
+}
+
+.gnb>li>a{
+	display:block;
+	padding:0 30px;
+	line-height:40px;
+	font-weight:bold;
+	color:#222;
+	
+}
+
+.gnb>li:nth-child(2){
+	margin-left:146px;
+}
+
+.gnb>li:last-child>a{padding-right:0;}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+p::first-letter{/*제일 첫번째에 등장하는 문자 1개*/
+	font-size:60px;
+	font-weight:bold;
+	color:red;
+}
+
+p::first-line{
+	/*
+	웹브라우저 상에서 보여지는 첫번째 줄
+	*/
+	
+	color:blue;
+}
+
+p::selection{
+	/*
+		선택된 요소안의 문자들을 드래그 했을 때 나오는 스타일
+		(블록을 잡았을 때)
+	*/
+	background-color:lightblue;
+	color:white;
+}
+
+p::before{
+	content:'★==출력될값..텍스트..';
+	background-color:pink;
+}
+p::after{
+	content:'☆';
+	background-color:green;
+}
+/*
+	::before
+		- 선택된 요소가 시작하기 전에  content property의 
+		먼저 값을 출력함
+		
+	::after
+		- 선택된 요소의 내용을 출력하고 난 후 content property의
+		값을 출력함
+		
+		※ 가상 선택자로 만들어둔 영역은 인라인 요소의 특징을
+		따른다.
+*/
+
+
+input:not([type='text']){
+	background-color:gray;
+}
+
+
+input{
+	-webkit-appearance:none;
+}

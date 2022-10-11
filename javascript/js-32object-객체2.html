@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-object-객체2.html </title>
+</head>
+<body>
+<script>
+var Family = {
+	"address" : "incheon",
+	"member" : {
+		"홍길동" : {
+			age:50,
+			gender:"남"
+		},
+	},
+	addFamily : function(age,name,gender){
+		this.member[name] = {
+			age : age,
+			gender : gender
+		}
+	}
+}
+
+Family.addFamily(98,"전우치","남");
+Family.addFamily(165,"임꺽정","여");
+
+for(var k in Family){
+	console.log(Family[k]);
+}
+/*
+
+*/
+
+</script>
+</body>
+</html>

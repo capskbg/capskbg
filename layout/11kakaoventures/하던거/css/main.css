@@ -1,0 +1,88 @@
+@charset "uth-8";
+/*RESET CSS*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+/*폰트 noto sans*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*font-family: 'Amatic SC', cursive;
+font-family: 'Noto Sans KR', sans-serif;*/
+
+img{vertical-align: top;}
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+/*공통 레이아웃*/
+
+.flex{/*플렉스 컨테이너 만들어 주는 클래스*/
+    display:flex; /*display:inline-flex*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.wrap{/*가로 사이즈 중앙정렬*/
+    width:1440px;
+    margin:0 auto;
+}
+
+/*헤더영역*/
+
+.header_bg{
+    height:800px;
+    background: url('../images/main.jpg') no-repeat center/cover;
+    position: relative;
+
+}
+.header_bg>h3{
+    position:absolute;
+    text-align: center;
+    font-size:2.3rem;
+    color:#fff;
+    top:50%; left:50%;
+    transform: translateX(-50%);
+    font-weight:700;
+}
+
+
+header{
+    border-bottom: 1px solid #fff;
+    height:80px;
+}
+
+header>.wrap{height: 80px;}
+#logo{width:250px; height:29px;}
+#logo>a{
+    display:block;
+    height:100%;
+    width:100%;
+    background: url('../images/logo.png') no-repeat;
+    overflow: hidden;
+    text-indent: -999999px;
+}
+
+#gnb{width:40%;}
+#gnb>li{width:25%; text-align: center;}
+#gnb a{
+    font-size: 1.2rem;
+    color:#fff;
+    padding: 0 10px;
+    display:block;
+}
+
+#gnb a:hover{color:gold; font-weight:700;}
+
+.header_bg>header h2{
+    width:45px; height:45px;
+    overflow:hidden;
+    
+}
+
+.header_bg>header h2 a{
+    display:block;
+    width:100%; height: 100%;
+    background: url('../images/glass.png') no-repeat center/20px;
+    text-indent: -99999px;
+}

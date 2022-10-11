@@ -1,0 +1,200 @@
+@charset "utf-8";
+@import "layout.css";
+
+
+/* investmet 영역*/
+
+#investment .flex{
+    justify-content: center;
+}
+#investment .flex>figure:nth-child(2){
+    margin:0 100px;
+}
+
+#investment figcaption{
+    margin:20px 0;
+    line-height:2;
+    font-weight:500;
+
+}
+
+/*Press 영역*/
+#press>div.flex>article{
+    height:700px;
+    width:24%;
+    background:url() no-repeat center;
+}
+#press>div.flex>article:nth-child(1){background-image: url('../images/press1.png');}
+#press>div.flex>article:nth-child(2){background-image: url('../images/press2.png');}
+#press>div.flex>article:nth-child(3){background-image: url('../images/press3.png');}
+#press>div.flex>article:nth-child(4){background-image: url('../images/press4.png');}
+
+#press>div.flex>article>a{
+    display:block;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+ul.press_con{
+    position:absolute;
+    bottom:0;
+    color:#fff;
+    padding:30px;
+    box-sizing:border-box;
+}
+ul.press_con h4{
+    font-size:1.8rem;
+    font-weight:700;
+    line-height:1.5;
+}
+span.line{
+    display:block;
+    width:80px;
+    height:3px;
+    background: gold;
+    margin:20px 0;
+}
+ul.press_con p{
+    line-height:1.3;
+    font-size:0.9rem;
+    margin:20px 0;
+}
+ul.press_con>li:last-child{text-align:right;}
+
+/*배너영역*/
+#bnr>h2{	
+    display:none;
+	visibility:hidden;
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+#bnr{
+    height:765px;
+    text-align:center;
+    background:url('../images/main2.jpg') no-repeat center/cover;
+    margin:100px 0;
+}
+
+/*스토리 영역*/
+#story>div.flex>article:nth-child(odd){
+    background: royalblue;
+}
+#story>div.flex>article:nth-child(even){
+    background: aquamarine;
+}
+#story>div.flex{flex-wrap:wrap;}
+#story>div.flex>article{
+    height:700px;
+    background:url() no-repeat center;
+}
+#story>div.flex>article:nth-child(1),
+#story>div.flex>article:nth-child(3){
+    width:19%;
+    height:700px;
+}
+#story>div.flex>article:nth-child(2){
+    height:700px;
+    width:60%;
+}
+#story>div.flex>article:last-child{
+    width:100%;
+    height:340px;
+    margin-top:20px;
+}
+
+#story>div.flex>article:nth-child(1){background-image: url('../images/story1.png');}
+#story>div.flex>article:nth-child(2){background-image: url('../images/story2.jpg');}
+#story>div.flex>article:nth-child(3){background-image: url('../images/story3.png');}
+#story>div.flex>article:nth-child(4){background-image: url('../images/story4.jpg');}
+
+
+#story>div.flex>article>a{
+    display:block;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+ul.stroty_con{
+    position:absolute;
+    color:#fff;
+    bottom:0;
+    box-sizing:border-box;
+}
+#stroty_con:nth-child(1),
+#stroty_con:nth-child(2)
+
+
+ul.story_con>li:last-child{text-align:right;}
+
+/*제휴업체 영역*/
+#family .flex{flex-flow:row wrap;}
+#family .flex>li{
+    width:360px; height:360px;
+    background: url() no-repeat center/50%;
+    overflow:hidden;
+    text-indent: -9999px;
+    box-sizing: border-box;
+}
+#family .flex>li>a{
+    display:block; 
+    width:100%; height:100%;
+}
+
+#family .flex>li:nth-child(1){
+    background-image:url('../images/ci1.png');
+    border:1px solid #666;
+}
+#family .flex>li:nth-child(2){
+    background-image:url('../images/ci2.png');
+    border-top:1px solid #666;
+    border-right:1px solid #666;
+    border-bottom:1px solid #666;
+}
+#family .flex>li:nth-child(3){
+    background-image:url('../images/ci3.png');
+    border-top:1px solid #666;
+    border-right:1px solid #666;
+    border-bottom:1px solid #666;
+}
+#family .flex>li:nth-child(4){
+    background-image:url('../images/ci4.png');
+    border-top:1px solid #666;
+    border-right:1px solid #666;
+    border-bottom:1px solid #666;
+}
+#family .flex>li:nth-child(5){
+    background-image:url('../images/ci5.png');
+    border-left:1px solid #666;
+    border-bottom:1px solid #666;
+}
+#family .flex>li:nth-child(6){
+    background-image:url('../images/ci6.png');
+    border-left:1px solid #666;
+    border-bottom:1px solid #666;
+}
+#family .flex>li:nth-child(7){
+    background-image:url('../images/ci7.png');
+    border-left:1px solid #666;
+    border-bottom:1px solid #666;
+}
+#family .flex>li:nth-child(8){
+    background-image:url('../images/ci8.png');
+    border-left:1px solid #666;
+    border-bottom:1px solid #666;
+    border-right:1px solid #666;
+}
+
+/*contact 영역*/
+#contact{
+    text-align:center;
+    margin:0 0 120px 0;
+}
+#contact button{
+    border:1px solid #666;
+    outline:none;
+    padding:10px 40px;
+    background: #fff;
+}
+

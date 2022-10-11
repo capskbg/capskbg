@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<style>
+#myslider1{
+width:400px;
+margin:30px;
+}
+#myslider2{
+width:10px;
+margin:30px;
+}
+</style>
+<script>
+// 스크립트 부분
+$(function(){
+    $("#myslider1").slider({
+        change : function(evt,ui){
+            var val = ui.value;
+            $("#res").html("숫자 : " + val);
+        }
+    });
+    $("#myslider2").slider({
+        orientation:"vertical",
+        slide:function(evt,ui){
+           var val = ui.value;
+           $("#res2").html("숫자 :  " + val); 
+        },
+        change:function(evt,ui){
+           var val = ui.value;
+           $("#res2").html("숫자 :  " + val); 
+        },
+    });
+        
+});
+</script>
+</head>
+<body>
+<h1>jquery UI 슬라이드바 만들기</h1>
+<div id="myslider1"></div>
+<div id="myslider2"></div>
+<output id="res"></output>
+<output id="res2"></output>
+</body>
+</html>

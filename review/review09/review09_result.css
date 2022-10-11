@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*관련 색상
+rgba(150,255,0,0.3)
+#00CED1
+#D8BFD8
+#6495ED
+*/
+body{
+   /**/background: url(../bg.png);
+   /**/text-align:center;
+}
+.menu{
+   border:1px solid #666;
+   padding:0; margin:0;
+   /**/background:rgba(150,255,0,0.3);
+}
+.menu>li{
+   padding:5px 10px;
+   /**/display:inline-block;
+}			/* padding 값의 적용 유무:
+				inline으로 적용 시  좌우에는 padding값이 들어가나 상하에는 padding값이 적용되지 않음 세로 크기는 무조건 폰트의 크기로 결정되어짐.
+*/
+.menu>li>a{
+   color:#000;
+   /**/text-decoration:none;
+   /**/font-size:1.2em;
+		font-weight:bold;
+}
+.sc01{
+   margin:150px 0;
+   /**/
+}
+.sc01>p{
+   width:600px;
+   padding:30px;
+   /**/display:inline-block;
+   /**/background:#00CED1;
+   /**/text-align:justify;
+   word-spacing:10px;
+}
+.sc02>p{
+   width:800px;
+   padding:10px;
+   /**/display:inline-block;
+   /**/background:#D8BFD8;
+   /**/text-align:left;
+
+   /**/line-height:2;
+}
+.sc02{margin-bottom:100px;}
+.sc03{
+   height:100px;
+   /**/background:#6495ED;
+   /**/font-size:1.2em;
+}
+
+
+
+
+

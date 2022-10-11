@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>js-conditinal-조건-삼항연산자.html </title>
+</head>
+<body>
+<script>
+
+var num1 = 7; var num2=3;
+var op, res;
+op="+";
+/*
+op가 +와 같으면 num1 + num2를 해준 결과값을 res 변수에 넣고
+op가 +가 아니면 num1 - num2 결과값을 res 변수에 넣으시오
+
+*/
+res = (op == "+") ? (num1+num2): (num1-num2);
+document.write(res);
+
+
+var input = prompt("숫자를 입력하세요");
+document.write("<hr/>");
+document.write(input);
+
+/*
+	삼향연산자를 사용해서.. input이 짝수이면 "짝수입니다"출력
+							input이 홀수이면 "홀수입니다"출력
+*/
+
+res = ((input % 2)  == 0  ) ? ("짝수입니다") : ("홀수입니다");
+document.write("<hr/>" + res);
+</script>
+</body>
+</html>

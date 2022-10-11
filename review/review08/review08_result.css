@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*
+font-family: 'Gugi', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+*{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+img{vertical-align:top;} 
+/*img 태그는 인라인 요소
+	간혹 이미지 위에 전체적으로 색을 덮는 호버효과를 줄 때 미세하게 틀어지는 2~3px이 발생함. 이를 해결하기 위한 '공식' 같은 태그조합
+*/
+body{
+   background:#e8e3de;
+   color:#666;
+   /**/text-align:center;
+   /*
+		text-align은 하위요소(후손)까지 영향을 끼치기 때문에 이런식으로 전역적으로는 사용을 잘 하지 않습니다.
+   */
+}
+
+.wrap{
+   width:800px;
+   margin:37px auto/*중앙정렬*/;
+   padding:50px;
+   background:#fff;
+   border:1px solid #c4b6a3;
+   border-radius:9px;
+   /**/
+}
+.wrap h1{
+   color:#ed1c24;
+   /**/font:900 35px/1 'Noto Sans KR', sans-serif;
+}
+.wrap ol{margin-top:47px;}
+.wrap>ol>li{
+    width: 750px;
+    margin: 32px auto 0/*상/좌우(중앙정렬)/하*/;
+    padding: 38px 0;
+    border: 1px solid #c4b6a3;
+    border-radius: 9px;
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.05);
+    /**/background:#fff;
+	/*input을 제외한 대부분의 태그(요소)들은 배경 색이 투명*/
+	
+}
+.wrap li dl{margin:22px 0 0 0;}
+.wrap li dt{
+   color:#000;
+   /**/ font:normal bold 25px/1 'Gugi', cursive;
+}
+.wrap li dd.eng{
+   margin-top:9px;
+   color:#ed1c24;
+   /**/font:italic bold 20px/1 'Lobster', cursive;
+}
+.wrap li dd{
+   margin-top:26px;
+   /**/ font:normal 100 16px/2 'Noto Sans KR', sans-serif;
+}
+

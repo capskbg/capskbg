@@ -1,0 +1,25 @@
+<div>
+	<h1></h1>
+	<h2></h2>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+p strobf {
+	border: 1px solid blue;
+} -> 후손 선택자: p태그 안에 존재하는 모든 strong 태그를 선택
+
+ul > li {
+	border: 1px solid blue;
+} -> 자식 선택자: ul태그 자식 li태그를 선택
+
+
+<form>
+	<input type="text" />
+	<input type="password" />
+	<input type="button" value="버튼" />
+	<input type="tel" />
+</form>

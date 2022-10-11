@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>	
+	<meta charset="utf-8" />
+	<title> new </title>
+	<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+	<style>
+		body{font-size:30px;}
+		.cntWrap{height:80px; text-align:center;
+			margin-right:20px; }
+		.cntWrap *{display:inline-block; }
+		p.minus, p.plus{
+			border:1px solid #333;
+			font-size:30px;
+			padding:0px 10px;
+			cursor:pointer;
+		}
+		#number_cnt{width:50px;}
+	</style>
+</head>
+<body>
+<div class="cntWrap">
+<h4>수량</h4>
+<p class="minus">-</p>
+<span id="number_cnt">0</span>
+<p class="plus">+</p>
+</div>
+<script>
+	$(function(){
+		$(".minus").click(function(){
+			var number_cnt = parseInt($("#number_cnt").text());
+			$("#number_cnt").text(number_cnt-1);  
+		});
+		$(".plus").click(function(){
+			$("#number_cnt").text(parseInt($("#number_cnt").text())+1);
+		});
+	});
+</script>
+</body>
+</html>

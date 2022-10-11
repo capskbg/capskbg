@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-for반복문.html </title>
+</head>
+<body>
+<script>
+/*
+	for(초기값; 조건식;증감식){
+	조건식이 참인동안 실행되는 실행문ㄷ	
+	}
+*/
+
+var limit = prompt("숫자를 입력하시오 입력한 숫자만큼 벌어보이게 될거에요.")
+for(var i = 1; i <= limit; i++){
+	document.write("☆");
+
+
+}
+
+document.write("숫자를 입력하세요 입력한 숫자만큼 별이 보이게 될거에요.");
+document.write("<hr/>");
+
+/*for 문으로 1부터 9까지의 합을 출력 해보시오*/
+
+var sum = 0;
+
+for(var k = 1; k < 10; k++){
+	document.write("<br/> k의 값 : " + k);
+	document.write("<br/> k를 더하지 않은 sum의 : " + sum);
+	sum += k ;
+
+	document.write("<br/>sum += k: " + sum);
+}
+
+document.write("<hr/> 최종 sum : " + sum);
+
+
+</script>
+</body>
+</html>

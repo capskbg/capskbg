@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+h1{font-family:'Times New Roman', '나눔고딕', '돋움', 'Helvetica' sans-serif;}
+
+
+
+/*
+font-family
+ 글꼴을 성정하는 property로 다중으로 설정 가능(여러개의 글꼴을 한번에 설정할 수 있음)
+ 왼쪽부터 우선순위가 지정이 되는데 해당 글꼴이 존재하지 않으면, 
+ 다음으로 이동하여 글꼴을 적용해줌.
+ 
+ 글꼴의 구분은 ,(콤마)로 하고 폰트명을 쓸때는 ''(작은따옴표)로 묶어서 사용하는게 좋다. --> 폰트이름을 한글로 사용하는 경우 반드시 묶어야 하고, 영문은 그냥 써도 되기 때문
+ 
+ ※ 기본 웹브라우저 폰트인 sans-serif, serif의 경우 ''를 생략해서 사용해도 됨.
+ --> ie}(인터넷 익스플로러)에서 sans-serif , serif 적용할 때 ''를 사용하면 안 되기 때문에
+ 
+*/
+
+@font-face {
+    font-family: 'OKDDUNG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{font-family: 'Edu VIC WA NT Beginner', cursive;
+	font-size: 16pt; /* 12pt=1em=100%=16px /small,large */
+	font-weight:100;
+}
+/*
+	font-size
+	선택하나 요소의 글자 크기를 지정할 때 쓰는  property 숫자 px(숫자+단위 형태로 쓸 수 있음. 단위는 반드시 작성해야함)
+	- 주로 사용하는 단위 : pt, px, ->고정 //// em, %, rem-> 가변
+	- 뷰포트 관련 단위 : vw, vh, vmin, vmax, ex, ch...
+	>> large, small
+	
+	font-weight(글꼴 두께)
+	글자의 두께를 지정할 때 사용하는 property로 글꼴마다 제공해주는 굵기가
+	다르기 때문에 적용할 수 있는 값도 다르다.
+		- normal(기본값), bold(굵게), lighter(얇게), bolder(더 굵게), inherit(상송)
+		
+		=> 글꼴마다 상이하지만 ㅣ기본적으로 400(regular), bold 까지는 웬만하면 쓸 수 있다.
+*/
+
+
+
+/*
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Pacifico&display=swap');
+
+
+	font-family: 'Edu VIC WA NT Beginner', cursive;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Pacifico', cursive;
+*/
+
+address{
+	font-style:normal;
+}
+
+/*
+	font-style
+	글자의 스타일을 지정(기울임 관련) 할 때 쓰는 프로퍼티
+	- normal, italic, oblique, inherit
+*/
+
+p{font-variant:small-caps;}
+/*
+	font-variant (영문자)
+	 글자의 대소문자 구분 및 변형에 관련된 property로 영문자에만 적용
+	- normal, small-caps(소문자를 대문자로 만들어줌)
+*/
+
+p{line-height:2.5em;}
+/*
+	line-height
+		글자의 줄 간격을 지정해주는 propert
+		숫자만 쓰게되면 em단위를 생략한 것.(배수)
+*/

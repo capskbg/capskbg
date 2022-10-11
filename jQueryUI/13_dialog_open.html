@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+
+    $("#op").button();
+    $("#op").click(funtion(){
+        $("#msg").dialog("open");
+    });
+    $("#msg").dialog({
+        modal:true,
+        width:600,
+        height:100,
+        resizable:true,
+        draggable:false,
+        minHeight:80,
+        maxwidth:1200,
+        position:{
+            my : "left top",
+            at : "left+100px top+10px"
+        },
+        autoOpen:false
+    });
+
+});
+</script>
+</head>
+<body>
+<button id="op">클릭하면 대화상자 열림</button>
+<div id="msg" title="대화상자의 제목부분">
+대화상자의 내용이 들어갑니다.
+</div>
+
+</body>
+</html>

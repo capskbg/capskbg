@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <h3>회원가입 폼</h3>
+    <h5 style="color:red;">아래 항목중에 하나라도 작성(선택)하지 않으시면 회원가입 불가합니다.<h5>
+    <form name="form1" id="join">
+    <p>아이디 : <input type="text" name="u_id"/></p>
+    <p>비밀번호 : <input type="password" name="u_pw"/></p>
+    <p>비밀번호확인 : <input type="password" name="u_pw2"/></p>
+    <p>주소 : <input type="text" name="addr" /></p>
+    <p>성별 : 
+        <input type="radio" name="gender" value="여자-value" />여자
+        <input type="radio" name="gender" value="남자-value" />남자
+    </p>
+    <p>이메일 : <input type="email" name="email" /></p>
+    <p>취미 : 
+        <input type="checkbox" name="hobby" value="축구-value"/> 축구
+        <input type="checkbox" name="hobby" value="야구-value"/> 야구
+        <input type="checkbox" name="hobby" value="농구-value"/> 농구
+        <input type="checkbox" name="hobby" value="배구-value"/> 배구<br/>
+    </p>
+    <p>직업 :
+        <select name="job">
+            <option>----선택하세요----</option>
+            <option value="프로그래머-value">프로그래머</option>
+            <option value="퍼블리셔-value">퍼블리셔</option>
+            <option value="디자이너-value">디자이너</option>
+            <option value="기획-value">기획</option>
+        </select>
+    </p>
+    <p>
+    <input type="submit" value="회원가입">
+    <input type="reset" value="다시작성">
+    </p>
+    </form>
+    <script src="./join.js"></script>
+</body>
+</html>

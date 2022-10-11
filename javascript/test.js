@@ -1,0 +1,1 @@
+document.write("외부js에서 작성된 텍스트입니다.")

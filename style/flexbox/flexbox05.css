@@ -1,0 +1,47 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+h3,p{text-align:center;}
+
+.wrapper{
+	width:600px;
+	height:200px;
+	background:#ccc;
+	margin:0px auto 20px;
+	display:flex;
+	flex-flow:row wrap;
+	/**/
+}
+.wrapper>div{
+	background:rgba(0,255,0,0.6);
+	color:#fff;
+	border:2px solid green;
+}
+
+#con1>div{
+	flex-grow:1;
+	/*
+		flex-grow : 플렉스아이템 확장관련 프로퍼티
+		-1 이면 하위요소 가로크기 무시가 되고 부모요소에 모든 
+		플렉스 아이템들이 꽉채워져서 들어감.
+	*/
+	flex-shrink:1;
+	/*
+	flex-shrink : 플렉스아이템 축소관련 프로퍼티
+		- 0이면 부모요소의 크기가 플렉스아이템보다 작아져도 크기가 줄어들지 않고 원래 크기로 유지
+		- 1이면 부모요소의 크기가 플렉스 아이템보다 작아질 때 부모요소의 크기에 맞추어 줄어든다.
+		
+	*/
+	flex-basis:0;
+	/*
+		flex-basis : 플렉스아이템의 기본크기를 결정하는 속성.. 기본 값은 auto width속성에 사용하는 모든 단위 함께 사용가능.
+		
+		단위와 함께 쓰게되면 플렉스 아이템의 사이즈는 당연히 고정이 됨.
+		
+		속성값이 0이면 각 항목들이 1:1:1로 가로크기가 결정됨.
+	*/
+}
+
+#con2{width:1200px;}
+#con2>div:nth-child(2){flex:5;} /* =flex:5 1 0;*/
+
+/* flex2; =flex:2 1 0;*.

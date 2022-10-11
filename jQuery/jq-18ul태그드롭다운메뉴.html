@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximun-scale=1, user-scalable=yes"/>
+	<meta charset="utf-8" />
+	<title> new </title>
+	<script src="https://code.jquery.com/jquery-3.2.0.js"></script>
+	<style>
+		*{list-style:none;}
+		#fruits{width:152px;}
+		#fruits>li{background:linghtpink; cursor:pointer;padding:10px; border:pink 1px solid; position:relative;}
+		#fruits>li.active ~ li{display:none;}
+		#fruits>li.active::after{
+			content:'▼';
+			color:blue;
+			position:absolute;
+			right:10px;
+			transition: all .2s;
+		}
+		#fruits:hover>li.active::after{transform:rotate(180deg); transition: all .2s;}
+		#fruits>li:not(.active){text-align:center;}
+	</style>
+</head>
+<body>
+<ul id="fruits">
+	<li class="active">따알기따알기</li>
+	<li>오렌지오렌지</li>
+	<li>포오도포오도</li>
+	<li>사아과사아과</li>
+	<li>감감감감감감</li>
+</ul>
+<Select>
+	<option>ddd</option>
+	<option>dddddddddddd</option>
+	<option>ddd</option>
+	<option>dddaaaaaaaaaa</option>
+</Select>
+<script>
+/**/
+
+$(function(){
+	$("#fruits").hover(function(){
+	$(this).children(".active").nextAll("li").css("display","block");
+	},function(){
+		$(this).children(".active").nextAll("li").css("display","none");
+	});
+	$("#fruits>li").click(function(){
+		var chText = $(this).text();// 바꿀 텍스트
+		var defText = $("#fruits>li.active").text(); // 기존에 선택되어져 있던 요소의 텍스트
+		$("#fruits>li.active").text(chText);
+		// 바꿀 텍스트(클릭한 리스트의 텍스트)
+		$(this).text(defText);
+		$("#fruits>li.active").nextAll("li").css("display","none");
+	});
+});
+</script>
+</body>
+</html>

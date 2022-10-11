@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+//스크립트 부분
+$(function(){
+	$.datepicker.setDefaults($.datepicker.regional['ko']);
+	$(".seldate").datepicker({
+		firstDay:1,
+		dayNamesMin:["일","월","화","수","목","금","토"]
+	});
+});
+</script>
+</head>
+<body>
+<h1>달력 불러오기</h1>
+<form>
+	선택 1 : <input type="text" class="seldate"><br/>
+	선택 2 : <input type="text" class="seldate"><br/>
+
+	<input type="date" />
+</form>
+
+</body>
+</html>

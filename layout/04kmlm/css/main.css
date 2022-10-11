@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import "layout.css";
+
+
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+
+
+
+#gnb{font-size: 1.5rem;}
+#gnb>h1{width:250px; height:100%; text-align: center; }
+#gnb>h1 img{width:auto; height:140px; padding: 5px 0;} 
+
+#gnb a{width:50%; height:100%; display: block;}
+
+
+/*contents 영역*/
+.box_con1{position: relative;}
+#contents a{ display: block;}
+.box>.box_con1>a{position: absolute; top:0; left:0; color:#fff; line-height: 3; padding:4.5% 0 0 4.5%; background-color: #f15f38;}
+.box_con1>a>h3{ font-size: 2rem;}
+.box_con1>a>p{ font-size: 1.5rem; text-align: center;} 
+
+
+
+.head{width:100%; height:auto; background:#e4e2c9;   border-bottom:2px solid #789395; padding: 2% 0; box-sizing: border-box; }
+.head>a:first-child{float:left; width:65%;height:100%; text-align: center;}
+.head>a:last-child{float:right; width:25%;height:100%; text-align: right;}
+
+.head::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+/*작가*/
+#author_head{color: #333;}
+#author_head>a:first-child{ font-size: 1.5rem;}
+#author{width:100%; height:90%; }
+#author>div, #author>a{float:left;}
+#author>div{ width:50%; height:100%; line-height: 1.5; text-align: center;}
+#author>a{ width:50%; height:100%; background: url('../images/찔레꽃.jpg') no-repeat center/cover;}
+
+
+/*잡지*/
+
+#magazine_head{color: #333;}
+#magazine_head>a:first-child{ font-size: 1.5rem;}
+
+#magazine{width:100%; height:90%; }
+#magazine>a{width: 100%;height:100%; text-align: center;}
+
+
+#magazine img{width:49%; height:100%; }
+
+
+/*설립자*/
+
+#founder>.head{padding: 4% 0; text-align: center;}
+#founder>.head>a:first-child{font-size: 1.5rem;}
+#founder>a{width:100%; height:90%; background: url(../images/founder.png) no-repeat center/contain;}
+
+/*행사 · 이벤트*/
+#event>.head>a:first-child{font-size: 1.5rem;}
+#event>ul{line-height: 2.5; font-size: 1.4rem; }
+
+#event>ul>li>a{text-overflow: ellipsis; white-space:nowrap;  overflow:hidden; }    
+
+/*제휴사이트*/
+
+#coo>.head>a:first-child{font-size: 1.5rem;}
+
+#coo{ position: relative;}
+
+#coo>a>img{width:200px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+
+
+/*전시안내*/
+#exhibit_head>.head>a:first-child{font-size:1.5rem;}
+#exhibit>a{width:100%; height:auto; margin-bottom: 8%}
+#exhibit figcaption{font-size: 1.5rem; font-weight: bold; padding-bottom: 5px; text-align: right; color: #333 }
+#exhibit img{width:295px;}
+
+
+/*소장자료*/
+#collect::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+#collect>.head>a:first-child{font-size: 1.5rem;}
+#collect>a{width:49%; height:80%; float:left; padding-top: 5%; box-sizing: border-box;}
+#collect>a>img{width:100%; height: 100%;}
+#collect>dl{width:49%; height:80%; float:left; line-height: 2; font-size: 1.2rem; 
+    text-align: center;  padding-top: 5%; box-sizing: border-box;}
+#collect>dl>dd{text-align: left;}
+
+/*기증품*/
+
+#donate::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+#donate>.head>a:first-child{font-size: 1.5rem;}
+#donate>a{width:49%; height:80%; float:left; padding-top: 5%; box-sizing: border-box;}
+#donate>a>img{width:100%; height: 100%;}
+#donate>dl{width:49%; height:80%; float:left; line-height: 2; font-size: 1.2rem; 
+    text-align: center; padding-top: 5%; box-sizing: border-box;}
+#donate>dl>dd{text-align: left;}
+
+
+/*문학관을 찾은 사람들*/
+
+#visit>a:first-child{width:100%; height:auto; background:#e4e2c9; font-size: 1.5rem; text-align: center; 
+     border-bottom:2px solid #789395; padding: 2% 0; box-sizing: border-box;  }
+#visit>figure{width: 100%; height:240px; }
+#visit figcaption{font-size: 1.3rem; text-align: center; margin: 5px 0;}
+
+
+#visit img{width:100%; height:170px;}
+
+
+/*오시는 길 */
+
+#location>.head>a:first-child{font-size: 1.5rem;}
+
+#location>figure{width:100%; height:93%;}
+#location>figure>a{width:100%; height:60%;}
+#location>figure img{width:295px; height:260px;}
+#location>figure>figcaption{line-height: 1.5; text-align: center; font-size: 1.2rem; }
+#location>figure>figcaption>h3{font-size: 1.8rem; font-weight: bold;}
+
+
+
+
+
+/*공지사항*/
+#notice>.head>a:first-child{font-size: 1.5rem;}
+
+
+#notice>article{font-size: 1.2rem; line-height: 1.2;}
+#notice>article>h3{font-size: 1.5rem; font-weight: bold;}
+
+
+/*푸터*/
+.footer{width:1280px; height:200px;  margin: 0 auto; position: relative; }
+#footer_util{position: absolute; top:10%; right:0; width:500px; height:100px;  }
+#footer_util>li{float:left; padding: 0 2%; }
+
+
+#footer_addr{position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); }
+#footer_addr>li{float:left;}
+#footer_addr address{margin:40px 10px 0 20px; line-height:2;}
+
+#footer_addr img{width:200px; height:120; }
+
+#footer_util::after,#footer_addr::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}

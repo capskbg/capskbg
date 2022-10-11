@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+    <link href=".css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script>
+/*
+숫자를 입력 받아와서 (prompt)
+
+3~5을 입력 했을 경우 
+        "봄입니다"를 출력 
+6~8을 입력 했을 경우
+        "여름입니다"를 출력
+9~11을 입력 했을 경우
+        "가을입니다"를 출력
+12,1,2 를 입력 했을 경우 
+        "겨울 입니다"를 출력
+*/
+
+var month = prompt("1~12 사이의 숫자를 입력하시오.");
+
+if((month >= 3) && (month <=5 )){ // 3~5 봄출력
+    /*  T       &&     T   = T
+    
+    (month >= 3):변수 3보다 크거나 같으면 3이상
+        (month <= 5 ): 변수가 5보다 작거나 같으면.. 5이하
+    */
+
+    document.write("봄");
+}else if((month >= 6) && (month <= 8 )){//6 ~8 여름 출력
+    document.write("여름");
+}
+else if((month >= 9) && (month <= 11 )){//9~11 가을 출력
+    document.write("가을");
+}
+else if((month == 12) || (month == 1 ) || (month == 2 )){// 12, 1, 2 겨울 출력
+    document.write("겨울");
+}
+else{
+    document.write("1~12 사이의 숫자를 입력하십시오");
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

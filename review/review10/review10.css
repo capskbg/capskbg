@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*
+font-family: 'Cute Font', cursive;
+font-family: 'Song Myung', serif;
+*/
+
+
+/* RESET CSS */
+*{
+	margin:0; padding:0;
+}
+
+ul,ol,li{list-style:none;}
+
+
+/*a 링크 스타일*/
+a, a:link, a:visited,
+a:hover, a:active{
+	text-decoration:none;
+	color:#fff;
+}
+/*문서 전체 스타일*/
+body{background:url('../pt.jpg');}
+/*레이아웃 CSS*/
+header,section#tableWrap{
+		width:1200px;
+		
+		margin:0 auto;
+}
+
+/*헤더 스타일*/
+
+#gnb>ul{text-align:center}
+#gnb>ul>li{
+		display:inline-block;
+		width:220px;
+		height:40px;
+		vertical-align:middle;
+}
+#gnb>ul>li:nth-child(odd){background:navy;}
+#gnb>ul>li:nth-child(even){background:darkgreen;}
+
+#gnb>ul>li>a{line-height:40px;}
+/*
+	a태그는 인라인 요소
+	- 인라인 요소의 세로 크기는 폰트의 사이즈만큼만 가짐.
+*/
+
+#tableWrap{
+	height:500px;
+	background:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(64,192,174,0.7) 14%, rgba(84,192,161,1) 23%, rgba(117,191,138,0.6) 38%, rgba(161,190,108,0.7) 58%, rgba(168,190,104,0.8) 61%, rgba(253,187,45,1) 100%);
+	padding:20px 0;
+}
+th,td{
+	background:rgba(255,255,255,0.3);
+	padding:20px;
+	border-radius:5px;
+}
+
+table{margin:0 auto;}
+
+table>caption{
+			font:bold 2em/1 'Cute Font', cursive;
+			color:#fff;
+			margin:10px 0;
+}
+
+th[scope="col"],th[scope="row"]{
+	background:rgba(255,255,255,0.6);
+}
+
+#prd1st>tbody>tr>td:last-child{
+	color:red;
+}
+
+#prd1st>tfoot>tr>td{
+	color:blue;
+}
+
+

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>NEW</title>
+	<style>
+	table, td, th{
+			border:1px solid black;
+			border-collapse:collapse;}
+		table{width:20%;}
+	</style>
+</head>
+<body>
+<h3>기본 테이블 태그</h3>
+<table> 
+<!-- border 속성은 HTML5에서는 CSS에서 수정해줘야함.-->
+	<tr>
+		<td>칸(cell)</td>
+	</tr>
+</table>
+
+<h3>1행 3열의 3x3 테이블</h3>
+<table>
+	<tr><!--첫번째 행-->
+		<td>1행 1열</td><!-- 1행의 1열(칸)-->
+		<td>1행 2열</td><!-- 1행의 2열(칸)-->
+		<td>1행 3열</td><!-- 1행의 3열(칸)-->
+	</tr>
+	<tr><!--두번째 행-->
+		<td>2행 1열</td><!-- 2행의 1열(칸)-->
+		<td>2행 2열</td><!-- 2행의 2열(칸)-->
+		<td>2행 3열</td><!-- 2행의 3열(칸)-->
+	</tr>
+	<tr><!--세번째 행-->
+		<td>3행 1열</td><!-- 3행의 1열(칸)-->
+		<td>3행 2열</td><!-- 3행의 2열(칸)-->
+		<td>3행 3열</td><!-- 3행의 3열(칸)-->
+	</tr>
+</table>	
+
+
+<h3>59p 결과 ex1-19</h3>
+
+<table>
+	<tr>
+		<th>교과목</th>
+		<th>점수</th>
+	</tr>
+	<tr>
+		<th>HTML</th>
+		<td>93</td>
+	</tr>
+	<tr>
+		<th>CSS</th>
+		<td>92</td>
+	</tr>
+	<tr>
+		<th>평균</th>
+		<td>92.5</td>
+	</tr>
+</table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<h3>열제목 지정하기</h3>
+<table>
+	<tr>
+	 <th>이름</th>
+	 <th>주소</th>
+	 <th>전화번호</th>
+	</tr>
+	<tr>
+		<td>이정우</td>
+		<td>강원도 속초시 교동</td>
+		<td>010-1111-1111</td>
+	</tr>
+	<tr>
+		<td>박좋은</td>
+		<td>서울시 서초구 방배동</td>
+		<td>010-2222-3333</td>
+	</tr>
+	<tr>
+		<td>이연지</td>
+		<td>부천시 소사구 소사동</td>
+		<td>010-3333-3333</td>
+	</tr>
+</table>
+
+<h3>2개 열 병합하기</h3>
+
+<table>
+	<tr>
+	 <th>이름</th>
+	 <th colspan="2">전화번호</th>
+	 
+	</tr>
+	<tr>
+		<td>이정우</td>
+		<td>02-325-0863</td>
+		<td>010-1111-1111</td>
+	</tr>
+</table>
+
+<h3>2개 행 합치기</h3>
+<table>
+	<tr>
+		<th>이름</th>
+		<td>이정우</td>
+	</tr>
+	
+	<tr>
+		<th rowspan="2">전화번호</th>
+		<td>02-123-1234</td>
+	</tr>
+	
+	<tr>
+		<td>010-123-1234</td>
+	</tr>
+</table>
+
+<br/><br/><br/><br/><br/>
+
+<table>
+	<tr>
+		<td colspan="3">1</td>
+	</tr>
+	
+	<tr>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+
+
+</table>
+<br/>
+<br/>
+<br/>
+<table>
+	<tr>
+		<td rowspan="2">1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>5</td>
+	</tr>
+
+</table>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<table>
+	<tr>
+		<th colspan="6">한국의차</th>
+	</tr>
+	
+	<tr>
+		<th rowspan="6">뿌리차</th>
+		<td>인삼차</td>
+		
+		<th rowspan="9">과일차</th>
+		<td>수정과</td>
+		
+		<th rowspan="5">잎차</th>
+		<td>뽕잎차</td>
+	</tr>
+	
+	<tr>
+		<td>당귀차</td>
+		<td>유자차</td>
+		<td>감잎차</td>
+	</tr>
+	
+	<tr>
+		<td>생강차</td>
+		<td>구기자차</td>
+		<td>솔잎차</td>
+	</tr>
+	<tr>
+		<td>칡차</td>
+		<td>대추차</td>
+		<td>국화차</td>
+	</tr>
+	
+	
+	<tr>
+		<td>둥글레차</td>
+		<td>오미자차</td>
+		<td>이슬차</td>
+	</tr>
+	<tr>
+		<td>마차</td>
+		<td>매실차</td>
+		<th rowspan="4">기타</th>
+		<td>두충차</td>
+	</tr>
+	
+	<tr>
+		<th rowspan="3">곡물차</th>
+		<td>보리차</td>
+		<td>모과차</td>
+		<td>영지버섯차</td>
+	</tr>
+	<tr>
+		<td>옥수수차</td>
+		<td>산수유차</td>
+		<td>귤강차</td>
+	</tr>
+	<tr>
+		<td>현미차</td>
+		<td>댕자차</td>
+		<td>쌍화차</td>
+	</tr>
+	
+	
+</table>
+
+</body>
+</html>

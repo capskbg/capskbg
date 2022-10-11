@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title>js-elseif-중첩조건문.html </title>
+</head>
+<body>
+<script>
+/*
+	조건을 여러개 걸어 둘 때 사용하는 else if
+
+	- 90점 ~ 100점 : A학점입니다.
+	- 80점 ~ 89점 : B학점입니다.
+	- 70점 ~ 79점 : C학점입니다.
+	- 60점 ~ 69점 : D학점입니다.
+	- 60점 미만 : F학점입니다.
+	* 100점 이상을 입력을 했을 때, 음수를 입력 했을 때 조건 X
+*/
+
+
+//90~ 100점 :A학점입니다 ---- 참으로 만드는 조건식 작성
+
+var jumsu = prompt("0~100점 사이의 점수를 입력하시오");
+
+
+
+if((jumsu >= 90) && (jumsu <= 100)){//90~100점:A학점입니다
+	document.write("A학점입니다.");
+}else if((jumsu >= 80) && (jumsu <= 89)){ // 80 ~ 89점 : B학점입니다.
+	document.write("B학점입니다.");
+}else if((jumsu >= 70) && (jumsu <= 79)){// 70 ~ 79점 : C학점입니다.
+	document.write("C학점입니다");
+}else if((jumsu >= 60) && (jumsu <= 69)){// 60 ~ 69점 : D학점입니다.
+	document.write("D학점입니다");
+}else if(jumsu < 60){// 60점 미만: F학점입니다.
+	document.write("F학점입니다");
+}else{// 위에 있는 조건들에 포함하지 않은 경우
+	document.write("잘못 입력하셨습니다. 0~100 사이의 점수를 다시 입력하십시오");
+
+}
+
+
+
+
+</script>
+</body>
+</html>

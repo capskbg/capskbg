@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<style>
+#selList {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:20%;
+}
+#selList li {padding:5pt;}
+#selList .ui-selecting {
+	background-color:pink; 
+	opacity:0.2;
+}
+#selList .ui-selected {
+	background-color:skyblue; 
+	opacity:1; 
+	color:red;
+}
+
+</style>
+</head>
+<body>
+<h1>목록 선택</h1>
+
+<ol id="selList">
+	<li class="ui-widget-content">1번목록</li>
+	<li class="ui-widget-content">2번목록</li>
+	<li class="ui-widget-content">3번목록</li>
+	<li class="ui-widget-content">4번목록</li>
+	<li class="ui-widget-content">5번목록</li>
+</ol>
+<ol id="selList2">
+	<li class="ui-widget-content">1번목록</li>
+	<li class="ui-widget-content">2번목록</li>
+	<li class="ui-widget-content">3번목록</li>
+	<li class="ui-widget-content">4번목록</li>
+	<li class="ui-widget-content">5번목록</li>
+</ol>
+
+
+<script>
+// 스크립트 부분
+$(function(){
+	$("#selList").selectable();
+	$("#selList2").sortable();
+});
+
+</script>
+</body>
+</html>

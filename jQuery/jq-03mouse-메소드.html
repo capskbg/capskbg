@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+    <style>
+        .out{
+            width: 500px; height:200px;
+            background: #ccf;
+            border:2px solid #cfc;
+            text-align:center;
+            line-height:80px;
+        }
+    </style>
+</head>
+<body>
+<div class="out">
+    <p class="notice">제이쿼리 마우스 이벤트</p>
+    <p class="cnt">0</p>
+</div>
+<script>
+var i = 0; // 전역변수(어디서든 불러다가 쓸 수 있도록 전역변수)
+/*
+상자안에 마우스가 들어가면  : mouseenter()
+- .notice 안의 텍스트가 '들어옴' 으로 변경
+- .cnt 안에 있는 숫자가 증가
+*/
+
+$("div.out").mouseenter(function(){
+    $(".notice").text("들어옴");
+    $(".cnt").text(++i);
+});
+
+/*
+상자에서 마우스가 빠져나가면 
+- .notice 안의 텍스트가 '나감' 으로 변경
+- .cnt 안에 있는 숫자는 변동 없음.
+*/
+$("div.out").mouseleave(function(){
+    $(".notice").text("나감");
+    $(".cnt").text(i);
+});
+
+
+/*상자를 클릭하고 있으면.
+- .notice 클래스는 감춰줄 것: hide()
+- .cnt 클래스는 '상자를 누르고 있는 중~' 변경
+*/
+$("div.out").mousedown(function(){
+    $(".notice").hide();
+    $(".cnt").text('상자를 누르고 있는 중~');
+});
+
+$("div.out").mouseup(function(){
+    $(".notice").show();
+    $(".cnt").text(i);
+});
+
+</script>
+
+
+</body>
+</html>

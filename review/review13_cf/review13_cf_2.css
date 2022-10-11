@@ -1,0 +1,99 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+li,ul,ol{list-style:none;}
+
+/*a link style*/
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+/*레이아웃 공통 적용 css*/
+
+.wrap{/*컨텐츠 가로 1280px 중앙정렬*/
+	width:1440px;
+	margin:0 auto;
+
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+.util_bg{background:#000000; height:40px;}
+
+.gnb_bg{background:#231f20; height:100px;}
+
+
+.util_left{
+	float:left;
+}
+
+.util_left>li{
+	float:left;
+	height:40px;
+	line-height:40px;
+}
+
+.util_left>li>a{
+	color:#dddddd;
+	display:block;
+	padding:0 10px;
+	font-size:0.8em;
+}
+
+.util_right{
+	float:right;
+}
+
+.util_right>li{
+	float:left;
+	height:40px;
+	line-height:40px;
+}
+
+.util_right>li>a{
+	color:#dddddd;
+	display:block;
+	padding:0 10px;
+	font-size:0.8em;
+}
+
+#logo{
+	width:200px; height:100px;
+	float:left;
+
+}
+
+#logo>a{
+	background:url('./images/dd_logo.png') no-repeat center/200px;
+	display:block;
+	width:100%; height:100px; 
+	text-indent:-999px;
+	overflow:hidden;
+	padding:0 10px;
+}
+
+.gnb{float:right;}
+
+.gnb>li{
+	float:left;
+	height:100px;
+	line-height:100px;
+}
+
+.gnb>li>a{
+	color:#dddddd;
+	font-weight:bold;
+	font-size:1.2em;
+	padding:0 30px;
+}
+
+
+.gnb>li:hover>a{
+	color:#db3d21;
+}

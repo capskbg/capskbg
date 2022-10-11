@@ -1,0 +1,31 @@
+@charset "utf-8";
+h3{text-align:center;}
+p{text-align:center; font-weight:bold;}
+
+.wrapper{
+	width:600px;
+	height:300px;
+	margin:0px auto 20px;
+	
+	border:2px solid black;
+	background:#ccc;
+	display:flex;
+	flex-flow:row wrap;
+	 /**/
+}
+.wrapper div{
+	width:210px;
+	background:#f3f3f3;
+	border:2px solid #cfc;
+}
+
+#con1{align-content:flex-start;}
+/*상단부터 시작*/
+#con2{align-content:flex-end;}
+/*하단부터 시작*/
+#con3{align-content:center;}
+/*세로축(수직) 중앙정렬*/
+#con4{align-content:space-between;}
+/*상하 양끝 정렬*/
+#con5{align-content:space-around;}
+/*여백 포함하여 상하 양끝 정렬*/

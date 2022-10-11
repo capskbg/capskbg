@@ -1,0 +1,50 @@
+@charset "utf-8";
+body{
+	background: url('../img/bg_grid.png') #F0FFFF;
+}
+
+input[type="text"]{background:transparent;}
+p,input,h2,div,span{color:currentcolor;}
+
+/*
+
+CSS에서 색상을 적용하는 방법
+ 1. 색상 명칭을 쓰는 방법(키워드, 텍스트로 작성)
+  transparent = 투명
+  currentcolor = 현재컬러
+	기타 색상명칭에 관련된 텍스트.. X11 웹 컬러
+
+ 2. HEX (16진수) 컬러 : #000000
+  
+	#00 00 00
+	  R  G  B
+	  
+ 3. RGB 10진수 컬러 : rgb(red,green,blue)
+
+		rgb(0,0,0)
+		
+			ex) rgb(0,0,0)       = 검은색 = #000000
+				rgb(255,255,255) = 흰색   = #ffffff
+				
+ 3. RGBA 알파채널 컬러
+		
+		rgba(0,0,0,0.5)
+			ex) rgba(0,0,0,0.5)
+				마지막에 해당하는 alpha 부분에는 0~1 사이의 소수점 값이 들어감
+					0= 투명 = opacity 0%
+					1= 불투명 = opacity 100%
+					
+ 5. hsla(hue, saturation, lightness, alpha)
+	hsl(hue, saturation, lightness)
+		hue : 숫자
+		saturation : 숫자%
+		lightness : 숫자%
+		alpha : 0~1 사이 소수점
+
+
+*/
+
+
+div{background:#ffc;} /* #ffffcc*/
+span{background:#363;} /* #336633*/
+h2{background:#fa53d1;}

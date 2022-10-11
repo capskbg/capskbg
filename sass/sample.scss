@@ -1,0 +1,72 @@
+.list{
+    li{
+        list-style: none;
+
+    }
+}
+/*변수 사용*/
+$default: #333333;
+$sub-color:#fa574e;
+.text{
+ color: $default;
+ background: $sub-color;
+}
+
+/*mixin 선언*/
+@mixin box-style($default, $sub-color, $width){
+    width:$width;
+    background: $sub-color;
+    
+}
+
+.sample{
+    @include box-style(100px,red,500px);
+}
+@mixin  clear {
+    
+        content:'';
+        width:0; height:0;
+        display:block;
+        clear:both;
+        visibility:hidden;
+     
+
+}
+.box{
+    li{float:left;}
+    &::after{@include clear}
+
+}
+
+.sample{
+    li{
+        a{
+            text-align: center;
+            @at-root .sample2{
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+.box2{
+    /*css에서 축약형태 쓸대 접두어에 좀 신경을 씀
+        border-top;
+        border-left
+        margin-top ->> margin:
+        padding-top
+    */
+    border: { 
+        left:$default;
+        top:$sub-color;
+        bottom:red;
+        right:lime
+        
+    }
+    margin: {
+        left:20px;
+        bottom: 20px;
+        right:300px;
+    }
+}

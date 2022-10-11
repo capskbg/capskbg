@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body{
+	background:url('../../html/images/cupcake.png') no-repeat fixed center/cover;
+	
+}
+
+
+@media screen and (max-width:1024px){
+	/*
+		가로 사이즈 최대 1024 일대의 스타일
+		0~1024 까지의 스타일
+	*/
+	
+	body{
+	background:url('../../html/icon/icon02.png') no-repeat fixed center/cover;
+}
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1280px){
+	/*1025~1280*/
+	body{
+	background:url('../../html/icon/icon03.png') no-repeat fixed center/cover;
+}
+}
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+    $("a").button({
+        icons:{
+            primary:"ui-icon-scissors"
+        }
+    });
+    $("#cha").button({
+        icons:{
+            primary:"ui-icon-pencil"
+        }
+    });
+});
+</script>
+</head>
+<body>
+<h1>구기종목을 선택 하세요</h1>
+<div>
+<a href="#">축구</a>
+<a href="#">농구</a>
+<a href="#">야<span class="ui-icon ui-icon-scissors"></span>구
+</a>
+</div>
+<button id="cha">그래픽 버튼 아이콘 변경</button>
+<span class="ui-icon ui-icon-scissors"></span>
+<div class="ui-icon ui-icon-scissors"></div>
+</body>
+</html>

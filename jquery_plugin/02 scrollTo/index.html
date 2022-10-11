@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>scrollTo plugin</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script src="./js/jquery.scrollTo.min.js"></script>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="headerWrap">
+			<header>
+				<h1>SITE TITLE</h1>
+				<nav>
+					<a href="#aa" class="nav-btn">AAA</a>
+					<a href="#bb" class="nav-btn">BBB</a>
+					<a href="#cc" class="nav-btn">CCC</a>
+					<a href="#dd" class="nav-btn">DDD</a>
+				</nav>
+			</header>
+		</div>
+	<div id="container">
+		
+
+		<section id="aa" class="page1">
+			<h2>aaa</h2>
+		</section>
+		<section id="bb" class="page2">
+			<h2>bbb</h2>
+		</section>
+		<section id="cc" class="page3">
+			<h2>ccc</h2>
+		</section>
+		<section id="dd" class="page4">
+			<h2>ddd</h2>
+		</section>
+	</div>
+	
+<script>
+/*스크립트*/
+
+$("nav a").click(function(evt){
+	$.scrollTo(this.hash,3000);
+	evt.preventDefault();
+});
+
+
+
+</script>
+	
+	
+	</body>
+
+</html>

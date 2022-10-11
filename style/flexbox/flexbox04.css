@@ -1,0 +1,41 @@
+@charset "utf-8";
+h3{text-align:center;}
+p{text-align:center; font-weight:bold;}
+
+.wrapper{
+	width:600px;
+	height:300px;
+	margin:0px auto 20px;
+	
+	border:2px solid black;
+	background:#ccc;
+	
+	display:flex;
+	flex-wrap:row wrap;
+}
+.wrapper div{
+	width:100px;
+	background:#f3f3f3;
+	border:2px solid green;
+}
+
+#con1{align-items:stretch;}
+/*
+stretch(기본값) : 플렉스를 선언한 부모요소의 세로사이즈가 아이템의 세로 사이즈가 됨.
+*/
+#con2{align-items:flex-start;}
+#con2>div:nth-child(2n){height:120px;}
+
+#con3{align-items:flex-end;}
+#con3>div:nth-child(2n){height:120px;}
+
+#con4{align-items:center;}
+#con4>div:nth-child(2n){height:120px;}
+
+#con5{align-items:baseline;}
+#con5{
+	align-items:baseline;
+	/*글자의 기본라인을 중심*/
+	align-content:center;
+	justify-content:center;
+}

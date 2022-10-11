@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-history-1.html </title>
+</head>
+<body>
+<script>
+/*
+	window 객체 바로 아래에 있는
+		history (방문기록과 관련 되어 있음.)
+		location (방문기록상에 위치로 이동 가능..)
+
+
+	window.여기
+
+		screen : 화면정보 (사용자가 사용하는 모니터/디바이스)
+		history : 방문기록 정보 제공
+		location : 현재문서(위치)의 url 제공
+		document : 현재문서(웹문서)
+		navigator : 브라우저의 정보제공
+
+		(XML관련..)
+*/
+function goFor(){
+	history.forward();
+}
+
+</script>
+<a href="./js-27history-2.html">entity.html으로 이동</a>
+<button onclick="goFor();">방문기록 상 다음 페이지</button>
+</body>
+</html>

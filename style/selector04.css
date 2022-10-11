@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*
+	h2,h6, 텍스트 컬러를 파랑색으로 변경
+*/
+
+h2, h6{
+	/*문서 내에 있는 모든 h2 태그와 h6 태그 선택*/
+	color:orange;
+}
+
+h1, h2, h3 {
+	border: 1px solid blue;
+	-태그선택자
+}
+
+h1 + h2{background-color:yellow;
+	/*
+		인접 선택자 :
+		주체는 h1(앞에 쓴거) 바로 뒤에 있는 h2 하나만 선택
+	*/
+}
+
+h1 ~ h2{
+	border:2px solid pink;
+	
+}
+
+/*★가 붙어 있는 h2의 배경색상을 
+동위 선택자를 사용해 
+teal 컬러로 변경하시오*/
+
+div + h2{ background-color:teal;}

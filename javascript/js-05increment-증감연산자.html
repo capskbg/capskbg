@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-increment-증감연산자.html </title>
+</head>
+<body>
+<script>
+	/*
+		일반적으로 사용하는 식은 중위식
+
+			a +(연산자) b = 결과
+
+			+=ab 연산자들을 앞에 쓴다고 해서 전위식
+			ab+= 연산자들을 뒤에 쓴다고 해서 후위식	
+
+			i++, j++, k++ 
+			++i, ++j, ++k 
+			
+	*/
+
+	var num1 = 7;
+	var num2 = 3;
+
+	document.write("<br/> num1의 초기값: "+ num1);
+	
+	++num1;
+	document.write("<br/> ++num1의 초기값: "+ num1);
+
+	num1++;
+	document.write("<br/> 두번째 ++num1의 초기값: "+ num1);
+
+	document.write('<hr/>');
+
+	document.write("<br/> num2의 초기값: "+ num2);//3
+	
+	--num2; //2
+	document.write("<br/> ++num2의 초기값: "+ num2);//2
+
+	num2--; //1
+	document.write("<br/> 두번째 ++num2의 초기값: "+ num2);//1
+
+	var sample=10;
+	alert("첫번째"+(sample++)); //10
+	document.write("<hr/>"+sample);//11
+
+	alert("두번째"+ (++sample));//12
+	document.write("<hr/>"+sample);//12
+
+
+</script>
+</body>
+</html>

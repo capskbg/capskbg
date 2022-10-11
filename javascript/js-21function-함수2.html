@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> js-function-함수2.html </title>
+</head>
+<body>
+<script>
+/*
+ function 함수이름(){..}
+
+ function (){..} ---> 익명함수
+
+ */
+var i = 5; var j = 10;
+
+
+ var Cal = function(){
+	document.write("1." + (i + j));
+ }
+Cal();
+
+</script>
+<h2>html에 직접 입력한 텍스트</h2>
+<script>
+(function(){
+	document.write("바로 실행함수");
+})();
+
+function operatorFunc(op1, op2){
+	/*
+	 operationFunc(op1,op2)
+	 	-> 매개변수 1,2를 입력받아 와서
+		해당 숫자들을 산술 연산(+-/*)한 결과를 보여주는 기능을 하는 함수.
+	
+	*/
+	document.write("<hr/>");
+	document.write("op1 = "+op1 + " :: op2 = " + op2);
+	document.write("<hr/>");
+	document.write("op1 + op2 ="+ (op1+op2));
+	document.write("<hr/>");
+	document.write("op1 - op2 ="+ (op1-op2)); 
+	
+	/*
+	 op2가 0이면 계산 할 수가 없음. "0으로 나눌 수 없습니다."
+	조건 !!을 달아 줄 것.
+	0이 아니면 계산 해서 출력하면 됨.
+	*/
+	if(op2 != 0){
+		document.write("<hr/>");
+		document.write("op1 / op2 ="+ (op1/op2));
+
+	}else{
+		document.write("<br/> 0으로 나눌수 없습니다.");
+
+	}
+
+
+	document.write("<hr/>");
+	document.write("op1 * op2 ="+ (op1*op2)); 
+}
+operatorFunc(10,2);
+operatorFunc(1250,2);
+operatorFunc(165,0);
+
+
+function hap(a,b){
+	return a + b; // 해당 함수를 호출한 자리에 return 값.. 이 들어감.
+}
+var res;
+res = hap(5,2);
+document.write("<hr/>" + res);
+
+/*
+return; -> 함수,객체(object) 기능의 종결 의미
+return false; == return 0;
+return true; == return 1;
+*/
+
+
+
+</script>
+</body>
+</html>

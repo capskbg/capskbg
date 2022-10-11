@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{margin:0; padding:0;}
+li,ul,ol{list-style:none;}
+
+/*a link style*/
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+/*레이아웃 공통 적용 css*/
+
+.wrap{/*컨텐츠 가로 1280px 중앙정렬*/
+	width:1440px;
+	height:68px;
+	margin:0 auto;
+	position:relative;
+
+}
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+header{
+	height:68px;
+	background:rgba(0,0,0,0.3);
+	box-shadow:0 3px 10px rgba(0,0,0,0.2);
+	
+}
+
+#logo{
+	position:absolute;
+	height:20px;
+	width:120px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+#logo>a{
+	display:block;
+	width:100%; height:100%;
+	background:url('./img/samsung_logo.svg') no-repeat;
+	text-indent:-999px;
+	overflow:hidden;
+}
+
+
+.wrap>ul>li{float:left;}
+.wrap>ul:nth-of-type(1){
+	position:absolute;
+	top:50%;
+	transform:translate(-50%);
+}
+.wrap>ul:nth-of-type(2){
+	position:absolute;
+	right:0;
+	top:50%;
+	transform:translate(-50%);
+}
+
+.wrap>ul>li>a{
+	display:block;
+	padding:0 10px;
+}
+

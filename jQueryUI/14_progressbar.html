@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+    var i = 0;
+    $("#update").progressbar();
+    
+    
+   
+    (function(){
+        $("#update").progressbar("value",i);
+        i++;
+        if(i <= 100){
+            setTimeout(arguments.callee,100);
+            //arguments.callee : 현재 실행중인 함수를 다시 불러오는 것
+            
+        }
+})();//바로 실행되는 함수
+});
+</script>
+</head>
+<body>
+<h1>프로그레스(상태진행)바 출력</h1>
+<div id="update"></div>
+</body>
+</html>

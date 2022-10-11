@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>default page</title>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(function(){
+    $("a").tooltip({
+        position:{
+            my:"right bottom", //기준점
+            at:"center+150px top+160x" // 변경 위치
+        }
+    });
+});
+</script>
+</head>
+<body>
+<p><a href="#1" title="입력글이 출력됩니다">네이버</a></p>
+<p><a href="#2" title="툴팁내용으로 출력될 부분입니다">다음</a></p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#container{
+	width:420px;
+	height:300px;
+	background:skyblue;
+	border:1px solid blue;
+	margin: 0 auto;
+	display:flex;
+	/*flex-wrap:wrap;
+	flex-direction:row;*/
+	/*flex-flow:row wrap;*/
+	/**/
+}
+
+#container>div{
+	width:100px;
+	background:rgba(255,0,0,0.6);
+	color:#fff;
+	border:1px solid pink;
+	box-sizing:border-box;
+}
+
+#container>div:nth-child(3){}
+#container>div:nth-child(5){}
+
+
+/*
+display:flex;
+ - 요소를 감싸고 있는 선택자(부모요소)에 flex를 선언 해야함.
+ - flex가 선언된 요소의 자식요소는 모두 flexbox(flexitem)가 된다.
+ - 다른 프로퍼티를 사용하지 않고 단순하게 display:flex만 선언한 경우 flexbox(item)은 가로정렬로 변경 되고 item의 가로사이즈는 무시가 됨. 세로사이즈는 무조건 상위요소의 100%로 변경이 됨.
+ - 가로 사이즈는 item 개수에 따라 가로축은 중심으로 균등 배분됨.
+
+※ flex선언된 부모요소(container)에 쓰는 flex관련 프로퍼티
+▶flex-direction: 플렉스아이템의 주방향을 지정해주는 프로퍼티
+	-row(기본값) : 주축(x축,가로,행)을 중심으로 배치
+	-column: 교차축(y축,세로축,열)을 중심으로 배치
+	-row-reverse: 주축중심 역순배치
+	-column-reverse: 교차축중심 역순배치
+▶flex-wrap : 플렉스아이템을 한 줄 또는 여러줄로 배치할 때 쓰는 프로퍼티
+	- nowrap(기본값) : 무조건 한줄(한행)으로만 배치
+	- wrap : 플렉스아이템을 여러줄에 걸쳐서 표시
+	- wrap-reverse: 여러줄표시 역순배치
+▶flex-flow(축약) : flex-direction가 flex-wrap을 축약해서 쓰는 프로퍼티
+▶justify-content : 주축을 중심으로 플렉스 아이템을 어떠한 형태로 배치할 것인지 지정해주는 프로퍼티
+▶align-content : 교차축을 중심으로 플렉스 아이템을 어떠한 형태로 배치할 것인지 지정해주는 프로퍼티
+▶align-items: 수직방향의 정렬 방식 설정 (nowrap에는 효과 별로없고 wrap일 경우 두줄 이상의 아이템이 나열 되었을 때 유용하게 쓰임)
+
+※ flexbox(flexitem)에 쓰는 flex관련 프로퍼티
+▶align-self
+▶odrder
+▶flex-grow
+▶flex-shrink
+▶flex-basis
+▶flex (축약)
+
+*/

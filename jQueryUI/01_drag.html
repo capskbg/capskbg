@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>default page</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+	
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+<script>
+// 스크립트 부분
+$(document).ready(function(){
+  $("img, div").draggable();
+});
+</script>
+<style>
+	div{
+		width:100px;
+		height:100px;
+		background-color:lightgreen;
+	}
+</style>
+	
+</head>
+<body>
+<h1>요소를 드래그 할 수 있다.</h1>
+<img src="./images/0.jpg" alt="" />
+<img src="./images/1.jpg" alt="" />
+<div>박스1</div>
+<div>박스2</div>
+</body>
+</html>
