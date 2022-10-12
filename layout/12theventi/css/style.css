@@ -1,3 +1,56 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 
 
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+
+.header{width:100%; height:600px;}
+
+
+.gnb_bg{width:100%; margin: 0 auto; height:120px;  display: flex;
+    flex-flow: row wrap; 
+   justify-content: space-around;
+   align-items :center;}
+
+
+#logo img{width: 120px; height:25px; line-height: 25px;}
+
+
+
+a.link_icon01{width: 200px; height:50px; line-height: 50px; background: #780997; border-radius: 180px; color:#fff; display: block; text-align: center;}
+
+
+
+.header_bg{width:100%; height:480px; background: url('../images/header_bg.png') center/cover no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1007px){
+
+
+
+
+
+} 
+
+
+@media all and (max-width: 640px){
+
+} 
