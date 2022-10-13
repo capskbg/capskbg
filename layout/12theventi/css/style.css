@@ -1,45 +1,133 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 
 
+/*공통*/
+
 a{text-decoration:none;}
 a:link{color:#333;}
 a:visited{color:#333;}
 a:hover{color:#333;}
 a:active{color:#333;}
 
-.header{width:100%; height:600px;}
+.header{width:100%; height:580px;}
 
+img{vertical-align: middle;}
+h2{display: none;}
 
-.gnb_bg{width:100%; margin: 0 auto; height:120px;  display: flex;
+.clear::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+ }
+ 
+
+/*header영역*/
+
+.gnb_bg{width:100%; margin: 0 auto; text-align: center; height:100px;  display: flex;
     flex-flow: row wrap; 
-   justify-content: space-around;
+   justify-content:space-around;
    align-items :center;}
+  
+.gnb{width:650px; height:100px; display: flex;
+    flex-flow: row wrap; 
+   justify-content:space-between;
+   align-items :center;  }
 
 
-#logo img{width: 120px; height:25px; line-height: 25px;}
+.gnb>li>a{color:#333;  font-weight: bold; width:120px; height:100px; line-height: 100px; display: block; position: relative;}
+
+.gnb>li>a:hover{color: #780997; }
+.gnb>li>a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .gnb>li>a:hover::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: #780997;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+  }
+
+
+#logo{width:150px;  height:100px; line-height: 100px;}
+#logo img{width: 120px; height: 25px; }
 
 
 
-a.link_icon01{width: 200px; height:50px; line-height: 50px; background: #780997; border-radius: 180px; color:#fff; display: block; text-align: center;}
+a.link_icon01{width: 170px; height:50px; line-height: 50px; background: #780997; border-radius: 180px; color:#fff;  font-weight: bold;  display: block; text-align: center;}
 
 
 
-.header_bg{width:100%; height:480px; background: url('../images/header_bg.png') center/cover no-repeat;}
+.header_bg{width:100%; height:480px; background: url('../images/header_bg.png') center/cover no-repeat; position: relative;}
+
+
+.header_bg>p{text-align: center; color: #fff;  position: absolute; left:50%; transform: translateX(-50%); }
+.header_bg>p:first-child{font-size: 2.3rem; font-weight: bold; top:35%;  }
+.header_bg>p:last-child{top:50%; font-size: 1.2rem;}
+
+/*contents영역*/
+
+.contents{width:100%; height: 1500px;   }
+
+.con_tab{width:500px; margin:0 auto; text-align: center;   }
+.con_tab>li{ float:left;   }
+.con_tab>li>a{display: block; width:150px;  height:50px; line-height: 50px; position: relative; font-weight: bold;}
+
+
+.con_tab>li>a:hover{color: #780997; }
+.con_tab>li>a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ .con_tab>li>a:hover::after {
+    content: "";
+    width: 80%;
+    height: 4px;
+    position: absolute;
+    background: #780997;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+  }
 
 
 
 
+#con_tab_line{ background: #666; width:100%; box-sizing: border-box; margin-bottom: 80px;}
 
 
 
 
+.menu_tab{ width: 70%; margin: 0 auto; height:80px; text-align: center; margin-bottom: 40px;}
+.menu_tab>li{float:left; width:25%;}
+.menu_tab>li>a{  width:100%; height: 40px; line-height: 40px; background: #e6deda; display: block; color: #36252f; font-weight: bold;}
 
+.menu_tab>li>a:hover{background: #36252f; color:#fff;}
+.item_list_bg{width:100%;  margin:0 auto;}
+.item_list{ width:70%; margin: 0 auto; display: flex;
+    flex-flow: row wrap; 
+   justify-content: space-between;
+   align-items :center;
+text-align: center;}
 
-
-
-
-
-
+.item_list>li{width:24%; height:300px; border: 1px solid #e6e6e6; box-sizing: border-box; margin-bottom: 5px; position: relative;}
+.item_list>li>figure{ width:100%; height:100%; }
+.item_list>li>figure>figcaption>div{width:8px; height:8px; background: #006db0; border-radius: 50%; margin: 0 auto 5px;}
+.item_list>li>p{ width:50px; height:50px; line-height: 50px; border-radius: 50%; background: #e98004; color:#fff; right:5px; top:2px; position: absolute;}
 
 
 @media all and (max-width: 1007px){
