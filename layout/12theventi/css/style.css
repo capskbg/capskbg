@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 /*공통*/
@@ -409,16 +411,18 @@ a.link_icon02 {
   .gnb_bg {
     width: 100%;
     height: 100px;
-    justify-content: space-between;
+    justify-content:space-between;
+    position: fixed;
+    z-index: 100;
+    background-color: #e6deda;
   }
-  .gnb,
+  
   a.link_icon01 {
     display: none;
   }
 
   .header_bg {
-    width: 100%;
-    height: 400px;
+    width: 100%;   padding-top: 100px;   height: 400px;
   }
 
   .header_bg > p:first-child {
@@ -491,7 +495,35 @@ a.link_icon02 {
   .sns_icon img {
     width: 70%;
   }
+
+  /*햄버거 버튼 영역*/
+.ham{display: block;  cursor: pointer;  margin-left: auto; padding-right: 3%;  z-index: 9999;}
+  .ham>span{display: block; width:40px; height:4px; background: #780997; position: relative; margin: 5px auto; }
+
+.gnb{display: none;
+    width:50%;
+
+    height:100vh;
+    position: absolute;
+
+    right: 0;
+    top:0;
+    z-index: 999;
+    background: rgba(0,0,0,0.5);
+
+
+
 }
 
-@media all and (max-width: 640px) {
+.gnb > li{width:100%; height:100px; }
+
+
+.gnb > li > a{color: #fff; text-align: center; width:100%; }
+
+
+
 }
+
+  
+
+

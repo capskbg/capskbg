@@ -7,11 +7,19 @@
   <title>new</title>
   <link href="./css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
+<body>
 <header class="header">
+
   <div class="gnb_bg">
     <h1 id="logo">
       <a href="#"><img src="./images/logo.png" alt="logo" /></a>
     </h1>
+    <div class="ham" onclick="m_gnb()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav>
       <ul class="gnb clear">
         <li><a href="#"> BRAND</a></li>
@@ -306,5 +314,20 @@
     >인트로<img src="./images/logo-icon.png" alt="logo_icon"
   /></a>
 </footer>
+
+<script>
+$(document).ready(function(){
+  $('.ham').click(function(){
+    $('.gnb').toggle();
+  })
+
+
+
+});
+
+ 
+
+</script>
+
 </body>
 </html>
