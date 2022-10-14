@@ -41,6 +41,10 @@ h2 {
 
 /*header영역*/
 
+.ham {
+  display: none;
+}
+
 .gnb_bg {
   width: 100%;
   margin: 0 auto;
@@ -143,7 +147,7 @@ a.link_icon01 {
 
 .contents {
   width: 100%;
-  height: 1500px;
+  height: auto;
 }
 
 .con_tab {
@@ -219,7 +223,7 @@ a.link_icon01 {
 }
 .item_list_bg {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .item_list {
   width: 70%;
@@ -392,6 +396,101 @@ a.link_icon02 {
 }
 
 @media all and (max-width: 1090px) {
+  body {
+    width: 100%;
+  }
+  html {
+    font-size: 12px;
+  }
+  .header {
+    width: 100%;
+    height: 500px;
+  }
+  .gnb_bg {
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+  }
+  .gnb,
+  a.link_icon01 {
+    display: none;
+  }
+
+  .header_bg {
+    width: 100%;
+    height: 400px;
+  }
+
+  .header_bg > p:first-child {
+    font-size: 1.5rem;
+  }
+  .header_bg > p:last-child {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+
+  .con_tab {
+    width: 300px;
+  }
+  .con_tab > li > a {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .menu_tab {
+    height: auto;
+  }
+  .menu_tab > li {
+    width: 50%;
+  }
+  .item_list > li {
+    width: 48%;
+  }
+
+  .footer {
+    height: 500px;
+  }
+
+  .footer_line {
+    display: none;
+  }
+  #footer_logo {
+    left: 1%;
+    top: 10%;
+  }
+  #footer_logo img {
+    width: 70%;
+  }
+  .footer_util {
+    left: 1%;
+    transform: unset;
+    top: 25%;
+    width: 350px;
+  }
+
+  .tel {
+    left: 1%;
+    top: 32%;
+  }
+  address {
+    width: 95%;
+    left: 1%;
+    top: 50%;
+    transform: unset;
+    display: unset;
+    line-height: 1.8;
+  }
+
+  .link_icon02 {
+    left: 1%;
+    top: 85%;
+  }
+  .sns_icon > li {
+    margin-right: 2px;
+  }
+  .sns_icon img {
+    width: 70%;
+  }
 }
 
 @media all and (max-width: 640px) {
