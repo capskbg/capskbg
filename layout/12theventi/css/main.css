@@ -58,7 +58,13 @@ h2 {
   align-items: center;
 }
 
-.gnb {
+
+nav{width:650px; height:100px;}
+.m_gnb {
+  display: none;
+  
+}
+.gnb,.m_gnb {
   width: 650px;
   height: 100px;
   display: flex;
@@ -67,7 +73,7 @@ h2 {
   align-items: center;
 }
 
-.gnb > li > a {
+.gnb > li > a,.m_gnb > li > a {
   color: #333;
   font-weight: bold;
   width: 120px;
@@ -77,17 +83,17 @@ h2 {
   position: relative;
 }
 
-.gnb > li > a:hover {
+.gnb > li > a:hover,.m_gnb > li > a:hover {
   color: #780997;
 }
-.gnb > li > a::after {
+.gnb > li > a::after,.m_gnb > li > a::after {
   content: "";
   width: 0;
   height: 3px;
   left: 50%;
   transform: translateX(-50%);
 }
-.gnb > li > a:hover::after {
+.gnb > li > a:hover::after, .m_gnb > li > a:hover::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -517,6 +523,10 @@ a.link_icon02 {
 
   .gnb {
     display: none;
+    
+  }
+  .m_gnb{
+    display: none;
     width: 50%;
 
     height: 100vh;
@@ -527,13 +537,12 @@ a.link_icon02 {
     z-index: 999;
     background: rgba(0, 0, 0, 0.5);
   }
-
-  .gnb > li {
+  .m_gnb > li {
     width: 100%;
     height: 100px;
   }
 
-  .gnb > li > a {
+  .m_gnb > li > a {
     color: #fff;
     text-align: center;
     width: 100%;

@@ -18,14 +18,23 @@
         <h1 id="logo">
           <a href="#"><img src="./images/logo.png" alt="logo" /></a>
         </h1>
-        <div class="ham" onclick="m_gnb()">
+        <div class="ham" >
           <span></span>
           <span></span>
           <span></span>
         </div>
         <nav>
           <ul class="gnb clear">
-            <li><a href="#"> BRAND</a></li>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">MEMBERSHIP</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+          </ul>
+
+
+          <ul class="m_gnb">
+            <li><a href="#">BRAND</a></li>
             <li><a href="#">MENU</a></li>
             <li><a href="#">STORE</a></li>
             <li><a href="#">MEMBERSHIP</a></li>
@@ -321,7 +330,7 @@
     <script>
       $(document).ready(function () {
         $(".ham").click(function () {
-          $(".gnb").toggle();
+          $(".m_gnb").toggle();
         });
       });
     </script>
