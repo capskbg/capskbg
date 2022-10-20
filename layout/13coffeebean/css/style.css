@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body{width:100%;}
+
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover{color:#333;}
+a:active{color:#333;}
+h2{display: none;}
+.clear::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+ }
+ .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+ }
+
+ /*헤더영역*/
+ .header{width:100%; height:200px;}
+
+ .util_bg{width:100%; height:50px; background: #d6d6d6; 
+ position: relative;}
+
+ .util{width:720px;  height:50px; position: absolute; right:7%; }
+.header>nav{height:150px; width:100%; justify-content: left;}
+.gnb{width:1200px; height:150px; margin-left: 8%;}
+.gnb>li{ height:150px; line-height: 150px;}
+
+.gnb>li>a{text-align: center; color:#333; font-size: 1.3rem; }
+.gnb>li>a:hover{color: goldenrod;}
+
+#logo{display: inline-block; margin-left: 7%;}
+
+/*비주얼배너영역*/
+
+.bnr{width:100%; height:auto;}
+.bnr01{width:100%; height:540px;}
+.bnr01>a{display: block; width:100%; height:540px; background: url('../img/banner1.jpg') center/cover no-repeat;}
+.bnr02>a{display: block; width:100%; height: 400px; background: url('../img/banner2.jpg') center/cover no-repeat;}
+
+/*컨텐츠1*/
+.con_01{width:70%; margin: 0 auto; height:auto; margin-bottom: 100px;}
+.mdpick_bg,.new_bg{width:100%; height:auto; }
+.mdpick_bg>h3,.new_bg>h3{text-align: center; color: goldenrod; font-size: 1.4rem; font-weight: bold; margin: 50px auto;}
+.mdpcik,.new{width:100%;}
+.mdpcik>li{width:25%; height:400px;}
+.mdpcik>li>dl,.new>li>dl{text-align: center;}
+.mdpcik>li>dl>dd{margin: 10px 0;}
+.mdpcik>li>dl>dd:nth-child(2){color:black; font-weight: bold;}
+.mdpcik>li>dl>dd:nth-child(3){color:goldenrod; font-size: 0.9rem;}
+
+.new>li>dl>dd{color: goldenrod; font-size: 1.1rem; margin:10px 0;}
+
+/*컨텐츠2*/
+.con_02{width:100%; height:600px; background: purple; position: relative;}
+.con_02>h3{color:#fff; text-align: center; padding-top: 50px; font-size: 1.2rem; }
+
+.gal_bg{position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+
+.gal{width:1200px; height:400px;}
+.gal>li>a{ width:200px; height:200px; display: block;}
+.gal>li>a>img{width:100%;}
+#insta{position: absolute; bottom:40px; left:50%; transform: translateX(-50%);
+display: block; width:420px; height:40px;  background: orange; color: #fff; line-height: 40px; text-align: center;}
+
+
+/*푸터영역*/
+.footer{width:100%; height: 500px; background: #d6d6d6; padding-top: 50px;}
+
+.under_nav_bg{width:80%; margin:0 auto; border-bottom: 1px solid #804000;}
+.under_nav{width:100%; height: 300px; text-align: left;}
+.under_nav>li{color:goldenrod; font-size: 1.1rem; width:15%; height:300px;}
+.under_nav>li>ul{line-height: 1.8; margin-top: 20px; }
+
+.under_nav>li>ul>li>a{color:#804000;}
+.under_nav>li>ul>li>a:hover{font-weight: bold;}
+
+
+
+.foot_under_bg{width:80%; height:200px; margin:0 auto; position: relative;}
+.foot_util{position: absolute; top:30px; left:0;}
+.foot_util>li{float:left; margin: 0 5px;}
+.foot_util>li:first-child{margin:0 5px 0 0;}
+.foot_util>li>a{color:#804000; }
+.foot_util>li>a:hover{color:goldenrod;}
+.sns{position: absolute; top:30px; right:0; width: 250px;}
+
+.foot_under_bg>address{position: absolute; left:0; bottom:20px; line-height: 1.8;  font-size: 0.9rem;}
