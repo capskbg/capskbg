@@ -6,9 +6,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>main</title>
     <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    
     <script src="./js/malt.js">
       
       </script>
+      <script src="./slide_plug/bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+     
+
+     
 </head>
 <body>
 <header>
@@ -16,20 +21,23 @@
     <ul class="util flex">
         <li><a href="#">로그인</a></li>
         <li><a href="#">회원가입</a></li>
-        <li id="search_icon"></li>
+        <li id="search_icon"><a  href="#modal1" rel="modal:open"></a></li>
         
     </ul>
-</div>
-    <div class="search_box"><input type="search" placeholder="검색어를 입력 하세요"/><img src="./images/search.png" alt="search"/></div>
-  
 
+    <div id="modal1" class="modal">
+        <input type="search" placeholder="검색어를 입력하세요"/>
+        
+      </div>
+</div>
+   
 <nav>
     <ul class="gnb flex">
         <li><a href="#">home</a></li>
         <li><a href="#">cocktails</a></li>
         <li><a href="#">knowledge</a>
             <ul class="submenu">
-                <li><a href="#">single malt</a></li>
+                <li><a href="./sub.html">single malt</a></li>
                 <li><a href="#">history</a></li>
                
             </ul>
@@ -47,23 +55,25 @@
                 <li><a href="#">recent news</a></li>
             </ul>
         </li>
-        <li><a href="#" id="logo"><img src="./images/logo.png" alt="logo"/></a></li>
+        <li><a href="./index.html" id="logo"><img src="./images/logo.png" alt="logo"/></a></li>
     </ul>
 </nav>
 
 </header>
 <div class="container">
-<section>
+<section class="sec01">
     <h2>비주얼배너영역</h2>
-    <img src="./images/visual_bn01.jpg" alt="bn01"/>
-    <img src="./images/visual_bn02.jpg" alt="bn02"/>
-    <img src="./images/visual_bn03.jpg" alt="bn03"/>
-    
+    <ul class="bxslider">
+        <li><img src="./images/visual_bn01.jpg" alt="slide01"></li>
+        <li><img src="./images/visual_bn02.jpg" alt="slide02"></li>
+        <li><img src="./images/visual_bn03.jpg" alt="slide03"></li>
+        
+      </ul>
 </section>
-<section>
+<section class="sec02">
     <h2> 프리미엄상품영역</h2>
     <div>
-        <ul>
+        <ul class="premium flex">
             <li>
                 <figure>
                 <a href="#">
@@ -104,12 +114,12 @@
     </div>
 </section>
 
-<section>
+<section class="sec03">
     <h2>macallan리스트</h2>
-    <h3>macallan</h3>
+    <h3>MACALLAN</h3>
     <img src="./images/macallan.jpg" alt="macallan"/>
 
-    <ul>
+    <ul class="macallan_pr flex">
         <li>
             <dl>
                 <dt><a href="#"><img src="./images/product_01.jpg" alt="product_01"/></a></dt>
@@ -155,17 +165,58 @@
     </ul>
 </section>
 
-<section>
+<section class="sec04">
     <h2>glemorangie리스트</h2>
-    <h3>glemorangie</h3>
+    <h3>GLEMORANGIE</h3>
     <img src="./images/glenmorangie.jpg" alt="glemorangie"/>
 
-    <ul>
+    <ul class="glenmorangie_pr flex">
        <li>
         <dl>
             <dt><a href="#"><img src="./images/product_02.jpg" alt="product_02"/></a></dt>
             <dd>GLENMORANGIE SIGNET</dd>
             <dd>£ 153.58</dd>
+           
+        </dl>
+       </li> 
+       <li>
+        <dl>
+            <dt><a href="#"><img src="./images/product_02.jpg" alt="product_02"/></a></dt>
+            <dd>GLENMORANGIE SIGNET</dd>
+            <dd>£ 153.58</dd>
+           
+        </dl>
+       </li> 
+       <li>
+        <dl>
+            <dt><a href="#"><img src="./images/product_02.jpg" alt="product_02"/></a></dt>
+            <dd>GLENMORANGIE SIGNET</dd>
+            <dd>£ 153.58</dd>
+           
+        </dl>
+       </li> 
+       <li>
+        <dl>
+            <dt><a href="#"><img src="./images/product_02.jpg" alt="product_02"/></a></dt>
+            <dd>GLENMORANGIE SIGNET</dd>
+            <dd>£ 153.58</dd>
+           
+        </dl>
+       </li> 
+       <li>
+        <dl>
+            <dt><a href="#"><img src="./images/product_02.jpg" alt="product_02"/></a></dt>
+            <dd>GLENMORANGIE SIGNET</dd>
+            <dd>£ 153.58</dd>
+           
+        </dl>
+       </li> 
+       <li>
+        <dl>
+            <dt><a href="#"><img src="./images/product_02.jpg" alt="product_02"/></a></dt>
+            <dd>GLENMORANGIE SIGNET</dd>
+            <dd>£ 153.58</dd>
+           
         </dl>
        </li> 
     </ul>
