@@ -93,7 +93,7 @@ header {
 }
 .submenu {
   display: none;
-  z-index: 9999;
+  z-index: 99999;
   position: absolute;
   top: 100px;
   left: 0;
@@ -179,7 +179,7 @@ footer {
   display: none;
   vertical-align: top;
   position: relative;
-  z-index: 99995;
+  z-index: 99999;
   max-width: 100%;
   box-sizing: border-box;
   width: 100%;
