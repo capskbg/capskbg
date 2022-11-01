@@ -521,10 +521,32 @@ hr {
     opacity: 0;
 }
 
-.design img{width:300px; height:500px;}
+.design img{width:350px; height:500px;}
 
 .design figure{position: relative; overflow: hidden;}
 .design figure>figcaption{width:0%;
+	height:0%;
+	background:rgba(231,76,60,0.6);
+	position:absolute;
+	top:-100%; left:50%;
+	color:#fff;
+	font-size:1.5rem;
+	font-weight:bold;
+	text-align:center;
+	transform:translate(-50%,-50%);
+	transition:all .4s;
+	box-sizing:border-box;
+	padding:40% 25% 25% 25%;}
+
+    .design figure:hover>figcaption{width:370px;
+        height:500px;
+        top:50%; left:50%;
+       
+        font-size:2rem;}
+
+.web figure{position: relative; overflow: hidden; }
+.web img{width:350px; height:500px;}
+.web figure>figcaption{width:0%;
 	height:0%;
 	background:rgba(231,76,60,0.6);
 	position:absolute;
@@ -538,11 +560,14 @@ hr {
 	box-sizing:border-box;
 	padding:40% 25% 25% 25%;}
 
-    .design figure:hover>figcaption{width:320px;
+    .web figure:hover>figcaption{width:370px;
         height:500px;
-        top:50%; left:40%;
+        top:50%; left:50%;
        
         font-size:2rem;}
+        .design figure:hover>figcaption>span , .web figure:hover>figcaption>span{width:100%; margin-top: 20px; font-size: 1.6rem; color:#f2f2f2;}
+
+
 
 .grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
     opacity: 1;
